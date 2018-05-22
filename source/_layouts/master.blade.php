@@ -26,5 +26,14 @@
         </div>
 
         @include('_partials.footer')
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script type="text/javascript">
+            docsearch({
+                apiKey: '{{ $page->docsearchApiKey }}',
+                indexName: '{{ $page->docsearchIndexName }}',
+                inputSelector: '#docsearch'
+            });
+        </script>
     </body>
 </html>
