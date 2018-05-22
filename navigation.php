@@ -22,7 +22,7 @@ return [
         ]
     ],
     'Pretty URLs' => 'pretty-urls',
-    'Custom 404 Page' => 'custom-404-page',
+    'Custom 404 Page that is also something with a really long title just to see what happens in that context!' => 'custom-404-page',
 ];
 
 

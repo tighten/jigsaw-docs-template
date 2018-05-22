@@ -1,1 +1,1 @@
-<a class="font-bold level-{{ $level }}">{{ $title }}</a>
+<a class="font-bold text-grey-darkest level-{{ $level }}">{{ $title }}</a>
