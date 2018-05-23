@@ -19,8 +19,6 @@
         <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
     <body>
-        @include('_partials.header')
-
         <div class="container mx-auto px-4 pb-8 content">
             @yield('body')
         </div>

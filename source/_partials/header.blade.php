@@ -1,13 +1,14 @@
-<div class="mb-8">
-    <header class="container mx-auto px-4">
-        <div class="sm:flex">
-            <a href="{{ $page->url('/') }}" class="inline-flex items-center w-full pt-4 pb-2 sm:py-6 w-full font-bold">
-                @include('_partials.logo')
+<header class="container mx-auto px-4 border-b mb-8 sm:flex">
+    <div class="flex flex-1">
+        <a href="{{ $page->url('/') }}" class="inline-flex items-center pt-4 pb-2 sm:py-6 font-bold">
+            @include('_partials.logo')
 
-                <span class="pl-4">
-                    {{ $page->docsTitle }}
-                </span>
-            </a>
-        </div>
-    </header>
-</div>
+            <span class="pl-4">
+                {{ $page->docsTitle }}
+            </span>
+        </a>
+    </div>
+    <div class="flex flex-1 align-right justify-end items-center">
+        {{ $slot }}
+    </div>
+</header>

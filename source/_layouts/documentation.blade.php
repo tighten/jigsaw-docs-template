@@ -1,11 +1,12 @@
 @extends('_layouts.master')
 
 @section('body')
-<div class="border-b pb-8">
-    <input id="docsearch" class="border" type="text" name="docsearch" value="">
-</div>
 
-<div class="sm:flex pt-8">
+@component('_partials.header', ['page' => $page])
+    <input id="docsearch" class="border" type="text" name="docsearch" value="">
+@endcomponent
+
+<div class="sm:flex">
     <div class="sm:w-1/4 pr-8">
         @include('_partials.nav')
     </div>
