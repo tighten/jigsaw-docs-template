@@ -5,11 +5,11 @@
     <input id="docsearch" class="border" type="text" name="docsearch" value="">
 </div>
 
-<div class="flex py-8">
-    <div class="w-1/4 pr-8">
+<div class="sm:flex pt-8">
+    <div class="sm:w-1/4 pr-8">
         @include('_partials.nav')
     </div>
-    <div class="markdown w-3/4">
+    <div class="markdown sm:w-3/4">
         @yield('documentation_content')
     </div>
 </div>
