@@ -750,13 +750,13 @@ body {
 .markdown ul ol,
 .markdown ol ul,
 .markdown ol ol {
-  margin-top: .5rem;
+  margin-top: .25rem;
   margin-bottom: .5rem;
-  padding-bottom: .25rem;
+  padding-bottom: 0;
 }
 
 .markdown ol li {
-  padding-bottom: .5rem;
+  padding-bottom: .25rem;
 }
 
 .markdown ol li:last-child {
@@ -794,6 +794,30 @@ body {
 .markdown blockquote p {
   padding-top: .25rem;
   padding-bottom: .25rem;
+}
+
+.nav-item {
+  display: block;
+  border-bottom-width: 1px;
+  padding: .5rem;
+  text-decoration: none;
+  color: #3d4852;
+}
+
+.nav-item:hover {
+  background-color: #f1f5f8;
+}
+
+.nav-item--level-1 {
+  padding-left: .5rem;
+}
+
+.nav-item--level-2 {
+  padding-left: 1rem;
+}
+
+.nav-item--level-3 {
+  padding-left: 1.5rem;
 }
 
 /**

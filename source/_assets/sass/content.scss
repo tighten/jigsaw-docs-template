@@ -39,14 +39,14 @@
     list-style-position: outside;
 
     ul, ol {
-      @apply .my-2;
-      @apply .pb-1;
+      @apply .mt-1 .mb-2;
+      @apply .pb-0;
     }
   }
 
   ol {
     li {
-      @apply .pb-2;
+      @apply .pb-1;
     }
 
     li:last-child {
