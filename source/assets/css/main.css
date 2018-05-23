@@ -708,6 +708,31 @@ body {
   padding-bottom: 1rem;
 }
 
+.markdown h1 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.markdown h2 {
+  font-weight: 500;
+  margin-bottom: .5rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.markdown h3 {
+  font-size: 1rem;
+}
+
+.markdown hr {
+  border-bottom-width: 1px;
+  margin-bottom: 1rem;
+}
+
+.markdown code {
+  background-color: #f1f5f8;
+}
+
 .markdown p + ul,
 .markdown p + ol {
   margin-top: 0;
@@ -743,13 +768,13 @@ body {
   margin-bottom: 0;
 }
 
-.markdown h3 {
-  margin-bottom: 1rem;
+.markdown p + pre {
+  margin-top: 0;
 }
 
 .markdown pre {
   background-color: #f1f5f8;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 1.5rem;
   padding: 1.5rem;
   font-size: .875rem;
@@ -767,8 +792,8 @@ body {
 }
 
 .markdown blockquote p {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
 }
 
 /**

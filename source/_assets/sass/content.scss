@@ -5,6 +5,30 @@
 }
 
 .markdown {
+  h1 {
+    @apply .text-3xl;
+    @apply .mb-6;
+  }
+
+  h2 {
+    @apply .font-medium;
+    @apply .mb-2 .mt-8;
+    @apply .text-2xl;
+  }
+
+  h3 {
+    @apply .text-base;
+  }
+
+  hr {
+    @apply .border-b;
+    @apply .mb-4;
+  }
+
+  code {
+    @apply .bg-grey-lighter;
+  }
+
   p + ul, p + ol {
     @apply .mt-0;
   }
@@ -34,13 +58,13 @@
     }
   }
 
-  h3 {
-    @apply .mb-4;
+  p + pre {
+    @apply .mt-0;
   }
 
   pre {
     @apply .bg-grey-lighter;
-    @apply .mt-4 .mb-6;
+    @apply .mt-0 .mb-6;
     @apply .p-6;
     @apply .text-sm;
     @apply .overflow-scroll;
@@ -55,7 +79,7 @@
     @apply .text-grey-darkest;
 
     p {
-      @apply .py-2;
+      @apply .py-1;
     }
   }
 }

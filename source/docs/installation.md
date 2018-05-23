@@ -3,15 +3,15 @@ extends: _layouts.documentation
 section: documentation_content
 ---
 
-## Installation
+# Installation
 
-### System Requirements
+## System Requirements
 
 To use Jigsaw, you need to have PHP 7 and [Composer](https://getcomposer.org/) installed on your machine. You'll also optionally need Node.js and NPM installed if you want to use [Laravel Mix](https://laravel.com/docs/5.6/mix) to compile your CSS and Javascript.
 
 ---
 
-### 1. Create the Project Directory
+## 1. Create the Project Directory
 
 First, create a new directory for your site:
 
@@ -19,7 +19,7 @@ First, create a new directory for your site:
 $ mkdir my-site
 ```
 
-### 2. Install Jigsaw via Composer:
+## 2. Install Jigsaw via Composer:
 
 Next, navigate to your new project directory and install Jigsaw using Composer:
 
@@ -30,7 +30,7 @@ $ composer require tightenco/jigsaw
 
 > Make sure `~/.composer/vendor/bin` is in your `$PATH`.
 
-### 3. Initialize your Project
+## 3. Initialize your Project
 
 Finally, from your project directory, run Jigsaw's `init` command to scaffold the default directory structure:
 
@@ -40,11 +40,26 @@ $ ./vendor/bin/jigsaw init
 
 ---
 
-### Directory structure
+## Directory structure
 
 By default, Jigsaw gives you the following directory structure:
 
-![Default directory structure](../../img/directory-structure.png)
+* First directory
+* This bullet list wasn't in the original docs; it's just to prove out nested lists
+    * There's a sub bullet!
+        - And a double sub!
+    * Like a double rainbow
+* Back to start
+    1. But nested numbers now
+    2. To keep
+    3. You entertained
+
+1. Also
+2. A root number
+3. Then with
+    * Nested bullets
+    * For funsies
+4. And done.
 
 The `source` directory contains the actual contents of your site. This is where all of your site's pages, CSS, Javascript, images, etc. will be kept.
 
