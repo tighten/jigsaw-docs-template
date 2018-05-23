@@ -5,10 +5,6 @@
     @apply .no-underline;
     @apply .text-grey-darkest;
 
-    &:hover {
-        @apply .bg-grey-lighter;
-    }
-
     &--level-1 {
         @apply .pl-2;
     }
@@ -19,5 +15,11 @@
 
     &--level-3 {
         @apply .pl-6;
+    }
+}
+
+a.nav-item {
+    &:hover {
+        @apply .bg-grey-lighter;
     }
 }
