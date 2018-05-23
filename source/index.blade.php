@@ -9,7 +9,7 @@
 
 @section('body')
     @component('_partials.header', ['page' => $page])
-        <a href="/docs/installation" class="">Docs</a>
+        <a href="{{ $page->url('docs/installation') }}" class="">Docs</a>
     @endcomponent
 
     <div class="md:flex">
