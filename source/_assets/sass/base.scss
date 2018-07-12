@@ -1,3 +1,7 @@
 body {
     @apply .leading-normal;
+
+    background: $color-background;
+    border-color: $color-brand-primary;
+    color: $color-black;
 }

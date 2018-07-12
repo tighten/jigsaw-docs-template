@@ -1,85 +1,98 @@
 .content {
-  p, ol, ul {
-    @apply .pb-4;
-  }
+    p,
+    ol,
+    ul {
+        @apply .pb-4;
+    }
 }
 
 .markdown {
-  h1 {
-    @apply .text-3xl;
-    @apply .mb-6;
-  }
-
-  h2 {
-    @apply .font-medium;
-    @apply .mb-2 .mt-8;
-    @apply .text-2xl;
-  }
-
-  h3 {
-    @apply .text-base;
-  }
-
-  hr {
-    @apply .border-b;
-    @apply .mb-4;
-  }
-
-  code {
-    @apply .bg-grey-lighter;
-  }
-
-  p + ul, p + ol {
-    @apply .mt-0;
-  }
-
-  ul, ol {
-    @apply .mt-4 .mb-2;
-    @apply .ml-0;
-    list-style-position: outside;
-
-    ul, ol {
-      @apply .mt-1 .mb-2;
-      @apply .pb-0;
-    }
-  }
-
-  ol {
-    li {
-      @apply .pb-1;
+    h1 {
+        @apply .mb-6;
+        @apply .text-3xl;
     }
 
-    li:last-child {
-      @apply .pb-0;
+    h2 {
+        @apply .font-medium;
+        @apply .mb-2;
+        @apply .mt-8;
+        @apply .text-2xl;
     }
 
-    ul, ol {
-      @apply .mb-0;
+    h3 {
+        @apply .text-base;
     }
-  }
 
-  p + pre {
-    @apply .mt-0;
-  }
-
-  pre {
-    @apply .bg-grey-lighter;
-    @apply .mt-0 .mb-6;
-    @apply .p-6;
-    @apply .text-sm;
-    @apply .overflow-scroll;
-    @apply .leading-tight;
-  }
-
-  blockquote {
-    @apply .border-l-4;
-    @apply .border-grey;
-    @apply .pl-6;
-    @apply .mb-6 .ml-4;
-    @apply .text-grey-darkest;
-
-    p {
-      @apply .py-1;
+    hr {
+        @apply .border-b;
+        @apply .mb-4;
     }
-  }
+
+    code {
+        @apply .bg-grey-lighter;
+    }
+
+    p + ul,
+    p + ol {
+        @apply .mt-0;
+    }
+
+    ul,
+    ol {
+        @apply .mb-2;
+        @apply .mt-4;
+        @apply .ml-0;
+
+        list-style-position: outside;
+
+        ul,
+        ol {
+            @apply .mb-2;
+            @apply .mb-2;
+            @apply .pb-0;
+        }
+    }
+
+    ol {
+        li {
+            @apply .pb-1;
+        }
+
+        li:last-child {
+            @apply .pb-0;
+        }
+
+        ul,
+        ol {
+            @apply .mb-0;
+        }
+    }
+
+    p + pre {
+        @apply .mt-0;
+    }
+
+    pre {
+        @apply .bg-grey-lighter;
+        @border-radius-2;
+        @apply .leading-tight;
+        @apply .mb-6;
+        @apply .mt-0;
+        @apply .overflow-scroll;
+        @apply .p-4;
+        @apply .text-sm;
+    }
+
+    blockquote {
+        @apply .border-grey;
+        @apply .border-l-4;
+        @apply .mb-6;
+        @apply .ml-4;
+        @apply .pl-6;
+        @apply .text-grey-darkest;
+
+        p {
+            @apply .py-1;
+        }
+    }
 }

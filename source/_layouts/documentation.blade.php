@@ -1,7 +1,13 @@
 @extends('_layouts.master')
 
-@section('body')
+@push('meta')
+    <meta property="og:title" content="{{ $page->docsTitle }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ $page->getUrl() }}"/>
+    <meta property="og:description" content="{{ $page->docsDescription }}" />
+@endpush
 
+@section('body')
 @component('_partials.header', ['page' => $page])
     <input id="docsearch" class="border" type="text" name="docsearch" value="">
 @endcomponent

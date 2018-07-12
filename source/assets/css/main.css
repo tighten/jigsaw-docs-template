@@ -700,6 +700,9 @@ button,
 
 body {
   line-height: 1.5;
+  background: #f4f6f8;
+  border-color: #4a90e2;
+  color: #222a2e;
 }
 
 .content p,
@@ -709,8 +712,8 @@ body {
 }
 
 .markdown h1 {
-  font-size: 1.875rem;
   margin-bottom: 1.5rem;
+  font-size: 1.875rem;
 }
 
 .markdown h2 {
@@ -740,8 +743,8 @@ body {
 
 .markdown ul,
 .markdown ol {
-  margin-top: 1rem;
   margin-bottom: .5rem;
+  margin-top: 1rem;
   margin-left: 0;
   list-style-position: outside;
 }
@@ -750,7 +753,7 @@ body {
 .markdown ul ol,
 .markdown ol ul,
 .markdown ol ol {
-  margin-top: .25rem;
+  margin-bottom: .5rem;
   margin-bottom: .5rem;
   padding-bottom: 0;
 }
@@ -774,20 +777,21 @@ body {
 
 .markdown pre {
   background-color: #f1f5f8;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
-  font-size: .875rem;
-  overflow: scroll;
+  @border-radius-2;
   line-height: 1.25;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  overflow: scroll;
+  padding: 1rem;
+  font-size: .875rem;
 }
 
 .markdown blockquote {
-  border-left-width: 4px;
   border-color: #b8c2cc;
-  padding-left: 1.5rem;
+  border-left-width: 4px;
   margin-bottom: 1.5rem;
   margin-left: 1rem;
+  padding-left: 1.5rem;
   color: #3d4852;
 }
 
