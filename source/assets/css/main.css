@@ -715,6 +715,10 @@ a:hover {
   color: #3490dc;
 }
 
+.content {
+  min-height: 100vh;
+}
+
 .content p,
 .content ol,
 .content ul {
