@@ -7,6 +7,10 @@
 }
 
 .markdown {
+    a {
+        @apply .text-blue;
+    }
+
     h1 {
         @apply .font-extrabold;
         @apply .font-sans;
@@ -35,6 +39,7 @@
 
     code {
         @apply .bg-grey-lighter;
+        @apply .leading-loose;
     }
 
     .lead {

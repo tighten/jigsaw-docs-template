@@ -702,13 +702,27 @@ body {
   background-color: #f8fafc;
   line-height: 1.5;
   color: #3d4852;
+  font-size: 1.125rem;
   border-color: #3351d6;
+}
+
+a {
+  text-decoration: none;
+  color: #22292f;
+}
+
+a:hover {
+  color: #3490dc;
 }
 
 .content p,
 .content ol,
 .content ul {
   padding-bottom: 1rem;
+}
+
+.markdown a {
+  color: #3490dc;
 }
 
 .markdown h1 {
@@ -739,6 +753,7 @@ body {
 
 .markdown code {
   background-color: #f1f5f8;
+  line-height: 2;
 }
 
 .markdown .lead {

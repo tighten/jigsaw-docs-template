@@ -9,7 +9,7 @@
 
 @section('body')
 @component('_partials.header', ['page' => $page])
-    <input id="docsearch" class="border" type="text" name="docsearch" value="">
+    <input id="docsearch" class="rounded-full bg-grey-lighter py-2 px-4 focus:outline-none" type="text" name="docsearch" value="">
 @endcomponent
 <section class="container mx-auto">
     <div class="sm:flex">
