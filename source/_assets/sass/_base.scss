@@ -1,7 +1,7 @@
 body {
+    @apply .bg-grey-lightest;
     @apply .leading-normal;
+    @apply .text-grey-darkest;
 
-    background: $color-background;
     border-color: $color-brand-primary;
-    color: $color-black;
 }

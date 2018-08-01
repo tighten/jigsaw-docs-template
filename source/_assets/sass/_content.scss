@@ -8,15 +8,20 @@
 
 .markdown {
     h1 {
+        @apply .font-extrabold;
+        @apply .font-sans;
         @apply .mb-6;
         @apply .text-3xl;
+        @apply .text-black;
     }
 
     h2 {
-        @apply .font-medium;
+        @apply .font-bold;
+        @apply .font-sans;
         @apply .mb-2;
         @apply .mt-8;
-        @apply .text-2xl;
+        @apply .text-black;
+        @apply .text-xl;
     }
 
     h3 {
@@ -30,6 +35,13 @@
 
     code {
         @apply .bg-grey-lighter;
+    }
+
+    .lead {
+        @apply .font-bold;
+        @apply .font-sans;
+        @apply .text-black;
+        @apply .text-xl;
     }
 
     p + ul,
