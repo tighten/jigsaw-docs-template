@@ -17,7 +17,7 @@
             @include('_partials.nav')
         </div>
 
-        <div class="markdown sm:w-3/4">
+        <div class="markdown sm:w-3/4 pl-4">
             @yield('documentation_content')
         </div>
     </div>
