@@ -19,9 +19,9 @@
         <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
     <body class="border-t-8">
-        <div class="content">
+        <main class="content" role="main">
             @yield('body')
-        </div>
+        </main>
 
         @include('_partials.footer')
 
