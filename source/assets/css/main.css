@@ -706,13 +706,22 @@ body {
   border-color: #3351d6;
 }
 
-a {
+body a {
   text-decoration: none;
   color: #22292f;
 }
 
-a:hover {
+body a:hover {
   color: #3490dc;
+}
+
+body code {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+body p {
+  line-height: 2;
 }
 
 .content {
@@ -837,6 +846,7 @@ a:hover {
   padding: .5rem;
   text-decoration: none;
   color: #3d4852;
+  font-size: 1rem;
 }
 
 .nav-item--level-1 {

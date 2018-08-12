@@ -13,11 +13,11 @@
 @endcomponent
 <section class="container mx-auto">
     <div class="sm:flex">
-        <div class="sm:w-1/4 pr-8">
+        <div class="hidden lg:block sm:w-1/4 pr-8">
             @include('_partials.nav')
         </div>
 
-        <div class="markdown sm:w-3/4 pl-4">
+        <div class="markdown w-full lg:w-3/4 pl-4">
             @yield('documentation_content')
         </div>
     </div>

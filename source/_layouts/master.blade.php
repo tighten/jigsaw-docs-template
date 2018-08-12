@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
     <body class="border-t-8">
-        <div class="pb-8 content">
+        <div class="content">
             @yield('body')
         </div>
 
