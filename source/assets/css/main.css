@@ -843,10 +843,14 @@ body p {
 .nav-item {
   display: block;
   border-bottom-width: 1px;
-  padding: .5rem;
   text-decoration: none;
-  color: #3d4852;
+  padding: .5rem;
   font-size: 1rem;
+  color: #3d4852;
+}
+
+.nav-item:hover {
+  background-color: #f1f5f8;
 }
 
 .nav-item--level-1 {
@@ -859,10 +863,6 @@ body p {
 
 .nav-item--level-3 {
   padding-left: 1.5rem;
-}
-
-a.nav-item:hover {
-  background-color: #f1f5f8;
 }
 
 /**
