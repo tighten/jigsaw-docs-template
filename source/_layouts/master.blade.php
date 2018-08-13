@@ -25,7 +25,7 @@
 
         @include('_partials.footer')
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+        <script src="{{ $page->url(mix('js/main.js')) }}"></script>
         <script type="text/javascript">
             docsearch({
                 apiKey: '{{ $page->docsearchApiKey }}',
