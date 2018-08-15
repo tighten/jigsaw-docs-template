@@ -5,13 +5,21 @@ body {
     @apply .text-lg;
 
     border-color: $color-brand-primary;
-}
 
-a {
-    @apply .no-underline;
-    @apply .text-black;
+    a {
+        @apply .no-underline;
+        @apply .text-black;
 
-    &:hover {
-        @apply .text-blue;
+        &:hover {
+            @apply .text-blue;
+        }
+    }
+
+    code {
+        @apply .px-2;
+    }
+
+    p {
+        @apply .leading-loose;
     }
 }

@@ -1,10 +1,14 @@
 .nav-item {
     @apply .block;
     @apply .border-b;
-    @apply .p-2;
     @apply .no-underline;
-    @apply .text-grey-darkest;
+    @apply .p-2;
     @apply .text-base;
+    @apply .text-grey-darkest;
+
+    &:hover {
+        @apply .bg-grey-lighter;
+    }
 
     &--level-1 {
         @apply .pl-2;
@@ -16,11 +20,5 @@
 
     &--level-3 {
         @apply .pl-6;
-    }
-}
-
-a.nav-item {
-    &:hover {
-        @apply .bg-grey-lighter;
     }
 }
