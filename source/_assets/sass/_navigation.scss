@@ -26,4 +26,8 @@
 .search-field {
     background: url('../img/magnifying-glass.svg') .8em no-repeat;
     text-indent: 1.2em;
+
+    &:focus {
+        outline: none;
+    }
 }

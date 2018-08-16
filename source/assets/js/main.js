@@ -10491,7 +10491,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "lg:block w-full lg:w-1/4 lg:pr-8",
+      staticClass: "lg:block w-full lg:w-1/4 mb-8 lg:mb-0 lg:pr-8",
       class: { hidden: !_vm.showMobile }
     },
     [_vm._t("default")],
