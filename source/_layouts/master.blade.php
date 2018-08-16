@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css') }}">
     </head>
     <body class="border-t-8">
-        <div class="pb-8 content">
+        <div id="vue-app" class="pb-8 content">
             @component('_partials.header', ['page' => $page])
                 <input id="docsearch" class="rounded-full bg-grey-lighter py-2 px-4 focus:outline-none search-field" type="text" name="docsearch" value="">
 
@@ -36,9 +36,9 @@
 
             <section class="container mx-auto">
                 <div class="sm:flex">
-                    <div class="sm:w-1/4 pr-8">
+                    <responsive-navigation>
                         @include('_partials.nav')
-                    </div>
+                    </responsive-navigation>
 
                     <div class="markdown sm:w-3/4 pl-4">
                         @yield('documentation_content')
@@ -49,13 +49,15 @@
 
         @include('_partials.footer')
 
-        <script src="{{ $page->url(mix('js/main.js')) }}"></script>
-        <script type="text/javascript">
-            docsearch({
-                apiKey: '{{ $page->docsearchApiKey }}',
-                indexName: '{{ $page->docsearchIndexName }}',
-                inputSelector: '#docsearch'
-            });
-        </script>
+        <script src="{{ mix('js/main.js') }}"></script>
+        @if($page->docsearchApiKey && $page->docsearchIndexName)
+            <script type="text/javascript">
+                docsearch({
+                    apiKey: '{{ $page->docsearchApiKey }}',
+                    indexName: '{{ $page->docsearchIndexName }}',
+                    inputSelector: '#docsearch'
+                });
+            </script>
+        @endif
     </body>
 </html>
