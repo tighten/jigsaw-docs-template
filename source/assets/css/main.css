@@ -864,6 +864,11 @@ body p {
   padding-left: 1.5rem;
 }
 
+.search-field {
+  background: url("../img/magnifying-glass.svg") .5em no-repeat;
+  text-indent: 1.2em;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
