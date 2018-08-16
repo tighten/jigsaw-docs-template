@@ -92,12 +92,12 @@
 
     pre {
         @apply .bg-grey-lighter;
-        @border-radius-2;
         @apply .leading-tight;
         @apply .mb-6;
         @apply .mt-0;
         @apply .overflow-scroll;
         @apply .p-4;
+        @apply .rounded;
         @apply .text-sm;
     }
 
