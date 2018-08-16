@@ -5979,7 +5979,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: {
+        showMobile: {}
+    },
+
+    data: function data() {
+        return {
+            show: this.showMobile
+        };
+    }
+});
 
 /***/ }),
 
@@ -10478,7 +10488,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "w-1/4 pr-8" }, [_vm._t("default")], 2)
+  return _c(
+    "div",
+    {
+      staticClass: "lg:block w-full lg:w-1/4 lg:pr-8",
+      class: { hidden: !_vm.showMobile }
+    },
+    [_vm._t("default")],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -21550,7 +21568,13 @@ Vue.config.productionTip = false;
 
 
 new Vue({
-    components: { ResponsiveNavigation: __WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_vue___default.a }
+    components: { ResponsiveNavigation: __WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_vue___default.a },
+
+    data: function data() {
+        return {
+            showMobileNav: false
+        };
+    }
 }).$mount('#vue-app');
 
 /***/ }),

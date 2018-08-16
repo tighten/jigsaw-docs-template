@@ -7,5 +7,11 @@ import ResponsiveNavigation from './components/responsive-navigation.vue';
 
 new Vue({
     components: { ResponsiveNavigation },
+
+    data() {
+        return {
+            showMobileNav: false
+        }
+    },
 }).$mount('#vue-app');
 
