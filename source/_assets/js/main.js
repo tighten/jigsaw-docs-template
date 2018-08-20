@@ -10,7 +10,7 @@ new Vue({
 
     data() {
         return {
-            showMobileNav: false
+            showMobileNav: false,
         }
     },
 }).$mount('#vue-app');
