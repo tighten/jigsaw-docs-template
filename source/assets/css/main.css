@@ -868,7 +868,7 @@ p {
   background: url("../img/magnifying-glass.svg");
   background-position: .8em;
   background-repeat: no-repeat;
-  text-indent: 1.2em;
+  text-indent: 2em;
 }
 
 .search-field:focus {
