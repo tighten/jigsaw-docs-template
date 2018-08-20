@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.documentation')
 
 @section('documentation_content')
     <div class="md:flex">
