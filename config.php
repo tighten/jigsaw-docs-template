@@ -6,13 +6,13 @@ return [
     'copyrightHolder' => 'Tighten',
     'docsearchApiKey' => '',
     'docsearchIndexName' => 'jigsaw',
-    'baseUrl' => 'http://localhost:3000',
+    'baseUrl' => 'http://jigsaw-docs-skeleton.test/',
     'production' => false,
     'collections' => [
     ],
     'navigation' => require_once('navigation.php'),
     // helpers
     'url' => function ($page, $path) {
-        return rtrim($page->baseUrl, '/').'/'.ltrim($path, '/');
+        return rtrim($page->baseUrl, '/') . '/' . ltrim($path, '/');
     },
 ];
