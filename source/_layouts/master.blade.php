@@ -27,7 +27,7 @@
     <body class="border-t-8">
         <div id="vue-app" class="pb-8 content">
             @component('_partials.header', ['page' => $page])
-                <input id="docsearch" class="bg-grey-lighter outline-none px-4r py-2 rounded-full search-field text-grey-darker" type="text" name="docsearch" value="">
+                <input id="docsearch" class="bg-grey-lighter outline-none px-4r py-2 rounded-full text-grey-darker search-field" type="text" name="docsearch" value="">
 
                 <a href="#" class="bg-grey-lighter flex justify-center lg:hidden ml-4 px-4 py-2 rounded-full" @click="showMobileNav = !showMobileNav;">
                     <svg class="fill-current flex h-6 items-center text-grey-dark" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
