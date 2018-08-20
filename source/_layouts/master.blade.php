@@ -22,21 +22,21 @@
             <!-- Insert analytics code here -->
         @endif
 
-        <link rel="stylesheet" href="{{ mix('css/main.css') }}">
+        <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
     <body class="border-t-8">
         <div id="vue-app" class="pb-8 content">
             @component('_partials.header', ['page' => $page])
-                <input id="docsearch" class="rounded-full bg-grey-lighter py-2 px-4 text-grey-darker outline-none search-field" type="text" name="docsearch" value="">
+                <input id="docsearch" class="bg-grey-lighter outline-none px-4r py-2 rounded-full search-field text-grey-darker" type="text" name="docsearch" value="">
 
-                <a href="#" class="flex lg:hidden ml-4 py-2 px-4 bg-grey-lighter rounded-full justify-center" @click="showMobileNav = !showMobileNav;">
-                    <svg class="flex items-center fill-current text-grey-dark h-6" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <a href="#" class="bg-grey-lighter flex justify-center lg:hidden ml-4 px-4 py-2 rounded-full" @click="showMobileNav = !showMobileNav;">
+                    <svg class="fill-current flex h-6 items-center text-grey-dark" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
                     </svg>
                 </a>
             @endcomponent
 
-            <section class="container px-4 mx-auto">
+            <section class="container mx-auto px-4">
                 <div class="flex flex-col lg:flex-row">
                     <responsive-navigation :show-mobile="showMobileNav">
                         @include('_partials.nav')
@@ -51,8 +51,8 @@
 
         @include('_partials.footer')
 
-        <script src="{{ mix('js/main.js') }}"></script>
-        @if($page->docsearchApiKey && $page->docsearchIndexName)
+        <script src="{{ $page->url(mix('js/main.js')) }}"></script>
+        @if ($page->docsearchApiKey && $page->docsearchIndexName)
             <script type="text/javascript">
                 docsearch({
                     apiKey: '{{ $page->docsearchApiKey }}',
