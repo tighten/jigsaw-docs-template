@@ -7,13 +7,7 @@
 <script>
 export default {
     props: {
-        showMobile: {}
-    },
-
-    data() {
-        return {
-            show: this.showMobile
-        }
+        showMobile: Boolean
     }
 }
 </script>
