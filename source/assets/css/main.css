@@ -3504,19 +3504,7 @@ p {
   outline: 0;
 }
 
-.group:hover .group-hover\:outline-none {
-  outline: 0;
-}
-
-.hover\:outline-none:hover {
-  outline: 0;
-}
-
 .focus\:outline-none:focus {
-  outline: 0;
-}
-
-.active\:outline-none:active {
   outline: 0;
 }
 
@@ -7535,26 +7523,6 @@ p {
     opacity: 1;
   }
 
-  .sm\:outline-none {
-    outline: 0;
-  }
-
-  .group:hover .sm\:group-hover\:outline-none {
-    outline: 0;
-  }
-
-  .sm\:hover\:outline-none:hover {
-    outline: 0;
-  }
-
-  .sm\:focus\:outline-none:focus {
-    outline: 0;
-  }
-
-  .sm\:active\:outline-none:active {
-    outline: 0;
-  }
-
   .sm\:overflow-auto {
     overflow: auto;
   }
@@ -11546,26 +11514,6 @@ p {
 
   .md\:opacity-100 {
     opacity: 1;
-  }
-
-  .md\:outline-none {
-    outline: 0;
-  }
-
-  .group:hover .md\:group-hover\:outline-none {
-    outline: 0;
-  }
-
-  .md\:hover\:outline-none:hover {
-    outline: 0;
-  }
-
-  .md\:focus\:outline-none:focus {
-    outline: 0;
-  }
-
-  .md\:active\:outline-none:active {
-    outline: 0;
   }
 
   .md\:overflow-auto {
@@ -15561,26 +15509,6 @@ p {
     opacity: 1;
   }
 
-  .lg\:outline-none {
-    outline: 0;
-  }
-
-  .group:hover .lg\:group-hover\:outline-none {
-    outline: 0;
-  }
-
-  .lg\:hover\:outline-none:hover {
-    outline: 0;
-  }
-
-  .lg\:focus\:outline-none:focus {
-    outline: 0;
-  }
-
-  .lg\:active\:outline-none:active {
-    outline: 0;
-  }
-
   .lg\:overflow-auto {
     overflow: auto;
   }
@@ -19572,26 +19500,6 @@ p {
 
   .xl\:opacity-100 {
     opacity: 1;
-  }
-
-  .xl\:outline-none {
-    outline: 0;
-  }
-
-  .group:hover .xl\:group-hover\:outline-none {
-    outline: 0;
-  }
-
-  .xl\:hover\:outline-none:hover {
-    outline: 0;
-  }
-
-  .xl\:focus\:outline-none:focus {
-    outline: 0;
-  }
-
-  .xl\:active\:outline-none:active {
-    outline: 0;
   }
 
   .xl\:overflow-auto {
