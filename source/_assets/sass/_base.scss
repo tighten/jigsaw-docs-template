@@ -4,21 +4,21 @@ body {
     @apply .leading-normal;
     @apply .text-grey-darkest;
     @apply .text-lg;
+}
 
-    a {
-        @apply .no-underline;
-        @apply .text-black;
+a {
+    @apply .no-underline;
+    @apply .text-black;
 
-        &:hover {
-            @apply .text-blue;
-        }
+    &:hover {
+        @apply .text-blue;
     }
+}
 
-    code {
-        @apply .px-2;
-    }
+code {
+    @apply .px-2;
+}
 
-    p {
-        @apply .leading-loose;
-    }
+p {
+    @apply .leading-loose;
 }

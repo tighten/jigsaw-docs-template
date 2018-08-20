@@ -706,21 +706,21 @@ body {
   font-size: 1.125rem;
 }
 
-body a {
+a {
   text-decoration: none;
   color: #22292f;
 }
 
-body a:hover {
+a:hover {
   color: #3490dc;
 }
 
-body code {
+code {
   padding-left: .5rem;
   padding-right: .5rem;
 }
 
-body p {
+p {
   line-height: 2;
 }
 
