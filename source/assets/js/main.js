@@ -5967,6 +5967,37 @@ module.exports = "0.29.0";
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./source/_assets/js/components/responsive-navigation-toggle.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            status: false
+        };
+    },
+
+
+    methods: {
+        toggleStatus: function toggleStatus() {
+            this.status = !this.status;
+
+            this.$root.$emit('menu-toggle', this.status);
+        }
+    }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./source/_assets/js/components/responsive-navigation.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5980,8 +6011,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: {
-        showMobile: Boolean
+    data: function data() {
+        return {
+            status: false
+        };
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        this.$root.$on('menu-toggle', function (data) {
+            _this.status = data;
+        });
     }
 });
 
@@ -10486,7 +10526,7 @@ var render = function() {
     "div",
     {
       staticClass: "lg:block w-full lg:w-1/4 mb-8 lg:mb-0 lg:pr-8",
-      class: { hidden: !_vm.showMobile }
+      class: { hidden: !_vm.status }
     },
     [_vm._t("default")],
     2
@@ -10499,6 +10539,39 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-1f760f72", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-652a516c\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./source/_assets/js/components/responsive-navigation-toggle.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "button",
+      {
+        on: {
+          click: function($event) {
+            _vm.toggleStatus()
+          }
+        }
+      },
+      [_vm._v("CLICK ME")]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-652a516c", module.exports)
   }
 }
 
@@ -21499,6 +21572,54 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./source/_assets/js/components/responsive-navigation-toggle.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./source/_assets/js/components/responsive-navigation-toggle.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-652a516c\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./source/_assets/js/components/responsive-navigation-toggle.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "source/_assets/js/components/responsive-navigation-toggle.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-652a516c", Component.options)
+  } else {
+    hotAPI.reload("data-v-652a516c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
 /***/ "./source/_assets/js/components/responsive-navigation.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21552,8 +21673,10 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_vue__ = __webpack_require__("./source/_assets/js/components/responsive-navigation.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_toggle_vue__ = __webpack_require__("./source/_assets/js/components/responsive-navigation-toggle.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_toggle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_toggle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_responsive_navigation_vue__ = __webpack_require__("./source/_assets/js/components/responsive-navigation.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_responsive_navigation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_responsive_navigation_vue__);
 window.docsearch = __webpack_require__("./node_modules/docsearch.js/dist/npm/index.js");
 window.Vue = __webpack_require__("./node_modules/vue/dist/vue.common.js");
 
@@ -21561,8 +21684,9 @@ Vue.config.productionTip = false;
 
 
 
+
 new Vue({
-    components: { ResponsiveNavigation: __WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_vue___default.a },
+    components: { ResponsiveNavigation: __WEBPACK_IMPORTED_MODULE_1__components_responsive_navigation_vue___default.a, ResponsiveNavigationToggle: __WEBPACK_IMPORTED_MODULE_0__components_responsive_navigation_toggle_vue___default.a },
 
     data: function data() {
         return {
