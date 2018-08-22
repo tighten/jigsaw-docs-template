@@ -6025,10 +6025,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
-        navigationLinks: Object
+        navigationLinks: String,
+        currentUrl: String
     },
 
     computed: {
@@ -10555,40 +10562,62 @@ var render = function() {
       class: { hidden: !_vm.status }
     },
     [
-      _c(
-        "ul",
-        _vm._l(_vm.navigation, function(parent, key) {
-          return _c("li", [
-            _c("a", { attrs: { href: parent.root } }, [_vm._v(_vm._s(key))]),
-            _vm._v(" "),
-            parent.children
-              ? _c(
-                  "ul",
-                  _vm._l(parent.children, function(child, key) {
-                    return _c("li", [
-                      child !== "root"
-                        ? _c("a", { attrs: { href: child.root } }, [
-                            _vm._v(_vm._s(key))
-                          ])
-                        : _vm._e(),
-                      _vm._v(" "),
-                      child.children
-                        ? _c(
-                            "ul",
-                            _vm._l(child.children, function(grandChild, key) {
-                              return _c("li", [
-                                _vm._v(" " + _vm._s(grandChild))
-                              ])
-                            })
-                          )
-                        : _vm._e()
-                    ])
-                  })
-                )
-              : _vm._e()
-          ])
-        })
-      )
+      _c("nav", { staticClass: "nav-list", attrs: { role: "navigation" } }, [
+        _c(
+          "ul",
+          { staticClass: "list-reset" },
+          _vm._l(_vm.navigation, function(parent, key) {
+            return _c("li", { staticClass: "list-reset" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-item nav-item--level-1",
+                  attrs: { href: parent.root }
+                },
+                [_vm._v(_vm._s(key))]
+              ),
+              _vm._v(" "),
+              parent.children
+                ? _c(
+                    "ul",
+                    { staticClass: "list-reset" },
+                    _vm._l(parent.children, function(child, key) {
+                      return _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "nav-item nav-item--level-2",
+                            attrs: { href: child.root }
+                          },
+                          [_vm._v(_vm._s(key))]
+                        ),
+                        _vm._v(" "),
+                        child.children
+                          ? _c(
+                              "ul",
+                              { staticClass: "list-reset" },
+                              _vm._l(child.children, function(grandChild, key) {
+                                return _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "nav-item nav-item--level-3",
+                                      attrs: { href: key.root }
+                                    },
+                                    [_vm._v(_vm._s(key))]
+                                  )
+                                ])
+                              })
+                            )
+                          : _vm._e()
+                      ])
+                    })
+                  )
+                : _vm._e()
+            ])
+          })
+        )
+      ])
     ]
   )
 }
