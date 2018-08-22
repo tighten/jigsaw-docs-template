@@ -6013,8 +6013,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    props: {
+        navigationLinks: Object
+    },
+
+    computed: {
+        navigation: function navigation() {
+            return JSON.parse(this.navigationLinks);
+        }
+    },
+
     data: function data() {
         return {
             status: false
@@ -10532,8 +10554,42 @@ var render = function() {
       staticClass: "lg:block w-full lg:w-1/4 mb-8 lg:mb-0 lg:pr-8",
       class: { hidden: !_vm.status }
     },
-    [_vm._t("default")],
-    2
+    [
+      _c(
+        "ul",
+        _vm._l(_vm.navigation, function(parent, key) {
+          return _c("li", [
+            _c("a", { attrs: { href: parent.root } }, [_vm._v(_vm._s(key))]),
+            _vm._v(" "),
+            parent.children
+              ? _c(
+                  "ul",
+                  _vm._l(parent.children, function(child, key) {
+                    return _c("li", [
+                      child !== "root"
+                        ? _c("a", { attrs: { href: child.root } }, [
+                            _vm._v(_vm._s(key))
+                          ])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      child.children
+                        ? _c(
+                            "ul",
+                            _vm._l(child.children, function(grandChild, key) {
+                              return _c("li", [
+                                _vm._v(" " + _vm._s(grandChild))
+                              ])
+                            })
+                          )
+                        : _vm._e()
+                    ])
+                  })
+                )
+              : _vm._e()
+          ])
+        })
+      )
+    ]
   )
 }
 var staticRenderFns = []

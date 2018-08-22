@@ -9,7 +9,7 @@
 
 <section class="container mx-auto px-4">
     <div class="flex flex-col lg:flex-row">
-        <responsive-navigation :show-mobile="showMobileNav">
+        <responsive-navigation navigation-links="{{ $page->navigation }}">
             @include('_partials.nav')
         </responsive-navigation>
 
