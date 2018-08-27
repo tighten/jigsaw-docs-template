@@ -1,9 +1,14 @@
 .nav-item {
     @apply .block;
     @apply .border-b;
-    @apply .p-2;
     @apply .no-underline;
+    @apply .p-2;
+    @apply .text-base;
     @apply .text-grey-darkest;
+
+    &:hover {
+        @apply .bg-grey-lighter;
+    }
 
     &--level-1 {
         @apply .pl-2;
@@ -18,8 +23,9 @@
     }
 }
 
-a.nav-item {
-    &:hover {
-        @apply .bg-grey-lighter;
-    }
+.search-field {
+    background: url('../img/magnifying-glass.svg');
+    background-position: 0.8em;
+    background-repeat: no-repeat;
+    text-indent: 2em;
 }

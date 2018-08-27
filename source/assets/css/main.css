@@ -537,16 +537,6 @@ ul {
 }
 
 /**
- * Suppress the focus outline on elements that cannot be accessed via keyboard.
- * This prevents an unwanted focus outline from appearing around elements that
- * might still respond to pointer events.
- */
-
-[tabindex="-1"]:focus {
-  outline: none !important;
-}
-
-/**
  * Tailwind custom reset styles
  */
 
@@ -607,6 +597,7 @@ textarea {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 button,
@@ -644,6 +635,10 @@ textarea::placeholder {
 button,
 [role=button] {
   cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 /**
@@ -699,7 +694,33 @@ button,
  */
 
 body {
+  background-color: #f8fafc;
+  border-color: #3351d6;
   line-height: 1.5;
+  color: #3d4852;
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+  color: #22292f;
+}
+
+a:hover {
+  color: #3490dc;
+}
+
+code {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+p {
+  line-height: 2;
+}
+
+.content {
+  min-height: 100vh;
 }
 
 .content p,
@@ -708,16 +729,24 @@ body {
   padding-bottom: 1rem;
 }
 
+.markdown a {
+  color: #3490dc;
+}
+
 .markdown h1 {
-  font-size: 1.875rem;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   margin-bottom: 1.5rem;
+  font-size: 1.875rem;
+  color: #22292f;
 }
 
 .markdown h2 {
-  font-weight: 500;
+  font-weight: 700;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   margin-bottom: .5rem;
   margin-top: 2rem;
-  font-size: 1.5rem;
+  color: #22292f;
+  font-size: 1.25rem;
 }
 
 .markdown h3 {
@@ -731,6 +760,14 @@ body {
 
 .markdown code {
   background-color: #f1f5f8;
+  line-height: 2;
+}
+
+.markdown .lead {
+  font-weight: 700;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #22292f;
+  font-size: 1.25rem;
 }
 
 .markdown p + ul,
@@ -740,8 +777,8 @@ body {
 
 .markdown ul,
 .markdown ol {
-  margin-top: 1rem;
   margin-bottom: .5rem;
+  margin-top: 1rem;
   margin-left: 0;
   list-style-position: outside;
 }
@@ -750,7 +787,7 @@ body {
 .markdown ul ol,
 .markdown ol ul,
 .markdown ol ol {
-  margin-top: .25rem;
+  margin-bottom: .5rem;
   margin-bottom: .5rem;
   padding-bottom: 0;
 }
@@ -774,20 +811,21 @@ body {
 
 .markdown pre {
   background-color: #f1f5f8;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
-  font-size: .875rem;
-  overflow: scroll;
   line-height: 1.25;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  overflow: scroll;
+  padding: 1rem;
+  border-radius: .25rem;
+  font-size: .875rem;
 }
 
 .markdown blockquote {
-  border-left-width: 4px;
   border-color: #b8c2cc;
-  padding-left: 1.5rem;
+  border-left-width: 4px;
   margin-bottom: 1.5rem;
   margin-left: 1rem;
+  padding-left: 1.5rem;
   color: #3d4852;
 }
 
@@ -799,9 +837,14 @@ body {
 .nav-item {
   display: block;
   border-bottom-width: 1px;
-  padding: .5rem;
   text-decoration: none;
+  padding: .5rem;
+  font-size: 1rem;
   color: #3d4852;
+}
+
+.nav-item:hover {
+  background-color: #f1f5f8;
 }
 
 .nav-item--level-1 {
@@ -816,8 +859,11 @@ body {
   padding-left: 1.5rem;
 }
 
-a.nav-item:hover {
-  background-color: #f1f5f8;
+.search-field {
+  background: url("../img/magnifying-glass.svg");
+  background-position: .8em;
+  background-repeat: no-repeat;
+  text-indent: 2em;
 }
 
 /**
@@ -1037,7 +1083,7 @@ a.nav-item:hover {
 }
 
 .bg-blue-darker {
-  background-color: #1c3d5a;
+  background-color: #3351d6;
 }
 
 .bg-blue-dark {
@@ -1329,7 +1375,7 @@ a.nav-item:hover {
 }
 
 .hover\:bg-blue-darker:hover {
-  background-color: #1c3d5a;
+  background-color: #3351d6;
 }
 
 .hover\:bg-blue-dark:hover {
@@ -1498,6 +1544,14 @@ a.nav-item:hover {
 
 .bg-contain {
   background-size: contain;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.border-separate {
+  border-collapse: separate;
 }
 
 .border-transparent {
@@ -1685,7 +1739,7 @@ a.nav-item:hover {
 }
 
 .border-blue-darker {
-  border-color: #1c3d5a;
+  border-color: #3351d6;
 }
 
 .border-blue-dark {
@@ -1977,7 +2031,7 @@ a.nav-item:hover {
 }
 
 .hover\:border-blue-darker:hover {
-  border-color: #1c3d5a;
+  border-color: #3351d6;
 }
 
 .hover\:border-blue-dark:hover {
@@ -3446,6 +3500,14 @@ a.nav-item:hover {
   opacity: 1;
 }
 
+.outline-none {
+  outline: 0;
+}
+
+.focus\:outline-none:focus {
+  outline: 0;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -3468,6 +3530,22 @@ a.nav-item:hover {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
 }
 
 .overflow-x-scroll {
@@ -3844,6 +3922,14 @@ a.nav-item:hover {
   stroke: currentColor;
 }
 
+.table-auto {
+  table-layout: auto;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4045,7 +4131,7 @@ a.nav-item:hover {
 }
 
 .text-blue-darker {
-  color: #1c3d5a;
+  color: #3351d6;
 }
 
 .text-blue-dark {
@@ -4337,7 +4423,7 @@ a.nav-item:hover {
 }
 
 .hover\:text-blue-darker:hover {
-  color: #1c3d5a;
+  color: #3351d6;
 }
 
 .hover\:text-blue-dark:hover {
@@ -5028,7 +5114,7 @@ a.nav-item:hover {
   }
 
   .sm\:bg-blue-darker {
-    background-color: #1c3d5a;
+    background-color: #3351d6;
   }
 
   .sm\:bg-blue-dark {
@@ -5320,7 +5406,7 @@ a.nav-item:hover {
   }
 
   .sm\:hover\:bg-blue-darker:hover {
-    background-color: #1c3d5a;
+    background-color: #3351d6;
   }
 
   .sm\:hover\:bg-blue-dark:hover {
@@ -5676,7 +5762,7 @@ a.nav-item:hover {
   }
 
   .sm\:border-blue-darker {
-    border-color: #1c3d5a;
+    border-color: #3351d6;
   }
 
   .sm\:border-blue-dark {
@@ -5968,7 +6054,7 @@ a.nav-item:hover {
   }
 
   .sm\:hover\:border-blue-darker:hover {
-    border-color: #1c3d5a;
+    border-color: #3351d6;
   }
 
   .sm\:hover\:border-blue-dark:hover {
@@ -7461,6 +7547,22 @@ a.nav-item:hover {
     overflow-y: auto;
   }
 
+  .sm\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .sm\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .sm\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .sm\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .sm\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -7827,6 +7929,14 @@ a.nav-item:hover {
             box-shadow: none;
   }
 
+  .sm\:table-auto {
+    table-layout: auto;
+  }
+
+  .sm\:table-fixed {
+    table-layout: fixed;
+  }
+
   .sm\:text-left {
     text-align: left;
   }
@@ -8028,7 +8138,7 @@ a.nav-item:hover {
   }
 
   .sm\:text-blue-darker {
-    color: #1c3d5a;
+    color: #3351d6;
   }
 
   .sm\:text-blue-dark {
@@ -8320,7 +8430,7 @@ a.nav-item:hover {
   }
 
   .sm\:hover\:text-blue-darker:hover {
-    color: #1c3d5a;
+    color: #3351d6;
   }
 
   .sm\:hover\:text-blue-dark:hover {
@@ -8997,7 +9107,7 @@ a.nav-item:hover {
   }
 
   .md\:bg-blue-darker {
-    background-color: #1c3d5a;
+    background-color: #3351d6;
   }
 
   .md\:bg-blue-dark {
@@ -9289,7 +9399,7 @@ a.nav-item:hover {
   }
 
   .md\:hover\:bg-blue-darker:hover {
-    background-color: #1c3d5a;
+    background-color: #3351d6;
   }
 
   .md\:hover\:bg-blue-dark:hover {
@@ -9645,7 +9755,7 @@ a.nav-item:hover {
   }
 
   .md\:border-blue-darker {
-    border-color: #1c3d5a;
+    border-color: #3351d6;
   }
 
   .md\:border-blue-dark {
@@ -9937,7 +10047,7 @@ a.nav-item:hover {
   }
 
   .md\:hover\:border-blue-darker:hover {
-    border-color: #1c3d5a;
+    border-color: #3351d6;
   }
 
   .md\:hover\:border-blue-dark:hover {
@@ -11430,6 +11540,22 @@ a.nav-item:hover {
     overflow-y: auto;
   }
 
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .md\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .md\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .md\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .md\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -11796,6 +11922,14 @@ a.nav-item:hover {
             box-shadow: none;
   }
 
+  .md\:table-auto {
+    table-layout: auto;
+  }
+
+  .md\:table-fixed {
+    table-layout: fixed;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -11997,7 +12131,7 @@ a.nav-item:hover {
   }
 
   .md\:text-blue-darker {
-    color: #1c3d5a;
+    color: #3351d6;
   }
 
   .md\:text-blue-dark {
@@ -12289,7 +12423,7 @@ a.nav-item:hover {
   }
 
   .md\:hover\:text-blue-darker:hover {
-    color: #1c3d5a;
+    color: #3351d6;
   }
 
   .md\:hover\:text-blue-dark:hover {
@@ -12966,7 +13100,7 @@ a.nav-item:hover {
   }
 
   .lg\:bg-blue-darker {
-    background-color: #1c3d5a;
+    background-color: #3351d6;
   }
 
   .lg\:bg-blue-dark {
@@ -13258,7 +13392,7 @@ a.nav-item:hover {
   }
 
   .lg\:hover\:bg-blue-darker:hover {
-    background-color: #1c3d5a;
+    background-color: #3351d6;
   }
 
   .lg\:hover\:bg-blue-dark:hover {
@@ -13614,7 +13748,7 @@ a.nav-item:hover {
   }
 
   .lg\:border-blue-darker {
-    border-color: #1c3d5a;
+    border-color: #3351d6;
   }
 
   .lg\:border-blue-dark {
@@ -13906,7 +14040,7 @@ a.nav-item:hover {
   }
 
   .lg\:hover\:border-blue-darker:hover {
-    border-color: #1c3d5a;
+    border-color: #3351d6;
   }
 
   .lg\:hover\:border-blue-dark:hover {
@@ -15399,6 +15533,22 @@ a.nav-item:hover {
     overflow-y: auto;
   }
 
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .lg\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .lg\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .lg\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .lg\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -15765,6 +15915,14 @@ a.nav-item:hover {
             box-shadow: none;
   }
 
+  .lg\:table-auto {
+    table-layout: auto;
+  }
+
+  .lg\:table-fixed {
+    table-layout: fixed;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -15966,7 +16124,7 @@ a.nav-item:hover {
   }
 
   .lg\:text-blue-darker {
-    color: #1c3d5a;
+    color: #3351d6;
   }
 
   .lg\:text-blue-dark {
@@ -16258,7 +16416,7 @@ a.nav-item:hover {
   }
 
   .lg\:hover\:text-blue-darker:hover {
-    color: #1c3d5a;
+    color: #3351d6;
   }
 
   .lg\:hover\:text-blue-dark:hover {
@@ -16935,7 +17093,7 @@ a.nav-item:hover {
   }
 
   .xl\:bg-blue-darker {
-    background-color: #1c3d5a;
+    background-color: #3351d6;
   }
 
   .xl\:bg-blue-dark {
@@ -17227,7 +17385,7 @@ a.nav-item:hover {
   }
 
   .xl\:hover\:bg-blue-darker:hover {
-    background-color: #1c3d5a;
+    background-color: #3351d6;
   }
 
   .xl\:hover\:bg-blue-dark:hover {
@@ -17583,7 +17741,7 @@ a.nav-item:hover {
   }
 
   .xl\:border-blue-darker {
-    border-color: #1c3d5a;
+    border-color: #3351d6;
   }
 
   .xl\:border-blue-dark {
@@ -17875,7 +18033,7 @@ a.nav-item:hover {
   }
 
   .xl\:hover\:border-blue-darker:hover {
-    border-color: #1c3d5a;
+    border-color: #3351d6;
   }
 
   .xl\:hover\:border-blue-dark:hover {
@@ -19368,6 +19526,22 @@ a.nav-item:hover {
     overflow-y: auto;
   }
 
+  .xl\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .xl\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .xl\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .xl\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
   .xl\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -19734,6 +19908,14 @@ a.nav-item:hover {
             box-shadow: none;
   }
 
+  .xl\:table-auto {
+    table-layout: auto;
+  }
+
+  .xl\:table-fixed {
+    table-layout: fixed;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
@@ -19935,7 +20117,7 @@ a.nav-item:hover {
   }
 
   .xl\:text-blue-darker {
-    color: #1c3d5a;
+    color: #3351d6;
   }
 
   .xl\:text-blue-dark {
@@ -20227,7 +20409,7 @@ a.nav-item:hover {
   }
 
   .xl\:hover\:text-blue-darker:hover {
-    color: #1c3d5a;
+    color: #3351d6;
   }
 
   .xl\:hover\:text-blue-dark:hover {

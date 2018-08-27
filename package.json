@@ -11,11 +11,13 @@
         "browser-sync": "^2.23.6",
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^3.2.3",
+        "docsearch.js": "^2.5.2",
         "hasbin": "^1.2.3",
         "laravel-mix": "^2.0.0",
         "node-cmd": "^3.0.0",
         "on-build-webpack": "^0.1.0",
-        "tailwindcss": "^0.5.3",
+        "tailwindcss": "^0.6.4",
+        "vue": "^2.5.17",
         "webpack-watch": "^0.2.0",
         "yargs": "^4.6.0"
     }
