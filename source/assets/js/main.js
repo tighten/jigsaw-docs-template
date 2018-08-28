@@ -5990,6 +5990,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
@@ -5999,7 +6008,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
 
-    mounted: function mounted() {}
+    methods: {
+        isActive: function isActive(url) {
+            return document.URL.endsWith(url);
+        }
+    }
 });
 
 /***/ }),
@@ -6061,8 +6074,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: { NavigationItem: __WEBPACK_IMPORTED_MODULE_0__navigation_item_vue___default.a },
     props: {
-        navigationLinks: String,
-        currentUrl: String
+        navigationLinks: String
     },
 
     computed: {
@@ -10585,7 +10597,11 @@ var render = function() {
   return _c("li", { staticClass: "list-reset" }, [
     _c(
       "a",
-      { staticClass: "nav-item", attrs: { href: _vm.item.root } },
+      {
+        staticClass: "nav-item",
+        class: { "bg-grey-lighter": _vm.isActive(_vm.item.root) },
+        attrs: { href: _vm.item.root }
+      },
       [_vm._t("default")],
       2
     ),
@@ -10598,8 +10614,12 @@ var render = function() {
             return _c("li", [
               _c(
                 "a",
-                { staticClass: "nav-item", attrs: { href: child.root } },
-                [_vm._v(_vm._s(key))]
+                {
+                  staticClass: "nav-item",
+                  class: { "bg-grey-lighter": _vm.isActive(child.root) },
+                  attrs: { href: child.root }
+                },
+                [_vm._v("\n                " + _vm._s(key) + "\n            ")]
               ),
               _vm._v(" "),
               child.children
@@ -10612,9 +10632,18 @@ var render = function() {
                           "a",
                           {
                             staticClass: "nav-item",
+                            class: {
+                              "bg-grey-lighter": _vm.isActive(grandChild.root)
+                            },
                             attrs: { href: grandChild.root }
                           },
-                          [_vm._v(_vm._s(key))]
+                          [
+                            _vm._v(
+                              "\n                        " +
+                                _vm._s(key) +
+                                "\n                    "
+                            )
+                          ]
                         )
                       ])
                     })
@@ -21891,13 +21920,7 @@ Vue.config.productionTip = false;
 
 
 new Vue({
-    components: { Navigation: __WEBPACK_IMPORTED_MODULE_1__components_navigation_vue___default.a, NavigationToggle: __WEBPACK_IMPORTED_MODULE_0__components_navigation_toggle_vue___default.a },
-
-    data: function data() {
-        return {
-            showMobileNav: false
-        };
-    }
+    components: { Navigation: __WEBPACK_IMPORTED_MODULE_1__components_navigation_vue___default.a, NavigationToggle: __WEBPACK_IMPORTED_MODULE_0__components_navigation_toggle_vue___default.a }
 }).$mount('#vue-app');
 
 /***/ }),

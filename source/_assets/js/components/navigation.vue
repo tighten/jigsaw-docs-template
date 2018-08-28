@@ -14,7 +14,6 @@ export default {
     components: { NavigationItem },
     props: {
         navigationLinks: String,
-        currentUrl: String,
     },
 
     computed: {

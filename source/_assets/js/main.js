@@ -8,11 +8,5 @@ import Navigation from './components/navigation.vue';
 
 new Vue({
     components: { Navigation, NavigationToggle },
-
-    data() {
-        return {
-            showMobileNav: false,
-        }
-    },
 }).$mount('#vue-app');
 
