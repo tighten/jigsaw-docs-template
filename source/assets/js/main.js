@@ -6032,6 +6032,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -10717,7 +10721,7 @@ var render = function() {
       "a",
       {
         staticClass:
-          "bg-grey-lighter flex justify-center lg:hidden ml-4 px-4 py-2 rounded-full",
+          "bg-grey-lighter flex justify-center items-center lg:hidden ml-4 px-4 py-2 rounded-full",
         attrs: { href: "#" },
         on: {
           click: function($event) {
@@ -10726,27 +10730,47 @@ var render = function() {
         }
       },
       [
-        _c(
-          "svg",
-          {
-            staticClass: "fill-current flex h-6 items-center text-grey-dark",
-            attrs: {
-              version: "1.1",
-              viewBox: "0 0 32 32",
-              "xml:space": "preserve",
-              xmlns: "http://www.w3.org/2000/svg",
-              "xmlns:xlink": "http://www.w3.org/1999/xlink"
-            }
-          },
-          [
-            _c("path", {
-              attrs: {
-                d:
-                  "M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
-              }
-            })
-          ]
-        )
+        !_vm.visible
+          ? _c(
+              "svg",
+              {
+                staticClass: "fill-current text-grey-dark flex h-6",
+                attrs: {
+                  version: "1.1",
+                  viewBox: "0 0 32 32",
+                  "xml:space": "preserve",
+                  xmlns: "http://www.w3.org/2000/svg",
+                  "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+                  }
+                })
+              ]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.visible
+          ? _c(
+              "svg",
+              {
+                staticClass: "fill-current text-grey-dark flex h-6",
+                attrs: { viewBox: "0 0 36 30" }
+              },
+              [
+                _c("polygon", {
+                  attrs: {
+                    points:
+                      "32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "
+                  }
+                })
+              ]
+            )
+          : _vm._e()
       ]
     )
   ])
