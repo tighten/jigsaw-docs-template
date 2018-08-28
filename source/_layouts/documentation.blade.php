@@ -4,13 +4,12 @@
 @component('_partials.header', ['page' => $page])
     <input id="docsearch" class="bg-grey-lighter outline-none px-4r py-2 rounded-full text-grey-darker search-field" type="text" name="docsearch" value="">
 
-    <responsive-navigation-toggle></responsive-navigation-toggle>
+    <navigation-toggle></navigation-toggle>
 @endcomponent
 
 <section class="container mx-auto px-4">
     <div class="flex flex-col lg:flex-row">
-        <responsive-navigation navigation-links="{{ $page->navigation }}">
-        </responsive-navigation>
+        <navigation navigation-links="{{ $page->navigation }}"></navigation>
 
         <div class="markdown w-full lg:w-3/4 lg:pl-4">
             @yield('documentation_content')

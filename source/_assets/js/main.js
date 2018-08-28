@@ -3,11 +3,11 @@ window.Vue = require('vue');
 
 Vue.config.productionTip = false;
 
-import ResponsiveNavigationToggle from './components/responsive-navigation-toggle.vue';
-import ResponsiveNavigation from './components/responsive-navigation.vue';
+import NavigationToggle from './components/navigation-toggle.vue';
+import Navigation from './components/navigation.vue';
 
 new Vue({
-    components: { ResponsiveNavigation, ResponsiveNavigationToggle },
+    components: { Navigation, NavigationToggle },
 
     data() {
         return {
