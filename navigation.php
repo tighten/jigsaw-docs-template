@@ -11,7 +11,9 @@ return [
             'Something else with children' => [ // You can nest infinitely, as long as your template handles it
                 'root' => '/docs/something-else-with-children',
                 'children' => [
-                    'Grandchild node' => 'grandchild-node',
+                    'Grandchild node' => [
+                        'root' => '/docs/grandchild-node',
+                    ],
                 ],
             ],
         ],
@@ -19,12 +21,18 @@ return [
     // Example of a subsection without a root node; e.g. a grouping
     'Supported File Types' => [
         'children' => [
-            'Blade' => 'blade-file-type',
-            'RSS' => 'rss-file-type',
+            'Blade' => [
+                'root' => 'blade-file-type',
+            ],
+            'RSS' => [
+                'root' => 'rss-file-type',
+            ],
         ],
     ],
     'Pretty URLs' => [
         'root' => '/docs/pretty-urls',
     ],
-    'Custom 404 Page that is also something with a really long title just to see what happens in that context!' => '/docs/custom-404-page',
+    'Custom 404 Page that is also something with a really long title just to see what happens in that context!' => [
+        'root' => '/docs/custom-404-page',
+    ],
 ];
