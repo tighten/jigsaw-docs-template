@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:block w-full lg:w-1/4 mb-8 lg:mb-0 lg:pr-8" :class="{ hidden: ! status }">
+    <div class="lg:block w-full lg:w-1/4 mb-8 lg:mb-0 lg:pr-8" :class="{ hidden: ! visible }">
 
         <nav class="nav-list" role="navigation">
             <navigation-item :key="key" v-for="(url, key) in navigation" :item="url">{{ key }}</navigation-item>
@@ -25,13 +25,13 @@ export default {
 
     data() {
         return {
-            status: false,
+            visible: false,
         }
     },
 
     mounted() {
         this.$root.$on('menu-toggle', data => {
-            this.status = data;
+            this.visible = data;
         });
     }
 }

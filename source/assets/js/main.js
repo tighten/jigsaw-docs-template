@@ -5994,10 +5994,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
         item: {
-            type: String,
+            type: Object,
             required: true
         }
-    }
+    },
+
+    mounted: function mounted() {}
 });
 
 /***/ }),
@@ -6021,16 +6023,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            status: false
+            visible: false
         };
     },
 
 
     methods: {
-        toggleStatus: function toggleStatus() {
-            this.status = !this.status;
+        toggleVisible: function toggleVisible() {
+            this.visible = !this.visible;
 
-            this.$root.$emit('menu-toggle', this.status);
+            this.$root.$emit('menu-toggle', this.visible);
         }
     }
 });
@@ -6071,14 +6073,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     data: function data() {
         return {
-            status: false
+            visible: false
         };
     },
     mounted: function mounted() {
         var _this = this;
 
         this.$root.$on('menu-toggle', function (data) {
-            _this.status = data;
+            _this.visible = data;
         });
     }
 });
@@ -10647,7 +10649,7 @@ var render = function() {
     "div",
     {
       staticClass: "lg:block w-full lg:w-1/4 mb-8 lg:mb-0 lg:pr-8",
-      class: { hidden: !_vm.status }
+      class: { hidden: !_vm.visible }
     },
     [
       _c(
@@ -10690,7 +10692,7 @@ var render = function() {
         attrs: { href: "#" },
         on: {
           click: function($event) {
-            _vm.toggleStatus()
+            _vm.toggleVisible()
           }
         }
       },

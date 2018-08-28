@@ -11,8 +11,6 @@
     }
 
     & + ul {
-        @apply .w-full;
-
         text-indent: 0.4em;
 
         & > li > ul > li {

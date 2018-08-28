@@ -848,7 +848,6 @@ p {
 }
 
 .nav-item + ul {
-  width: 100%;
   text-indent: .4em;
 }
 
