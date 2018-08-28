@@ -10,16 +10,14 @@
         @apply .bg-grey-lighter;
     }
 
-    &--level-1 {
-        @apply .pl-2;
-    }
+    & + ul {
+        @apply .w-full;
 
-    &--level-2 {
-        @apply .pl-4;
-    }
+        text-indent: 0.4em;
 
-    &--level-3 {
-        @apply .pl-6;
+        & > li > ul > li {
+            text-indent: 0.8em;
+        }
     }
 }
 

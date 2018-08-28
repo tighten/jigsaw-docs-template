@@ -10571,10 +10571,7 @@ var render = function() {
             return _c("li", { staticClass: "list-reset" }, [
               _c(
                 "a",
-                {
-                  staticClass: "nav-item nav-item--level-1",
-                  attrs: { href: parent.root }
-                },
+                { staticClass: "nav-item", attrs: { href: parent.root } },
                 [_vm._v(_vm._s(key))]
               ),
               _vm._v(" "),
@@ -10587,7 +10584,7 @@ var render = function() {
                         _c(
                           "a",
                           {
-                            staticClass: "nav-item nav-item--level-2",
+                            staticClass: "nav-item",
                             attrs: { href: child.root }
                           },
                           [_vm._v(_vm._s(key))]
@@ -10602,7 +10599,7 @@ var render = function() {
                                   _c(
                                     "a",
                                     {
-                                      staticClass: "nav-item nav-item--level-3",
+                                      staticClass: "nav-item",
                                       attrs: { href: key.root }
                                     },
                                     [_vm._v(_vm._s(key))]

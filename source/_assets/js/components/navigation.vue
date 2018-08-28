@@ -4,15 +4,15 @@
         <nav class="nav-list" role="navigation">
             <ul class="list-reset">
                 <li v-for="(parent, key) in navigation" class="list-reset">
-                    <a :href="parent.root" class="nav-item nav-item--level-1">{{ key }}</a>
+                    <a :href="parent.root" class="nav-item">{{ key }}</a>
 
                     <ul v-if="parent.children" class="list-reset">
                         <li v-for="(child, key) in parent.children">
-                            <a :href="child.root" class="nav-item nav-item--level-2">{{ key }}</a>
+                            <a :href="child.root" class="nav-item">{{ key }}</a>
 
                             <ul v-if="child.children" class="list-reset">
                                 <li v-for="(grandChild, key) in child.children">
-                                    <a :href="key.root" class="nav-item nav-item--level-3">{{ key }}</a>
+                                    <a :href="key.root" class="nav-item">{{ key }}</a>
                                 </li>
                             </ul>
                         </li>
