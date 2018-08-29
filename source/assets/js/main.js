@@ -10734,7 +10734,7 @@ var render = function() {
           ? _c(
               "svg",
               {
-                staticClass: "fill-current text-grey-dark flex h-6",
+                staticClass: "fill-current text-grey-dark flex h-6 w-6",
                 attrs: {
                   version: "1.1",
                   viewBox: "0 0 32 32",
@@ -10758,7 +10758,7 @@ var render = function() {
           ? _c(
               "svg",
               {
-                staticClass: "fill-current text-grey-dark flex h-6",
+                staticClass: "fill-current text-grey-dark flex h-6 w-6",
                 attrs: { viewBox: "0 0 36 30" }
               },
               [
