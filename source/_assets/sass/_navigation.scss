@@ -3,8 +3,8 @@
     @apply .border-b;
     @apply .no-underline;
     @apply .p-2;
-    @apply .text-sm;
     @apply .text-grey-darkest;
+    @apply .text-sm;
 
     &:hover {
         @apply .bg-grey-lighter;
