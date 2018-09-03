@@ -839,7 +839,7 @@ p {
   border-bottom-width: 1px;
   text-decoration: none;
   padding: .5rem;
-  font-size: 1rem;
+  font-size: .875rem;
   color: #3d4852;
 }
 
@@ -847,16 +847,12 @@ p {
   background-color: #f1f5f8;
 }
 
-.nav-item--level-1 {
-  padding-left: .5rem;
+.nav-item + ul {
+  text-indent: .4em;
 }
 
-.nav-item--level-2 {
-  padding-left: 1rem;
-}
-
-.nav-item--level-3 {
-  padding-left: 1.5rem;
+.nav-item + ul > li > ul > li {
+  text-indent: .8em;
 }
 
 .search-field {

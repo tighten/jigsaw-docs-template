@@ -1,1 +1,0 @@
-<span class="font-bold text-grey-darkest nav-item nav-item--level-{{ $level }}">{{ $title }}</span>

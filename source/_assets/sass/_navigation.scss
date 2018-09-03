@@ -3,23 +3,19 @@
     @apply .border-b;
     @apply .no-underline;
     @apply .p-2;
-    @apply .text-base;
     @apply .text-grey-darkest;
+    @apply .text-sm;
 
     &:hover {
         @apply .bg-grey-lighter;
     }
 
-    &--level-1 {
-        @apply .pl-2;
-    }
+    & + ul {
+        text-indent: 0.4em;
 
-    &--level-2 {
-        @apply .pl-4;
-    }
-
-    &--level-3 {
-        @apply .pl-6;
+        & > li > ul > li {
+            text-indent: 0.8em;
+        }
     }
 }
 
