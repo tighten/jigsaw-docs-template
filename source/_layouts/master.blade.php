@@ -22,7 +22,6 @@
             <!-- Insert analytics code here -->
         @endif
 
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/github.min.css">
         <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
     <body class="border-t-8">
@@ -30,9 +29,7 @@
             @yield('body')
         </div>
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
         <script src="{{ $page->url(mix('js/main.js')) }}"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
         @yield('scripts')
         @include('_partials.footer')
     </body>
