@@ -8,8 +8,6 @@ return [
     'docsearchIndexName' => 'jigsaw',
     'baseUrl' => 'http://jigsaw-docs-skeleton.test/',
     'production' => false,
-    'collections' => [
-    ],
     'navigation' => require_once('navigation.php'),
 
     // helpers

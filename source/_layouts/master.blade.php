@@ -24,13 +24,17 @@
 
         <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
-    <body class="border-t-8">
-        <div id="vue-app" class="pb-8 content">
+    <body>
+        <main id="vue-app" class="content">
+            @yield('navigation')
             @yield('body')
-        </div>
+        </main>
 
         <script src="{{ $page->url(mix('js/main.js')) }}"></script>
         @yield('scripts')
-        @include('_partials.footer')
+
+        <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
+            <p>&copy; {{ $page->copyrightHolder}}. Built with <a href="http://jigsaw.tighten.co">Jigsaw</a> and <a href="https://tailwindcss.com">Tailwind CSS</a>.</p>
+        </footer>
     </body>
 </html>

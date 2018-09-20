@@ -1,6 +1,6 @@
-@extends('_layouts.documentation')
+@extends('_layouts.master')
 
-@section('documentation_content')
+@section('body')
     <div class="md:flex">
         <div class="mb-8 lg:mb-0 px-4 w-full">
             <div class="my-6 pb-6 border-b border-light-grey">

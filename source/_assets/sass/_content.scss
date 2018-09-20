@@ -1,36 +1,33 @@
-.content {
+main {
     @apply .min-h-screen;
-
-    p,
-    ol,
-    ul {
-        @apply .pb-4;
-    }
 }
 
 .markdown {
+    @apply .pb-16;
+    @apply .text-base;
+
     a {
         @apply .text-blue;
     }
 
+    h1,
+    h2,
+    h3 {
+        @apply .text-grey-darkest;
+        @apply .my-4;
+        @apply .font-normal;
+    }
+
     h1 {
-        @apply .font-sans;
-        @apply .mb-6;
         @apply .text-3xl;
-        @apply .text-black;
     }
 
     h2 {
-        @apply .font-bold;
-        @apply .font-sans;
-        @apply .mb-2;
-        @apply .mt-8;
-        @apply .text-black;
-        @apply .text-xl;
+        @apply .text-2xl;
     }
 
     h3 {
-        @apply .text-base;
+        @apply .text-xl;
     }
 
     hr {
@@ -38,9 +35,15 @@
         @apply .mb-4;
     }
 
+    p > code {
+        @apply .mx-1;
+    }
+
     code {
         @apply .bg-grey-lighter;
         @apply .leading-loose;
+        @apply .px-2;
+        @apply .py-1;
     }
 
     .lead {
@@ -86,16 +89,12 @@
         }
     }
 
-    p + pre {
-        @apply .mt-0;
-    }
-
     pre {
         @apply .bg-grey-lighter;
         @apply .leading-tight;
         @apply .mb-6;
-        @apply .mt-0;
-        @apply .overflow-scroll;
+        @apply .mt-4;
+        @apply .overflow-x-auto;
         @apply .p-4;
         @apply .rounded;
         @apply .text-sm;
