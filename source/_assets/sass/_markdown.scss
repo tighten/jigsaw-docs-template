@@ -1,10 +1,5 @@
-main {
-    @apply .min-h-screen;
-}
-
 .markdown {
     @apply .pb-16;
-    @apply .text-base;
 
     a {
         @apply .text-blue;
