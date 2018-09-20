@@ -23,7 +23,7 @@ $ mkdir my-site
 
 Next, navigate to your new project directory and install Jigsaw using Composer:
 
-```
+```bash
 $ cd my-site
 $ composer require tightenco/jigsaw
 ```
@@ -34,7 +34,7 @@ $ composer require tightenco/jigsaw
 
 Finally, from your project directory, run Jigsaw's `init` command to scaffold the default directory structure:
 
-```
+```bash
 $ ./vendor/bin/jigsaw init
 ```
 
