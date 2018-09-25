@@ -14,7 +14,7 @@
         <title>{{ $page->title ? "{$page->title} | " : "" }}{{ $page->docsTitle }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
-        <link rel="icon" href="{{ $page->url('favicon.ico') }}">
+        <link rel="icon" href="{{ $page->url('/assets/img/logo.png') }}">
 
         @stack('meta')
 
