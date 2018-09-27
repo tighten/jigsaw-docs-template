@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'docsTitle' => 'Jigsaw Docs',
-    'docsDescription' => 'The documentation for the Jigsaw static site generator.',
+    'title' => 'Jigsaw Docs',
+    'description' => 'Give your documentation a boost with Jigsaw. Generate elegant, static, docs quickly and easily.',
     'copyrightHolder' => 'Tighten',
     'docsearchApiKey' => '',
     'docsearchIndexName' => 'jigsaw',
