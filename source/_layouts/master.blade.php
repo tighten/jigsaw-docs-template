@@ -25,31 +25,35 @@
         <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
     <body>
-        <main id="vue-app" class="content">
-            <header class="bg-white border-b mb-8 py-4 flex shadow">
-                <section class="container max-w-2xl flex mx-auto px-4">
-                    <div class="flex flex-1">
+        <div id="vue-app">
+            <header class="bg-white border-b mb-8 py-4 flex shadow" role="banner">
+                <div class="container max-w-2xl flex mx-auto px-4">
+                    <div class="flex">
                         <a href="{{ $page->url('/') }}" title="{{ $page->title }} home" class="inline-flex items-center font-bold">
                             <img class="h-8 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->title }} logo" />
                         </a>
                     </div>
 
                     <div class="flex flex-1 align-right justify-end items-center">
-                        <input id="docsearch" class="bg-grey-lighter outline-none px-4r py-2 rounded-full text-grey-darker search-field" type="text" name="docsearch" value="">
+                        <input id="docsearch" type="text" name="docsearch"
+                            placeholder="Search"
+                            class="w-1/3 focus:w-1/2 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker docsearch">
 
                         <navigation-toggle></navigation-toggle>
                     </div>
-                </section>
+                </div>
             </header>
 
-            @yield('body')
-        </main>
+            <main role="main">
+                @yield('body')
+            </main>
+        </div>
 
         <script src="{{ $page->url(mix('js/main.js')) }}"></script>
         @yield('scripts')
 
         <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
-            <p>&copy; {{ $page->copyrightHolder}}. Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a> and <a href="https://tailwindcss.com" title="Tailwindcss a utility-first css framework">Tailwind CSS</a>.</p>
+            <p>&copy; {{ $page->copyrightHolder}} {{ date('Y') }}. Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a> and <a href="https://tailwindcss.com" title="Tailwindcss a utility-first css framework">Tailwind CSS</a>.</p>
         </footer>
     </body>
 </html>

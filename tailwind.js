@@ -906,7 +906,7 @@ module.exports = {
     verticalAlign: ['responsive'],
     visibility: ['responsive'],
     whitespace: ['responsive'],
-    width: ['responsive'],
+    width: ['responsive', 'focus'],
     zIndex: ['responsive'],
   },
 

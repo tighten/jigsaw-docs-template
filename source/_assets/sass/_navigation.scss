@@ -19,9 +19,13 @@
     }
 }
 
-.search-field {
+.docsearch {
     background: url('../img/magnifying-glass.svg');
     background-position: 0.8em;
     background-repeat: no-repeat;
-    text-indent: 2em;
+    text-indent: 2.5em;
+
+    -webkit-transition: width .3s ease-out;
+    -moz-transition: width .3s ease-out;
+    transition: width .3s ease-out;
 }
