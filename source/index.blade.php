@@ -2,7 +2,7 @@
 
 @section('body')
 <section class="container max-w-2xl py-10 mx-auto px-4 md:py-16">
-    <div class="flex flex-col-reverse mb-8 lg:flex-row md:mb-16">
+    <div class="flex flex-col-reverse mb-8 lg:flex-row md:mb-20">
         <div class="mt-8">
             <h1 class="font-normal tracking-normal leading-normal">
                 Welcome to {{ $page->title }} <br>

@@ -27,7 +27,7 @@
     <body>
         <div id="vue-app">
             <header class="bg-white border-b mb-8 py-4 flex shadow" role="banner">
-                <div class="container max-w-2xl flex mx-auto px-4">
+                <div class="container max-w-2xl flex mx-auto px-6">
                     <div class="flex items-center">
                         <a href="{{ $page->url('/') }}" title="{{ $page->title }} home" class="inline-flex items-center mr-3 font-bold">
                             <img class="h-8 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->title }} logo" />
@@ -54,7 +54,7 @@
         @yield('scripts')
 
         <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
-            <p>&copy; {{ $page->copyrightHolder}} {{ date('Y') }}. Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a> and <a href="https://tailwindcss.com" title="Tailwindcss a utility-first css framework">Tailwind CSS</a>.</p>
+            <p class="text-sm">&copy; {{ $page->copyrightHolder}} {{ date('Y') }}. Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a> and <a href="https://tailwindcss.com" title="Tailwindcss a utility-first css framework">Tailwind CSS</a>.</p>
         </footer>
     </body>
 </html>
