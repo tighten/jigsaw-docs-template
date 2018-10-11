@@ -1,25 +1,18 @@
 <template>
     <li class="list-reset">
-        <a :href="item.root" class="text-grey-darkest nav-item"
-            :class="{ 'text-blue': isActive(item.root) }">
+        <a :href="item.root" class="text-grey-darkest text-sm mb-2"
+            :class="{ 'text-blue' : isActive(item.root) }">
             <slot></slot>
         </a>
 
-        <ul v-if="item.children" class="list-reset">
-            <li v-for="(child, key) in item.children">
-                <a :href="child.root" class="text-grey-darker nav-item"
-                :class="{ 'text-blue': isActive(child.root) }">
+        <ul v-if="item.children" class="list-reset text-sm">
+            <li :key="key" v-for="(child, key) in item.children" class="ml-4">
+                <a :href="child.root" class="text-grey-darker"
+                :class="{ 'text-blue font-medium': isActive(child.root) }">
                     {{ key }}
                 </a>
 
-                <ul v-if="child.children" class="list-reset">
-                    <li v-for="(grandChild, key) in child.children">
-                        <a :href="grandChild.root" class="text-grey-dark nav-item"
-                            :class="{ 'text-blue': isActive(grandChild.root) }">
-                            {{ key }}
-                        </a>
-                    </li>
-                </ul>
+                <navigation-item v-if="item.children" :item="child"></navigation-item>
             </li>
         </ul>
     </li>
@@ -27,6 +20,8 @@
 
 <script>
 export default {
+    name: 'navigation-item',
+
     props: {
         item: {
             type: Object,
@@ -37,7 +32,7 @@ export default {
     methods: {
         isActive (url) {
             return window.location.href.indexOf(url) > -1;
-        }
+        },
     },
 }
 </script>

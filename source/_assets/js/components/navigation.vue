@@ -12,19 +12,15 @@ import NavigationItem from './navigation-item.vue';
 
 export default {
     components: { NavigationItem },
-    props: {
-        navigationLinks: String,
-    },
 
-    computed: {
-        navigation() {
-            return JSON.parse(this.navigationLinks);
-        }
+    props: {
+        links: Object,
     },
 
     data() {
         return {
             visible: false,
+            navigation: this.links
         }
     },
 

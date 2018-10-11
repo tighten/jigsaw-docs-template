@@ -3,7 +3,7 @@
 @section('body')
 <section class="container max-w-2xl mx-auto px-4">
     <div class="flex flex-col lg:flex-row">
-        <navigation navigation-links="{{ $page->navigation }}"></navigation>
+        <navigation :links='@json($page->navigation)'></navigation>
 
         <div class="markdown w-full lg:w-3/4 lg:pl-4">
             @yield('documentation_content')
