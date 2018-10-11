@@ -92,6 +92,7 @@
         @apply .overflow-x-auto;
         @apply .p-4;
         @apply .rounded;
+        @apply .shadow;
         @apply .text-sm;
     }
 
@@ -99,7 +100,6 @@
         @apply .border-grey;
         @apply .border-l-4;
         @apply .mb-6;
-        @apply .ml-4;
         @apply .pl-6;
         @apply .text-grey-darkest;
 

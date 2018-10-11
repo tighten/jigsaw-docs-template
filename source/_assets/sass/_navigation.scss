@@ -1,13 +1,11 @@
 .nav-item {
     @apply .block;
-    @apply .border-b;
     @apply .no-underline;
     @apply .p-2;
-    @apply .text-grey-darkest;
     @apply .text-sm;
 
     &:hover {
-        @apply .bg-grey-lighter;
+        @apply .text-blue;
     }
 
     & + ul {
@@ -23,9 +21,7 @@
     background: url('../img/magnifying-glass.svg');
     background-position: 0.8em;
     background-repeat: no-repeat;
-    text-indent: 2.5em;
+    text-indent: 1.2em;
 
-    -webkit-transition: width .3s ease-out;
-    -moz-transition: width .3s ease-out;
     transition: width .3s ease-out;
 }
