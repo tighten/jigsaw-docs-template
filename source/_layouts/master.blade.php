@@ -40,7 +40,7 @@
                             placeholder="Search"
                             class="w-1/3 focus:w-1/2 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker docsearch">
 
-                        <navigation-toggle></navigation-toggle>
+                        @yield('navigation')
                     </div>
                 </div>
             </header>

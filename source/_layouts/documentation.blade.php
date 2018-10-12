@@ -1,5 +1,9 @@
 @extends('_layouts.master')
 
+@section('navigation')
+<navigation-toggle></navigation-toggle>
+@endsection
+
 @section('body')
 <section class="container max-w-2xl mx-auto px-4">
     <div class="flex flex-col lg:flex-row">

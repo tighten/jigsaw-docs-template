@@ -9,7 +9,7 @@
                 Elegant docs powered by Jigsaw
             </h1>
 
-            <p class="w-3/4 text-lg">{{ $page->description }}</p>
+            <p class="text-lg sm:w-3/4">{{ $page->description }}</p>
 
             <div class="flex mt-8">
                 <a href="/docs/installation" title="{{ $page->title }} getting started" class="bg-blue py-1 px-6 text-white rounded mr-4">Get started</a>
