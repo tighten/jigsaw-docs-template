@@ -1,6 +1,6 @@
 <template>
     <li class="list-reset">
-        <a :href="item.root" class="text-grey-darkest text-sm mb-2"
+        <a :href="item.root" class="text-blue-darkest text-sm mb-2"
             :class="{ 'text-blue' : isActive(item.root) }">
             <slot></slot>
         </a>

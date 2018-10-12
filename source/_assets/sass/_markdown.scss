@@ -1,19 +1,36 @@
 .markdown {
-    @apply .pb-16;
-
     a {
         @apply .text-blue;
+    }
+
+    blockquote {
+        @apply .border-blue-light;
+        @apply .border-l-4;
+        @apply .font-normal;
+        @apply .italic;
+        @apply .my-8;
+        @apply .pl-6;
+        @apply .text-grey-darker;
+        @apply .text-xl;
+    }
+
+    code {
+        @apply .bg-grey-lighter;
+        @apply .leading-loose;
+        @apply .px-2;
+        @apply .py-1;
     }
 
     h1,
     h2,
     h3 {
-        @apply .text-grey-darkest;
+        @apply .font-light;
         @apply .my-2;
-        @apply .font-normal;
+        @apply .text-blue-darkest;
     }
 
     h1 {
+        @apply .font-normal;
         @apply .text-3xl;
     }
 
@@ -26,55 +43,21 @@
     }
 
     hr {
-        @apply .border-b;
-        @apply .mb-4;
+        @apply .border-b-2;
+        @apply .border-grey-light;
+        @apply .my-8;
+        @apply .rounded-full;
+    }
+
+    li {
+        ul,
+        ol {
+            @apply .my-0;
+        }
     }
 
     p > code {
         @apply .mx-1;
-    }
-
-    code {
-        @apply .bg-grey-lighter;
-        @apply .leading-loose;
-        @apply .px-2;
-        @apply .py-1;
-    }
-
-    p + ul,
-    p + ol {
-        @apply .mt-0;
-    }
-
-    ul,
-    ol {
-        @apply .mb-2;
-        @apply .mt-4;
-        @apply .ml-0;
-
-        list-style-position: outside;
-
-        ul,
-        ol {
-            @apply .mb-2;
-            @apply .mb-2;
-            @apply .pb-0;
-        }
-    }
-
-    ol {
-        li {
-            @apply .pb-1;
-        }
-
-        li:last-child {
-            @apply .pb-0;
-        }
-
-        ul,
-        ol {
-            @apply .mb-0;
-        }
     }
 
     pre {
@@ -89,15 +72,8 @@
         @apply .text-sm;
     }
 
-    blockquote {
-        @apply .border-grey;
-        @apply .border-l-4;
-        @apply .mb-6;
-        @apply .pl-6;
-        @apply .text-grey-darkest;
-
-        p {
-            @apply .py-1;
-        }
+    ul,
+    ol {
+        @apply .my-4;
     }
 }
