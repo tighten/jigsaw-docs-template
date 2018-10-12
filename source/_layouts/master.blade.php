@@ -26,7 +26,7 @@
     </head>
     <body>
         <div id="vue-app">
-            <header class="bg-white border-b mb-8 py-4 flex shadow" role="banner">
+            <header class="bg-white border-b mb-8 py-4 flex shadow-lg" role="banner">
                 <div class="container max-w-2xl flex mx-auto px-6">
                     <div class="flex items-center">
                         <a href="{{ $page->url('/') }}" title="{{ $page->title }} home" class="inline-flex items-center mr-3 font-bold">
@@ -38,7 +38,7 @@
                     <div class="flex flex-1 align-right justify-end items-center">
                         <input id="docsearch" type="text" name="docsearch"
                             placeholder="Search"
-                            class="w-2/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker docsearch md:w-1/3">
+                            class="w-2/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker transition-sm docsearch md:w-1/3">
 
                         @yield('navigation')
                     </div>

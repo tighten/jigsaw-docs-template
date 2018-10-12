@@ -41,13 +41,6 @@
         @apply .py-1;
     }
 
-    .lead {
-        @apply .font-bold;
-        @apply .font-sans;
-        @apply .text-black;
-        @apply .text-xl;
-    }
-
     p + ul,
     p + ol {
         @apply .mt-0;
