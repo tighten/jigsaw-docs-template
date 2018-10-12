@@ -1,22 +1,3 @@
-.nav-item {
-    @apply .block;
-    @apply .no-underline;
-    @apply .p-2;
-    @apply .text-sm;
-
-    &:hover {
-        @apply .text-blue;
-    }
-
-    & + ul {
-        text-indent: 0.4em;
-
-        & > li > ul > li {
-            text-indent: 0.8em;
-        }
-    }
-}
-
 .docsearch {
     background: url('../img/magnifying-glass.svg');
     background-position: 0.8em;
@@ -24,4 +5,10 @@
     text-indent: 1.2em;
 
     transition: width .3s ease-out;
+}
+
+@screen md {
+    .docsearch:focus {
+        @apply .w-1/2;
+    }
 }
