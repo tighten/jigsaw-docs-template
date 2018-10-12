@@ -6,12 +6,12 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="{{ $page->meta_description or $page->description }}">
 
-        <meta property="og:title" content="{{ $page->title }}" />
+        <meta property="og:title" content="{{ $page->siteName }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
         <meta property="og:description" content="{{ $page->description }}" />
 
-        <title>{{ $page->title ? "{$page->title} | " : "" }}{{ $page->title }}</title>
+        <title>{{ $page->siteName }} | {{ $page->title }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
         <link rel="icon" href="{{ $page->url('favicon.ico') }}">
@@ -29,10 +29,10 @@
             <header class="bg-white border-b mb-8 py-4 flex shadow-lg" role="banner">
                 <div class="container max-w-2xl flex mx-auto px-6">
                     <div class="flex items-center">
-                        <a href="{{ $page->url('/') }}" title="{{ $page->title }} home" class="inline-flex items-center mr-3 font-bold">
-                            <img class="h-8 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->title }} logo" />
+                        <a href="{{ $page->url('/') }}" title="{{ $page->siteName }} home" class="inline-flex items-center mr-3 font-bold">
+                            <img class="h-8 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
                         </a>
-                        <h3 class="font-normal">{{ $page->title }}</h3>
+                        <h3 class="font-normal">{{ $page->siteName }}</h3>
                     </div>
 
                     <div class="flex flex-1 align-right justify-end items-center">

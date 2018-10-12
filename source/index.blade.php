@@ -5,20 +5,20 @@
     <div class="flex flex-col-reverse mb-8 lg:flex-row md:mb-20">
         <div class="mt-8">
             <h1 class="font-normal tracking-normal leading-normal">
-                Welcome to {{ $page->title }} <br>
+                Welcome to {{ $page->siteName }} <br>
                 Elegant docs powered by Jigsaw
             </h1>
 
             <p class="text-lg sm:w-3/4">{{ $page->description }}</p>
 
             <div class="flex mt-8">
-                <a href="/docs/installation" title="{{ $page->title }} getting started" class="bg-blue py-1 px-6 text-white rounded mr-4">Get started</a>
+                <a href="/docs/installation" title="{{ $page->siteName }} getting started" class="bg-blue py-1 px-6 text-white rounded mr-4">Get started</a>
 
                 <a href="https://jigsaw.tighten.co" title="Jigsaw by Tighten" class="bg-grey-light py-1 px-6 text-blue rounded">Install</a>
             </div>
         </div>
 
-        <img src="/assets/img/logo-large.svg" alt="{{ $page->title }} large logo" class="max-w-md mb-4 mx-auto md:mb-0 ">
+        <img src="/assets/img/logo-large.svg" alt="{{ $page->siteName }} large logo" class="max-w-md mb-4 mx-auto md:mb-0 ">
     </div>
 
     <div class="flex flex-col items-center justify-center md:items-start md:flex-row md:justify-between">
