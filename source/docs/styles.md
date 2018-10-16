@@ -7,52 +7,26 @@ section: documentation_content
 
 # Styles
 
-This template uses the same configuration as [Jigsaw](https://jigsaw.tighten.co/docs/site-variables/). Within the `config.php` is where you can set your default environment variables.
+This template is built with [Tailwindcss](https://tailwindcss.com). Changing colors and the layout can all be done directly on html elements. For specificity rules, a few SCSS files have been created.
 
-```php
-// config.php
-return [
-    'siteName' => 'App Docs',
-    'title' => 'Documentation powered by Jigsaw',
-    'description' => 'Give your documentation a boost with Jigsaw. Generate elegant, static, docs quickly and easily.',
-    'copyrightHolder' => 'Company Name',
-    'docsearchApiKey' => '',
-    'docsearchIndexName' => '',
-    'baseUrl' => 'http://appname.com/',
-    'production' => false,
-    'navigation' => require_once('navigation.php'),
+### Layouts
+There are two core layouts in this template. The `documentation.blade.php` layout is what is used to parse the documentation files. If you need to style how your generated documentation looks, see the `_markdown.scss` file.
 
-    // helpers
-    'url' => function ($page, $path) {
-        return rtrim($page->baseUrl, '/') . '/' . ltrim($path, '/');
-    },
-];
-```
-> When creating content, the `title` variable can be overwritten to dynamically generate proper SEO page titles.
+```scss
+// source/_assets/sass/_markdown.scss
+.markdown {
+    a {
+        @apply .text-blue;
+    }
 
-## Algolia Docsearch
-
-[Docsearch](https://community.algolia.com/docsearch/) is an open source index based search tool, built by [Algolia](https://www.algolia.com). Out-of-the-box the docs template is setup to use DocSearch, only the credentials are needed.
-
-**Get your DocSearch credentials [here](https://community.algolia.com/docsearch/#join-docsearch-program)**
-
-```php
-// config.php
-return [
-    'docsearchApiKey' => '',
-    'docsearchIndexName' => '',
-];
-```
-
-Once the `docsearchApiKey` and `docsearchIndexName` are entered in the `config.php`, the markup will automatically use these values to power search form.
-
-```html
-<!-- /source/layouts/documentation.blade.php -->
-<script type="text/javascript">
-    docsearch({
-        apiKey: '{{ $page->docsearchApiKey }}',
-        indexName: '{{ $page->docsearchIndexName }}',
-        inputSelector: '#docsearch'
-    });
-</script>
+    blockquote {
+        @apply .border-blue-light;
+        @apply .border-l-4;
+        @apply .font-normal;
+        @apply .italic;
+        @apply .my-8;
+        @apply .pl-6;
+        @apply .text-grey-darker;
+        @apply .text-xl;
+    }
 ```

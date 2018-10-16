@@ -45,7 +45,7 @@
                 </div>
             </header>
 
-            <main role="main">
+            <main role="main" class="min-h-screen">
                 @yield('body')
             </main>
         </div>
