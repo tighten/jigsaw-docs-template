@@ -10,11 +10,11 @@ section: documentation_content
 This template is built with [Tailwindcss](https://tailwindcss.com). Changing colors and the layout can all be done directly on html elements. For specificity rules, a few SCSS files have been created.
 
 ### Layouts
-There are two core layouts in this template. The `documentation.blade.php` layout is what is used to parse the documentation files. If you need to style how your generated documentation looks, see the `_markdown.scss` file.
+There are two core layouts in this template. The `documentation.blade.php` layout is what is used to parse the documentation files. If you need to style how your generated documentation looks, see the `_content.scss` file.
 
 ```scss
-// source/_assets/sass/_markdown.scss
-.markdown {
+// source/_assets/sass/_content.scss
+.content {
     a {
         @apply .text-blue;
     }
