@@ -12,13 +12,13 @@ This template uses the same configuration as [Jigsaw](https://jigsaw.tighten.co/
 ```php
 // config.php
 return [
-    'siteName' => 'App Docs',
+    'siteName' => 'Jigsaw Docs',
+    'siteDescription' => 'Give your documentation a boost with Jigsaw. Generate elegant, static docs quickly and easily.',
     'title' => 'Documentation powered by Jigsaw',
-    'description' => 'Give your documentation a boost with Jigsaw. Generate elegant, static, docs quickly and easily.',
-    'copyrightHolder' => 'Company Name',
+    'copyrightHolder' => 'Tighten',
     'docsearchApiKey' => '',
-    'docsearchIndexName' => '',
-    'baseUrl' => 'http://appname.com/',
+    'docsearchIndexName' => 'jigsaw',
+    'baseUrl' => 'http://jigsaw-docs-skeleton.test/',
     'production' => false,
     'navigation' => require_once('navigation.php'),
 
