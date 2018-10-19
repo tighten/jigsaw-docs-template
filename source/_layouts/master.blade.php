@@ -54,7 +54,7 @@
         @yield('scripts')
 
         <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
-            <p class="text-sm">&copy; {{ $page->copyrightHolder}} {{ date('Y') }}. Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a> and <a href="https://tailwindcss.com" title="Tailwindcss a utility-first css framework">Tailwind CSS</a>.</p>
+            <p class="text-sm">&copy; {{ $page->copyrightHolder}} {{ date('Y') }}. Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a> and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.</p>
         </footer>
     </body>
 </html>
