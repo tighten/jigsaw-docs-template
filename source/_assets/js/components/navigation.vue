@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:block w-full lg:w-1/4 mb-8 lg:mb-0 lg:pr-8" :class="{ hidden: ! visible }">
+    <div class="w-full mb-8 transition lg:block lg:mb-0 lg:pr-8 lg:w-1/4" :class="{ hidden: ! visible }">
 
         <nav class="nav-list" role="navigation">
             <navigation-item :key="key" v-for="(url, key) in navigation" :item="url">{{ key }}</navigation-item>
@@ -12,19 +12,15 @@ import NavigationItem from './navigation-item.vue';
 
 export default {
     components: { NavigationItem },
-    props: {
-        navigationLinks: String,
-    },
 
-    computed: {
-        navigation() {
-            return JSON.parse(this.navigationLinks);
-        }
+    props: {
+        links: Object,
     },
 
     data() {
         return {
             visible: false,
+            navigation: this.links
         }
     },
 

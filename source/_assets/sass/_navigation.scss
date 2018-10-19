@@ -1,27 +1,12 @@
-.nav-item {
-    @apply .block;
-    @apply .border-b;
-    @apply .no-underline;
-    @apply .p-2;
-    @apply .text-grey-darkest;
-    @apply .text-sm;
-
-    &:hover {
-        @apply .bg-grey-lighter;
-    }
-
-    & + ul {
-        text-indent: 0.4em;
-
-        & > li > ul > li {
-            text-indent: 0.8em;
-        }
-    }
-}
-
-.search-field {
+.docsearch {
     background: url('../img/magnifying-glass.svg');
     background-position: 0.8em;
     background-repeat: no-repeat;
-    text-indent: 2em;
+    text-indent: 1.2em;
+}
+
+@screen md {
+    .docsearch:focus {
+        @apply .w-1/2;
+    }
 }
