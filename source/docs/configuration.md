@@ -32,7 +32,7 @@ return [
 
 ## Algolia Docsearch
 
-[Docsearch](https://community.algolia.com/docsearch/) is an open source index based search tool, built by [Algolia](https://www.algolia.com). Out-of-the-box the docs template is setup to use DocSearch, only the credentials are needed.
+[Docsearch](https://community.algolia.com/docsearch/) is an open-source index-based search tool, built by [Algolia](https://www.algolia.com). This template is setup to use DocSearch out of the box by simply adding your credentials.
 
 **Get your DocSearch credentials [here](https://community.algolia.com/docsearch/#join-docsearch-program)**
 
