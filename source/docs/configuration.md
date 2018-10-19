@@ -7,7 +7,7 @@ section: documentation_content
 
 # Configuration
 
-This template uses the same configuration as [Jigsaw](https://jigsaw.tighten.co/docs/site-variables/). The `config.php` is where you can set your default environment variables.
+This template uses the same configuration as [Jigsaw](https://jigsaw.tighten.co/docs/site-variables/). The `config.php` file is where you can set your default site variables.
 
 ```php
 // config.php
