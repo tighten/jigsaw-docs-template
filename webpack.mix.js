@@ -19,5 +19,4 @@ mix.js('source/_assets/js/main.js', 'js')
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.js') ],
     })
-    .copy('source/_assets/img', 'source/assets/img')
     .version();

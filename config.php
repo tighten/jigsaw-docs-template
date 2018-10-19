@@ -2,8 +2,8 @@
 
 return [
     'siteName' => 'Jigsaw Docs',
+    'siteDescription' => 'Give your documentation a boost with Jigsaw. Generate elegant, static docs quickly and easily.',
     'title' => 'Documentation powered by Jigsaw',
-    'description' => 'Give your documentation a boost with Jigsaw. Generate elegant, static docs quickly and easily.',
     'copyrightHolder' => 'Tighten',
     'docsearchApiKey' => '',
     'docsearchIndexName' => 'jigsaw',

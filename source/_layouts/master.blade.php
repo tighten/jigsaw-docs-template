@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="{{ $page->meta_description or $page->description }}">
+        <meta name="description" content="{{ $page->meta_description or $page->siteDescription }}">
 
         <meta property="og:title" content="{{ $page->siteName }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
-        <meta property="og:description" content="{{ $page->description }}" />
+        <meta property="og:description" content="{{ $page->siteDescription }}" />
 
         <title>{{ $page->siteName }} | {{ $page->title }}</title>
 
@@ -24,6 +24,7 @@
 
         <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
+    
     <body>
         <div id="vue-app">
             <header class="bg-white border-b mb-8 py-4 flex shadow-lg" role="banner">
@@ -39,7 +40,7 @@
                     <div class="flex flex-1 align-right justify-end items-center">
                         <input id="docsearch" type="text" name="docsearch"
                             placeholder="Search"
-                            class="w-2/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker transition-sm docsearch md:w-1/3">
+                            class="w-2/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker transition-fast docsearch md:w-1/3">
 
                         @yield('navigation')
                     </div>
