@@ -2,7 +2,7 @@
     <li class="list-reset">
         <a :href="item.root"
             class="text-blue-darkest text-sm mb-2"
-            :class="{ 'text-blue' : isActive(item.root) }">
+            :class="{ 'text-blue': isActive(item.root) }">
             <slot></slot>
         </a>
 

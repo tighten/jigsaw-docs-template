@@ -24,7 +24,7 @@
     <div class="flex flex-col items-center justify-center md:items-start md:flex-row md:justify-between">
         <div class="flex flex-col w-full mb-6 md:w-1/3">
             <img src="/assets/img/icon-window.svg" class="h-8 w-8 mb-4" alt="window icon">
-            <h3 class="font-normal tracking-normal leading-normal mb-2">Blade <br> Templating </h3>
+            <h3 class="font-normal tracking-normal leading-normal mb-2">Blade <br>Templating</h3>
             <p class="text-sm leading-normal">Blade is a powerful, simple, and beautiful templating language, but until now it wasn't an option if you were building a simple static site that didn't need a complex PHP backend</p>
         </div>
 
