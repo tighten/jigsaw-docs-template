@@ -32,6 +32,7 @@
                         <a href="{{ $page->url('/') }}" title="{{ $page->siteName }} home" class="inline-flex items-center mr-3 font-bold">
                             <img class="h-8 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
                         </a>
+                        
                         <h3 class="font-normal">{{ $page->siteName }}</h3>
                     </div>
 
