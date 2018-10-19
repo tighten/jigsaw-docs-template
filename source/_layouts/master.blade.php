@@ -24,6 +24,7 @@
 
         <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
+    
     <body>
         <div id="vue-app">
             <header class="bg-white border-b mb-8 py-4 flex shadow-lg" role="banner">
