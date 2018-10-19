@@ -931,7 +931,7 @@ module.exports = {
     }),
     function({ addUtilities }) {
         const newUtilities = {
-          '.transition-sm': {
+          '.transition-fast': {
             transition: 'all .3s ease-out',
           },
           '.transition': {
