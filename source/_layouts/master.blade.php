@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="{{ $page->meta_description or $page->description }}">
+        <meta name="description" content="{{ $page->meta_description or $page->siteDescription }}">
 
         <meta property="og:title" content="{{ $page->siteName }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
-        <meta property="og:description" content="{{ $page->description }}" />
+        <meta property="og:description" content="{{ $page->siteDescription }}" />
 
         <title>{{ $page->siteName }} | {{ $page->title }}</title>
 
