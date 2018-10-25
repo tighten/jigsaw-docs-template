@@ -9,6 +9,5 @@ return [
             'Styles' => ['url' => '/docs/styles'],
         ],
     ],
-    'Sample Page' => ['url' => '/docs/sample-page'],
     'Jigsaw' => ['url' => 'https://jigsaw.tighten.co'],
 ];

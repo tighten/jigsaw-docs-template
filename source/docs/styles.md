@@ -9,6 +9,30 @@ section: documentation_content
 
 This template uses [Tailwind CSS](https://tailwindcss.com), so you can customize your design directly in your Blade templates. In addition, you'll find some base SCSS files in `source_assets/sass`, which you are free to modify or extend.
 
+# h1 Post Title
+## h2 Post Title
+### h3 Post Title
+#### h4 Post Title
+---
+The quick brown fox jumps over the lazy dog
+
+_The quick brown fox jumps over the lazy dog_
+
+**The quick brown fox jumps over the lazy dog**
+
+> The quick brown fox jumps over the lazy dog
+
+`The quick brown fox jumps over the lazy dog`
+
+[Anchor tag](#)
+
+---
+
+```bash
+$ cd my-site
+$ composer require tightenco/jigsaw
+```
+
 ### Layouts
 There are two core layouts in this template. The `documentation.blade.php` layout is what is used to parse the documentation files. If you need to style how your generated documentation looks, see the `_content.scss` file.
 
