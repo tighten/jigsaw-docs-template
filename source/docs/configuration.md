@@ -44,7 +44,7 @@ return [
 ];
 ```
 
-Once the `docsearchApiKey` and `docsearchIndexName` are entered in the `config.php`, the markup will automatically use these values to power search form.
+Once the `docsearchApiKey` and `docsearchIndexName` are entered in `config.php`, your site will automatically use these values to power the search form.
 
 ```html
 <!-- /source/layouts/documentation.blade.php -->
