@@ -2,10 +2,11 @@
 @tailwind components;
 
 @import 'base';
-@import 'content';
 @import 'navigation';
+@import 'documentation';
 
-// dynamic code syntax highlighting
+// Code syntax highlighting,
+// powered by https://highlightjs.org
 @import '~highlightjs/styles/default';
-
+ff
 @tailwind utilities;
