@@ -7,7 +7,7 @@ section: documentation_content
 
 # Styles
 
-This template is built with [Tailwindcss](https://tailwindcss.com). Changing colors and the layout can all be done directly on html elements. For specificity rules, a few SCSS files have been created.
+This template uses [Tailwind CSS](https://tailwindcss.com), so you can customize your design directly in your Blade templates. In addition, you'll find some base SCSS files in `source_assets/sass`, which you are free to modify or extend.
 
 ### Layouts
 There are two core layouts in this template. The `documentation.blade.php` layout is what is used to parse the documentation files. If you need to style how your generated documentation looks, see the `_content.scss` file.
