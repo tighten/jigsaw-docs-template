@@ -24,4 +24,5 @@ return [
     'Jigsaw' => ['url' => 'https://jigsaw.tighten.co'],
 ];
 ```
+
 > All documentation content is located at `source/docs/`
