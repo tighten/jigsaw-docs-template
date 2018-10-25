@@ -11,7 +11,7 @@ section: documentation_content
 Configure your site name, URL, and other settings. Take a look at [how to configure](/docs/configuration) your site.
 
 ## 2. Add Content
-All documentation content is located in the `docs` directory. Jigsaw supports a variety of [file types](http://jigsaw.tighten.co/docs/content-other-file-types/) for content.
+All your documentation content is located in the `docs` directory. Jigsaw supports a variety of [file types](http://jigsaw.tighten.co/docs/content-other-file-types/) for creating your content.
 
 ## 3. Add assets
 If you have any assets, they can be added to the `source/_assets/` directory and Laravel Mix will pick process them on build.
