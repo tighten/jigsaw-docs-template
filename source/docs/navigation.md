@@ -7,7 +7,7 @@ section: documentation_content
 
 # Navigation
 
-Navigation is configured via a PHP Array in the `navigation.php` file in the root of the directory. Using the `children` associative array, sub-navigation items can be defined.
+Navigation is configured via a PHP Array in the `navigation.php` file in the root directory. Sub-navigation items can be defined using the `children` associative array.
 
 ```php
 // navigation.php
