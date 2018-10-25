@@ -8,7 +8,7 @@ section: documentation_content
 
 
 ## 1. Configuration
-Configure your site name, url and other settings. Take a look at [configuring](/docs/configuration) your site.
+Configure your site name, URL, and other settings. Take a look at [how to configure](/docs/configuration) your site.
 
 ## 2. Add Content
 All documentation content is located in the `docs` directory. Jigsaw supports a variety of [file types](http://jigsaw.tighten.co/docs/content-other-file-types/) for content.
