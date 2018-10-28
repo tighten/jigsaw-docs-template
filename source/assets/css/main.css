@@ -728,11 +728,6 @@ a {
   margin-bottom: 0;
 }
 
-.content p > code {
-  margin-left: .25rem;
-  margin-right: .25rem;
-}
-
 .content pre {
   background-color: #f1f5f8;
   line-height: 1.25;

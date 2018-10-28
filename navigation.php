@@ -4,10 +4,10 @@ return [
     'Getting Started' => [
         'url' => '/docs/getting-started',
         'children' => [
-            'Configuration' => ['url' => '/docs/configuration'],
+            'DocSearch' => ['url' => '/docs/algolia-docsearch'],
             'Navigation' => ['url' => '/docs/navigation'],
-            'Styles' => ['url' => '/docs/styles'],
+            'Extending' => ['url' => '/docs/extending'],
         ],
     ],
-    'Jigsaw' => ['url' => 'https://jigsaw.tighten.co'],
+    'Jigsaw Docs' => ['url' => 'https://jigsaw.tighten.co/docs/installation/'],
 ];

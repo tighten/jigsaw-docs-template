@@ -66,10 +66,6 @@ a {
         }
     }
 
-    p > code {
-        @apply .mx-1;
-    }
-
     pre {
         @apply .bg-grey-lighter;
         @apply .leading-tight;
