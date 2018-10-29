@@ -70,6 +70,10 @@ a {
         }
     }
 
+    p {
+        @apply .my-2;
+    }
+
     pre {
         @apply .bg-grey-lighter;
         @apply .leading-tight;

@@ -33,7 +33,7 @@
                         <a href="{{ $page->url('/') }}" title="{{ $page->siteName }} home" class="inline-flex items-center font-bold">
                             <img class="h-8 mr-3 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
 
-                            <h3 class="font-normal text-blue-darker">{{ $page->siteName }}</h3>
+                            <h3 class="hidden font-normal text-blue-darker md:block">{{ $page->siteName }}</h3>
                         </a>
 
                     </div>
