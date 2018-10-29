@@ -6157,6 +6157,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   font-size: 3rem;
 }
 
+.text-6xl {
+  font-size: 8rem;
+}
+
 .italic {
   font-style: italic;
 }
@@ -11936,6 +11940,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
     font-size: 3rem;
   }
 
+  .sm\:text-6xl {
+    font-size: 8rem;
+  }
+
   .sm\:italic {
     font-style: italic;
   }
@@ -17704,6 +17712,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
   .md\:text-5xl {
     font-size: 3rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 8rem;
   }
 
   .md\:italic {
@@ -23476,6 +23488,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
     font-size: 3rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 8rem;
+  }
+
   .lg\:italic {
     font-style: italic;
   }
@@ -29244,6 +29260,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
   .xl\:text-5xl {
     font-size: 3rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 8rem;
   }
 
   .xl\:italic {

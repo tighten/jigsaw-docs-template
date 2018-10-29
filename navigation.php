@@ -6,6 +6,7 @@ return [
         'children' => [
             'DocSearch' => ['url' => '/docs/algolia-docsearch'],
             'Navigation' => ['url' => '/docs/navigation'],
+            '404 Page' => ['url' => '/docs/404'],
             'Extending' => ['url' => '/docs/extending'],
         ],
     ],
