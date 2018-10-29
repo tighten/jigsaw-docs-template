@@ -38,6 +38,8 @@ return [
 </script>
 ```
 
+---
+
 ## Adding Custom Styles
 Algolia exposes custom CSS classes to target in the event that you want to add your own styles.
 

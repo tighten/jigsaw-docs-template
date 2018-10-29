@@ -4,11 +4,10 @@ extends: _layouts.documentation
 section: documentation_content
 ---
 # Extending
-This theme has been designed to be easily customized and extended.
 
 ## Styles
 
-This template uses [Tailwind CSS](https://tailwindcss.com), so you can customize your design directly in your Blade templates. In addition, you'll find some base SCSS files in `source/assets/sass`, which you are free to modify or extend. Out of the box, a `_documentation.scss` file is created for your custom styles.
+This template uses [Tailwind CSS](https://tailwindcss.com), so you can customize your design directly in your Blade templates. In addition, you'll find some base SCSS files in `source/assets/sass`, which you are free to modify or extend. Out of the box, a blank `_documentation.scss` stylesheet is created for your custom styles.
 
 ```scss
 // source/_assets/sass/main.scss
@@ -25,6 +24,8 @@ This template uses [Tailwind CSS](https://tailwindcss.com), so you can customize
 
 @tailwind utilities;
 ```
+
+---
 
 ## Typography Styles
 
@@ -54,7 +55,7 @@ _The quick brown fox jumps over the lazy dog_
 [The quick brown fox jumps over the lazy dog](#)
 
 ```php
-class Foo extends bar 
+class Foo extends bar
 {
     public function fooBar()
     {

@@ -31,11 +31,13 @@ $page->navigation
 ```
 <a name="vue-components"></a>
 
+---
+
 ## Vue Components
 
-For clean and consistent markup, Vue components were added to consume the `navigation` configuration key. The `navigation.vue` component iterates over the multi-dimensional Array and renders a tree view structure, with dynamic anchor highlighting determined by the URL path. 
+For clean and consistent markup, Vue components were added to consume the `navigation` configuration key. The `navigation.vue` component iterates over the multi-dimensional Array and renders a tree view structure, with dynamic anchor highlighting determined by the URL path.
 
-By default the navigation component is hidden on mobile views, so a `navigation-toggle` was also added to expose a hamburger menu to show/hide the component. 
+By default the navigation component is hidden on mobile views, so the `navigation-toggle` can be used to display a hamburger menu to show/hide the component.
 
 ```html
 <!-- accessing Vue components in blade files -->
