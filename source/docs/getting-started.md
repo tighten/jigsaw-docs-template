@@ -18,9 +18,10 @@ return [
     'siteDescription' => 'Give your documentation a boost with Jigsaw. Generate elegant, static docs quickly and easily.',
     'title' => 'Documentation powered by Jigsaw',
     'copyrightHolder' => 'My Name',
+    'copyrightWebsite' => 'https://my-awesome-jigsaw-site.com',
     'docsearchApiKey' => '',
     'docsearchIndexName' => '',
-    'baseUrl' => 'http://my-awesome-jigsaw-site.com/',
+    'baseUrl' => 'https://my-awesome-jigsaw-site.com/',
     'production' => false,
     'navigation' => require_once('navigation.php'),
 
