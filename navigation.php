@@ -9,5 +9,5 @@ return [
             'Extending' => ['url' => '/docs/extending'],
         ],
     ],
-    'Jigsaw Docs' => ['url' => 'https://jigsaw.tighten.co/docs/installation/'],
+    'Jigsaw Docs' => ['url' => 'https://jigsaw.tighten.co/docs/installation'],
 ];

@@ -56,7 +56,7 @@ Images can be added, and committed, directly to `source/assets/img/`, _note ther
 **Be sure to replace `source/assets/logo.svg` with your own logo.**
 
 
-## Building
+## Building Your Site
 ```bash
 # build static files with Jigsaw
 $ ./vendor/bin/jigsaw build
