@@ -52,6 +52,10 @@ a {
         @apply .text-xl;
     }
 
+    .hljs {
+        @apply .bg-transparent;
+    }
+
     hr {
         @apply .border-b-2;
         @apply .border-grey-light;
