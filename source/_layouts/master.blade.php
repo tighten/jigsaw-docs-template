@@ -28,7 +28,7 @@
     <body>
         <div id="vue-app">
             <header class="bg-white border-b mb-8 py-4 flex shadow-lg" role="banner">
-                <div class="container max-w-2xl flex mx-auto px-6">
+                <div class="container max-w-4xl flex mx-auto px-6">
                     <div class="flex items-center">
                         <a href="{{ $page->url('/') }}" title="{{ $page->siteName }} home" class="inline-flex items-center font-bold">
                             <img class="h-8 mr-3 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />

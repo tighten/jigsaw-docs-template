@@ -5,7 +5,7 @@
 @endsection
 
 @section('body')
-<section class="container max-w-2xl mx-auto px-4">
+<section class="container max-w-4xl mx-auto px-4">
     <div class="flex flex-col lg:flex-row">
         <navigation :links='@json($page->navigation)'></navigation>
 
