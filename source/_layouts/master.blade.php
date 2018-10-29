@@ -24,7 +24,7 @@
 
         <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
     </head>
-    
+
     <body>
         <div id="vue-app">
             <header class="bg-white border-b mb-8 py-4 flex shadow-lg" role="banner">
@@ -33,13 +33,12 @@
                         <a href="{{ $page->url('/') }}" title="{{ $page->siteName }} home" class="inline-flex items-center mr-3 font-bold">
                             <img class="h-8 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
                         </a>
-                        
+
                         <h3 class="font-normal">{{ $page->siteName }}</h3>
                     </div>
 
                     <div class="flex flex-1 align-right justify-end items-center">
-                        <input id="docsearch" type="text" name="docsearch"
-                            placeholder="Search"
+                        <input name="docsearch" type="text" id="docsearch" placeholder="Search"
                             class="w-2/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker transition-fast docsearch md:w-1/3">
 
                         @yield('navigation')
