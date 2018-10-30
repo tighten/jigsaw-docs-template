@@ -12,7 +12,7 @@
             <p class="text-lg sm:w-3/4">{{ $page->siteDescription }}</p>
 
             <div class="flex mt-8">
-                <a href="/docs/installation" title="{{ $page->siteName }} getting started" class="bg-blue py-1 px-6 text-white rounded mr-4">Get started</a>
+                <a href="/docs/getting-started" title="{{ $page->siteName }} getting started" class="bg-blue py-1 px-6 text-white rounded mr-4">Get started</a>
 
                 <a href="https://jigsaw.tighten.co" title="Jigsaw by Tighten" class="bg-grey-light py-1 px-6 text-blue rounded">Install</a>
             </div>

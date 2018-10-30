@@ -9,7 +9,7 @@
     <div class="flex flex-col lg:flex-row">
         <navigation :links='@json($page->navigation)'></navigation>
 
-        <div class="w-full text-blue-darker pb-16 markdown transition-fast lg:w-3/4 lg:pl-4">
+        <div class="w-full text-blue-darker pb-16 content transition-fast lg:w-3/4 lg:pl-4" v-pre>
             @yield('documentation_content')
         </div>
     </div>

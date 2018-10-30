@@ -1,16 +1,16 @@
 <template>
     <li class="list-reset">
-        <a :href="item.root"
+        <a :href="item.url"
             class="text-blue-darkest text-sm mb-2"
-            :class="{ 'text-blue': isActive(item.root) }">
+            :class="{ 'text-blue' : isActive(item.url) }">
             <slot></slot>
         </a>
 
         <ul v-if="item.children" class="list-reset text-sm">
             <li :key="key" v-for="(child, key) in item.children" class="ml-4">
-                <a :href="child.root"
+                <a :href="child.url"
                     class="text-grey-darker"
-                    :class="{ 'text-blue font-medium': isActive(child.root) }">
+                    :class="{ 'text-blue font-medium': isActive(child.url) }">
                     {{ key }}
                 </a>
 

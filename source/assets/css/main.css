@@ -671,10 +671,6 @@ a {
   color: #3490dc;
 }
 
-.content a {
-  color: #3490dc;
-}
-
 .content blockquote {
   border-color: #6cb2eb;
   border-left-width: 4px;
@@ -730,11 +726,6 @@ a {
 .content li ol {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.content p > code {
-  margin-left: .25rem;
-  margin-right: .25rem;
 }
 
 .content pre {
@@ -6164,6 +6155,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 .text-5xl {
   font-size: 3rem;
+}
+
+.text-6xl {
+  font-size: 8rem;
 }
 
 .italic {
@@ -11945,6 +11940,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
     font-size: 3rem;
   }
 
+  .sm\:text-6xl {
+    font-size: 8rem;
+  }
+
   .sm\:italic {
     font-style: italic;
   }
@@ -17713,6 +17712,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
   .md\:text-5xl {
     font-size: 3rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 8rem;
   }
 
   .md\:italic {
@@ -23485,6 +23488,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
     font-size: 3rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 8rem;
+  }
+
   .lg\:italic {
     font-style: italic;
   }
@@ -29253,6 +29260,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
   .xl\:text-5xl {
     font-size: 3rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 8rem;
   }
 
   .xl\:italic {
