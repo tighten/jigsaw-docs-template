@@ -4,6 +4,8 @@ a {
 }
 
 .content {
+    // Remove top margin of first element
+    // to align content with left-hand sidebar
     :first-child {
         @apply .mt-0;
     }
