@@ -1,12 +1,12 @@
 <template>
     <li class="list-reset">
         <a :href="item.url"
-            class="text-blue-darkest text-sm mb-2"
+            class="text-blue-darkest mb-2"
             :class="{ 'text-blue' : isActive(item.url) }">
             <slot></slot>
         </a>
 
-        <ul v-if="item.children" class="list-reset text-sm">
+        <ul v-if="item.children" class="list-reset">
             <li :key="key" v-for="(child, key) in item.children" class="ml-4">
                 <a :href="child.url"
                     class="text-grey-darker"

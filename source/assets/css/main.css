@@ -714,6 +714,10 @@ a {
   font-size: 1.25rem;
 }
 
+.content .hljs {
+  background-color: transparent;
+}
+
 .content hr {
   border-bottom-width: 2px;
   border-color: #dae1e7;
@@ -726,6 +730,11 @@ a {
 .content li ol {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.content p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .content pre {
@@ -757,6 +766,7 @@ a {
 @media (min-width: 768px) {
   .docsearch:focus {
     width: 50%;
+    text-indent: 1.5em;
   }
 }
 
@@ -3444,6 +3454,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 .h-8 {
   height: 2rem;
+}
+
+.h-9 {
+  height: 2.2rem;
 }
 
 .h-10 {
@@ -9245,6 +9259,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
     height: 2rem;
   }
 
+  .sm\:h-9 {
+    height: 2.2rem;
+  }
+
   .sm\:h-10 {
     height: 2.5rem;
   }
@@ -15017,6 +15035,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
   .md\:h-8 {
     height: 2rem;
+  }
+
+  .md\:h-9 {
+    height: 2.2rem;
   }
 
   .md\:h-10 {
@@ -20793,6 +20815,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
     height: 2rem;
   }
 
+  .lg\:h-9 {
+    height: 2.2rem;
+  }
+
   .lg\:h-10 {
     height: 2.5rem;
   }
@@ -26565,6 +26591,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
   .xl\:h-8 {
     height: 2rem;
+  }
+
+  .xl\:h-9 {
+    height: 2.2rem;
   }
 
   .xl\:h-10 {
