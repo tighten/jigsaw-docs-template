@@ -25,19 +25,19 @@
         <div class="flex flex-col w-full mb-8 mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-window.svg" class="h-8 w-8 mb-4" alt="window icon">
             <h3 class="text-xl font-normal text-blue-darkest mb-3">Blade <br>Templating</h3>
-            <p class="">Blade is a powerful, simple, and beautiful templating language, but until now it wasn't an option if you were building a simple static site that didn't need a complex PHP backend</p>
+            <p>Blade is a powerful, simple, and beautiful templating language, but until now it wasn't an option if you were building a simple static site that didn't need a complex PHP backend</p>
         </div>
 
         <div class="flex flex-col w-full mb-8 mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-terminal.svg" class="h-8 w-8 mb-4" alt="terminal icon">
             <h3 class="text-xl font-normal text-blue-darkest mb-3">Use Markdown for <br> content-driven pages</h3>
-            <p class="">Markdown is a fantastic writing format for things like articles, blog posts, or documentation pages. Jigsaw makes it painless to work with Markdown content.</p>
+            <p>Markdown is a fantastic writing format for things like articles, blog posts, or documentation pages. Jigsaw makes it painless to work with Markdown content.</p>
         </div>
 
         <div class="flex flex-col w-full mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-stack.svg" class="h-8 w-8 mb-4" alt="stack icon">
             <h3 class="text-xl font-normal text-blue-darkest mb-3">Compile your assets using <br> Laravel Mix </h3>
-            <p class="">Jigsaw sites are configured with support for Laravel Mix out of the box. If you've ever used Mix in a Laravel project, you already know how to use Mix with Jigsaw.</p>
+            <p>Jigsaw sites are configured with support for Laravel Mix out of the box. If you've ever used Mix in a Laravel project, you already know how to use Mix with Jigsaw.</p>
         </div>
     </div>
 </section>
