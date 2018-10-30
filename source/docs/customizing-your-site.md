@@ -1,9 +1,9 @@
 ---
-title: Styling
+title: Customizing Your Site
 extends: _layouts.documentation
 section: documentation_content
 ---
-# Extending
+# Customizing Your Site
 
 ## Styles
 
