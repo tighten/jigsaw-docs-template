@@ -1,18 +1,13 @@
-body {
-    @apply .bg-grey-lightest;
-    @apply .border-blue-darker;
-    @apply .font-sans;
-    @apply .leading-loose;
-    @apply .text-blue-darkest;
-    @apply .text-base;
-}
-
 a {
     @apply .no-underline;
     @apply .text-blue;
 }
 
 .content {
+    :first-child {
+        @apply .mt-0;
+    }
+
     blockquote {
         @apply .border-blue-light;
         @apply .border-l-4;
@@ -21,34 +16,30 @@ a {
         @apply .my-8;
         @apply .pl-6;
         @apply .text-grey-darker;
-        @apply .text-xl;
+        @apply .text-lg;
     }
 
     code {
-        @apply .bg-grey-lighter;
-        @apply .leading-loose;
-        @apply .px-2;
-        @apply .py-1;
+        @apply .bg-grey-light;
+        @apply .p-1;
     }
 
     h1,
     h2,
-    h3 {
-        @apply .font-light;
-        @apply .my-2;
-        @apply .text-blue-darkest;
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply .my-6;
+        @apply .text-black;
     }
 
     h1 {
-        @apply .font-normal;
+        @apply .font-extrabold;
         @apply .text-3xl;
     }
 
     h2 {
-        @apply .text-2xl;
-    }
-
-    h3 {
         @apply .text-xl;
     }
 
@@ -71,19 +62,19 @@ a {
     }
 
     p {
-        @apply .my-2;
+        @apply .my-4;
+        @apply .text-xl;
     }
 
     pre {
         @apply .bg-grey-lighter;
-        @apply .leading-tight;
         @apply .mb-6;
         @apply .mt-4;
         @apply .overflow-x-auto;
         @apply .p-4;
         @apply .rounded;
         @apply .shadow;
-        @apply .text-sm;
+        @apply .text-base;
     }
 
     ul,
