@@ -57,7 +57,7 @@
 
         <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
             <p class="text-sm">
-                &copy; <a href="{{ $page->copyrightWebsite }}" title="{{ $page->copyrightHolder }} website">{{ $page->copyrightHolder}}</a> {{ date('Y') }}.
+                &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> {{ date('Y') }}.
                 Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
                 and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
             </p>

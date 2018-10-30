@@ -4,8 +4,6 @@ return [
     'siteName' => 'Jigsaw Docs',
     'siteDescription' => 'Give your documentation a boost with Jigsaw. Generate elegant, static docs quickly and easily.',
     'title' => 'Documentation powered by Jigsaw',
-    'copyrightHolder' => 'Tighten',
-    'copyrightWebsite' => 'https://tighten.co',
     'docsearchApiKey' => '',
     'docsearchIndexName' => 'jigsaw',
     'baseUrl' => 'http://jigsaw-docs-skeleton.test/',
