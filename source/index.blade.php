@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-<section class="container max-w-2xl py-10 mx-auto px-6 font-sans text-grey-darkest leading-normal text-base transition-fast md:py-16">
+<section class="container max-w-2xl py-10 mx-auto px-6 text-base transition-fast md:py-16">
     <div class="flex flex-col-reverse mb-10 lg:flex-row lg:mb-20">
         <div class="mt-8">
             <h1 class="text-4xl font-extrabold text-black leading-none">Welcome to {{ $page->siteName }}</h1>

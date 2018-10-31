@@ -662,11 +662,7 @@ a {
   color: #3490dc;
 }
 
-.content :first-child {
-  margin-top: 0;
-}
-
-.content blockquote {
+blockquote {
   border-color: #6cb2eb;
   border-left-width: 4px;
   font-weight: 400;
@@ -678,57 +674,57 @@ a {
   font-size: 1.125rem;
 }
 
-.content code {
+code {
   background-color: #e9edf1;
   padding: .25rem;
 }
 
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #1f2e41;
 }
 
-.content h1 {
+h1 {
   font-weight: 800;
   font-size: 3rem;
 }
 
-.content h2 {
+h2 {
   font-weight: 700;
   font-size: 2.25rem;
 }
 
-.content h3 {
+h3 {
   font-weight: 600;
   font-size: 1.875rem;
 }
 
-.content h4 {
+h4 {
   font-weight: 500;
   font-size: 1.5rem;
 }
 
-.content h5 {
+h5 {
   font-weight: 400;
   font-size: 1.25rem;
 }
 
-.content h6 {
+h6 {
   font-weight: 300;
   font-size: 1.125rem;
 }
 
-.content .hljs {
+code.hljs {
   background-color: transparent;
 }
 
-.content hr {
+hr {
   border-bottom-width: 2px;
   border-color: #e9edf1;
   margin-top: 2rem;
@@ -736,18 +732,18 @@ a {
   border-radius: 9999px;
 }
 
-.content li ul,
-.content li ol {
+li ul,
+li ol {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.content p {
+p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.content pre {
+pre {
   background-color: #f1f5f8;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
@@ -759,8 +755,8 @@ a {
   font-size: 1rem;
 }
 
-.content ul,
-.content ol {
+ul,
+ol {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
