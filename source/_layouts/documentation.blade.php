@@ -5,11 +5,11 @@
 @endsection
 
 @section('body')
-<section class="container max-w-4xl mx-auto px-4">
+<section class="container max-w-4xl mx-auto px-6">
     <div class="flex flex-col lg:flex-row">
         <navigation :links='@json($page->navigation)'></navigation>
 
-        <div class="w-full text-blue-darker pb-16 content transition-fast lg:w-3/4 lg:pl-4" v-pre>
+        <div class="w-full pb-16 transition-fast lg:w-3/4 lg:pl-4" v-pre>
             @yield('documentation_content')
         </div>
     </div>

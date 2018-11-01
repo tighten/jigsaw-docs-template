@@ -549,7 +549,7 @@ ul {
 *::after {
   border-width: 0;
   border-style: solid;
-  border-color: #dae1e7;
+  border-color: #e9edf1;
 }
 
 /**
@@ -657,21 +657,12 @@ table {
   }
 }
 
-body {
-  background-color: #f8fafc;
-  border-color: #334152;
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 2;
-  color: #1f2e41;
-  font-size: 1rem;
-}
-
 a {
   text-decoration: none;
   color: #3490dc;
 }
 
-.content blockquote {
+blockquote {
   border-color: #6cb2eb;
   border-left-width: 4px;
   font-weight: 400;
@@ -680,66 +671,80 @@ a {
   margin-bottom: 2rem;
   padding-left: 1.5rem;
   color: #606f7b;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
-.content code {
-  background-color: #f1f5f8;
-  line-height: 2;
-  padding-left: .5rem;
-  padding-right: .5rem;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
+code {
+  background-color: #e9edf1;
+  padding: .25rem;
 }
 
-.content h1,
-.content h2,
-.content h3 {
-  font-weight: 300;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #1f2e41;
 }
 
-.content h1 {
-  font-weight: 400;
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-weight: 600;
   font-size: 1.875rem;
 }
 
-.content h2 {
+h4 {
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
-.content h3 {
+h5 {
+  font-weight: 400;
   font-size: 1.25rem;
 }
 
-.content .hljs {
+h6 {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+code.hljs {
   background-color: transparent;
 }
 
-.content hr {
+hr {
   border-bottom-width: 2px;
-  border-color: #dae1e7;
+  border-color: #e9edf1;
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-radius: 9999px;
 }
 
-.content li ul,
-.content li ol {
+li ul,
+li ol {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.content p {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.content pre {
+pre {
   background-color: #f1f5f8;
-  line-height: 1.25;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
   overflow-x: auto;
@@ -747,11 +752,11 @@ a {
   border-radius: .25rem;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-  font-size: .875rem;
+  font-size: 1rem;
 }
 
-.content ul,
-.content ol {
+ul,
+ol {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -893,11 +898,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .bg-black {
-  background-color: #22292f;
+  background-color: #1f2e41;
 }
 
 .bg-grey-darkest {
-  background-color: #3d4852;
+  background-color: #3e4852;
 }
 
 .bg-grey-darker {
@@ -913,7 +918,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .bg-grey-light {
-  background-color: #dae1e7;
+  background-color: #e9edf1;
 }
 
 .bg-grey-lighter {
@@ -1185,11 +1190,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .hover\:bg-black:hover {
-  background-color: #22292f;
+  background-color: #1f2e41;
 }
 
 .hover\:bg-grey-darkest:hover {
-  background-color: #3d4852;
+  background-color: #3e4852;
 }
 
 .hover\:bg-grey-darker:hover {
@@ -1205,7 +1210,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .hover\:bg-grey-light:hover {
-  background-color: #dae1e7;
+  background-color: #e9edf1;
 }
 
 .hover\:bg-grey-lighter:hover {
@@ -1477,11 +1482,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .focus\:bg-black:focus {
-  background-color: #22292f;
+  background-color: #1f2e41;
 }
 
 .focus\:bg-grey-darkest:focus {
-  background-color: #3d4852;
+  background-color: #3e4852;
 }
 
 .focus\:bg-grey-darker:focus {
@@ -1497,7 +1502,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .focus\:bg-grey-light:focus {
-  background-color: #dae1e7;
+  background-color: #e9edf1;
 }
 
 .focus\:bg-grey-lighter:focus {
@@ -1841,11 +1846,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .border-black {
-  border-color: #22292f;
+  border-color: #1f2e41;
 }
 
 .border-grey-darkest {
-  border-color: #3d4852;
+  border-color: #3e4852;
 }
 
 .border-grey-darker {
@@ -1861,7 +1866,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .border-grey-light {
-  border-color: #dae1e7;
+  border-color: #e9edf1;
 }
 
 .border-grey-lighter {
@@ -2133,11 +2138,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .hover\:border-black:hover {
-  border-color: #22292f;
+  border-color: #1f2e41;
 }
 
 .hover\:border-grey-darkest:hover {
-  border-color: #3d4852;
+  border-color: #3e4852;
 }
 
 .hover\:border-grey-darker:hover {
@@ -2153,7 +2158,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .hover\:border-grey-light:hover {
-  border-color: #dae1e7;
+  border-color: #e9edf1;
 }
 
 .hover\:border-grey-lighter:hover {
@@ -2425,11 +2430,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .focus\:border-black:focus {
-  border-color: #22292f;
+  border-color: #1f2e41;
 }
 
 .focus\:border-grey-darkest:focus {
-  border-color: #3d4852;
+  border-color: #3e4852;
 }
 
 .focus\:border-grey-darker:focus {
@@ -2445,7 +2450,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .focus\:border-grey-light:focus {
-  border-color: #dae1e7;
+  border-color: #e9edf1;
 }
 
 .focus\:border-grey-lighter:focus {
@@ -5264,11 +5269,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .text-black {
-  color: #22292f;
+  color: #1f2e41;
 }
 
 .text-grey-darkest {
-  color: #3d4852;
+  color: #3e4852;
 }
 
 .text-grey-darker {
@@ -5284,7 +5289,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .text-grey-light {
-  color: #dae1e7;
+  color: #e9edf1;
 }
 
 .text-grey-lighter {
@@ -5556,11 +5561,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .hover\:text-black:hover {
-  color: #22292f;
+  color: #1f2e41;
 }
 
 .hover\:text-grey-darkest:hover {
-  color: #3d4852;
+  color: #3e4852;
 }
 
 .hover\:text-grey-darker:hover {
@@ -5576,7 +5581,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .hover\:text-grey-light:hover {
-  color: #dae1e7;
+  color: #e9edf1;
 }
 
 .hover\:text-grey-lighter:hover {
@@ -5848,11 +5853,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .focus\:text-black:focus {
-  color: #22292f;
+  color: #1f2e41;
 }
 
 .focus\:text-grey-darkest:focus {
-  color: #3d4852;
+  color: #3e4852;
 }
 
 .focus\:text-grey-darker:focus {
@@ -5868,7 +5873,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .focus\:text-grey-light:focus {
-  color: #dae1e7;
+  color: #e9edf1;
 }
 
 .focus\:text-grey-lighter:focus {
@@ -6704,11 +6709,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:bg-black {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .sm\:bg-grey-darkest {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .sm\:bg-grey-darker {
@@ -6724,7 +6729,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:bg-grey-light {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .sm\:bg-grey-lighter {
@@ -6996,11 +7001,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:hover\:bg-black:hover {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .sm\:hover\:bg-grey-darkest:hover {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .sm\:hover\:bg-grey-darker:hover {
@@ -7016,7 +7021,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:hover\:bg-grey-light:hover {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .sm\:hover\:bg-grey-lighter:hover {
@@ -7288,11 +7293,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:focus\:bg-black:focus {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .sm\:focus\:bg-grey-darkest:focus {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .sm\:focus\:bg-grey-darker:focus {
@@ -7308,7 +7313,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:focus\:bg-grey-light:focus {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .sm\:focus\:bg-grey-lighter:focus {
@@ -7644,11 +7649,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:border-black {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .sm\:border-grey-darkest {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .sm\:border-grey-darker {
@@ -7664,7 +7669,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:border-grey-light {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .sm\:border-grey-lighter {
@@ -7936,11 +7941,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:hover\:border-black:hover {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .sm\:hover\:border-grey-darkest:hover {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .sm\:hover\:border-grey-darker:hover {
@@ -7956,7 +7961,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:hover\:border-grey-light:hover {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .sm\:hover\:border-grey-lighter:hover {
@@ -8228,11 +8233,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:focus\:border-black:focus {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .sm\:focus\:border-grey-darkest:focus {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .sm\:focus\:border-grey-darker:focus {
@@ -8248,7 +8253,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:focus\:border-grey-light:focus {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .sm\:focus\:border-grey-lighter:focus {
@@ -11051,11 +11056,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:text-black {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .sm\:text-grey-darkest {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .sm\:text-grey-darker {
@@ -11071,7 +11076,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:text-grey-light {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .sm\:text-grey-lighter {
@@ -11343,11 +11348,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:hover\:text-black:hover {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .sm\:hover\:text-grey-darkest:hover {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .sm\:hover\:text-grey-darker:hover {
@@ -11363,7 +11368,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:hover\:text-grey-light:hover {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .sm\:hover\:text-grey-lighter:hover {
@@ -11635,11 +11640,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:focus\:text-black:focus {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .sm\:focus\:text-grey-darkest:focus {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .sm\:focus\:text-grey-darker:focus {
@@ -11655,7 +11660,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .sm\:focus\:text-grey-light:focus {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .sm\:focus\:text-grey-lighter:focus {
@@ -12482,11 +12487,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:bg-black {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .md\:bg-grey-darkest {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .md\:bg-grey-darker {
@@ -12502,7 +12507,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:bg-grey-light {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .md\:bg-grey-lighter {
@@ -12774,11 +12779,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:hover\:bg-black:hover {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .md\:hover\:bg-grey-darkest:hover {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .md\:hover\:bg-grey-darker:hover {
@@ -12794,7 +12799,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:hover\:bg-grey-light:hover {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .md\:hover\:bg-grey-lighter:hover {
@@ -13066,11 +13071,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:focus\:bg-black:focus {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .md\:focus\:bg-grey-darkest:focus {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .md\:focus\:bg-grey-darker:focus {
@@ -13086,7 +13091,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:focus\:bg-grey-light:focus {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .md\:focus\:bg-grey-lighter:focus {
@@ -13422,11 +13427,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:border-black {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .md\:border-grey-darkest {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .md\:border-grey-darker {
@@ -13442,7 +13447,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:border-grey-light {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .md\:border-grey-lighter {
@@ -13714,11 +13719,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:hover\:border-black:hover {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .md\:hover\:border-grey-darkest:hover {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .md\:hover\:border-grey-darker:hover {
@@ -13734,7 +13739,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:hover\:border-grey-light:hover {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .md\:hover\:border-grey-lighter:hover {
@@ -14006,11 +14011,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:focus\:border-black:focus {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .md\:focus\:border-grey-darkest:focus {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .md\:focus\:border-grey-darker:focus {
@@ -14026,7 +14031,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:focus\:border-grey-light:focus {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .md\:focus\:border-grey-lighter:focus {
@@ -16829,11 +16834,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:text-black {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .md\:text-grey-darkest {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .md\:text-grey-darker {
@@ -16849,7 +16854,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:text-grey-light {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .md\:text-grey-lighter {
@@ -17121,11 +17126,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:hover\:text-black:hover {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .md\:hover\:text-grey-darkest:hover {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .md\:hover\:text-grey-darker:hover {
@@ -17141,7 +17146,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:hover\:text-grey-light:hover {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .md\:hover\:text-grey-lighter:hover {
@@ -17413,11 +17418,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:focus\:text-black:focus {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .md\:focus\:text-grey-darkest:focus {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .md\:focus\:text-grey-darker:focus {
@@ -17433,7 +17438,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .md\:focus\:text-grey-light:focus {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .md\:focus\:text-grey-lighter:focus {
@@ -18260,11 +18265,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:bg-black {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .lg\:bg-grey-darkest {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .lg\:bg-grey-darker {
@@ -18280,7 +18285,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:bg-grey-light {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .lg\:bg-grey-lighter {
@@ -18552,11 +18557,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:hover\:bg-black:hover {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .lg\:hover\:bg-grey-darkest:hover {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .lg\:hover\:bg-grey-darker:hover {
@@ -18572,7 +18577,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:hover\:bg-grey-light:hover {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .lg\:hover\:bg-grey-lighter:hover {
@@ -18844,11 +18849,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:focus\:bg-black:focus {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .lg\:focus\:bg-grey-darkest:focus {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .lg\:focus\:bg-grey-darker:focus {
@@ -18864,7 +18869,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:focus\:bg-grey-light:focus {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .lg\:focus\:bg-grey-lighter:focus {
@@ -19200,11 +19205,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:border-black {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .lg\:border-grey-darkest {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .lg\:border-grey-darker {
@@ -19220,7 +19225,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:border-grey-light {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .lg\:border-grey-lighter {
@@ -19492,11 +19497,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:hover\:border-black:hover {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .lg\:hover\:border-grey-darkest:hover {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .lg\:hover\:border-grey-darker:hover {
@@ -19512,7 +19517,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:hover\:border-grey-light:hover {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .lg\:hover\:border-grey-lighter:hover {
@@ -19784,11 +19789,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:focus\:border-black:focus {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .lg\:focus\:border-grey-darkest:focus {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .lg\:focus\:border-grey-darker:focus {
@@ -19804,7 +19809,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:focus\:border-grey-light:focus {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .lg\:focus\:border-grey-lighter:focus {
@@ -22607,11 +22612,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:text-black {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .lg\:text-grey-darkest {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .lg\:text-grey-darker {
@@ -22627,7 +22632,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:text-grey-light {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .lg\:text-grey-lighter {
@@ -22899,11 +22904,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:hover\:text-black:hover {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .lg\:hover\:text-grey-darkest:hover {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .lg\:hover\:text-grey-darker:hover {
@@ -22919,7 +22924,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:hover\:text-grey-light:hover {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .lg\:hover\:text-grey-lighter:hover {
@@ -23191,11 +23196,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:focus\:text-black:focus {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .lg\:focus\:text-grey-darkest:focus {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .lg\:focus\:text-grey-darker:focus {
@@ -23211,7 +23216,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .lg\:focus\:text-grey-light:focus {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .lg\:focus\:text-grey-lighter:focus {
@@ -24038,11 +24043,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:bg-black {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .xl\:bg-grey-darkest {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .xl\:bg-grey-darker {
@@ -24058,7 +24063,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:bg-grey-light {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .xl\:bg-grey-lighter {
@@ -24330,11 +24335,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:hover\:bg-black:hover {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .xl\:hover\:bg-grey-darkest:hover {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .xl\:hover\:bg-grey-darker:hover {
@@ -24350,7 +24355,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:hover\:bg-grey-light:hover {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .xl\:hover\:bg-grey-lighter:hover {
@@ -24622,11 +24627,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:focus\:bg-black:focus {
-    background-color: #22292f;
+    background-color: #1f2e41;
   }
 
   .xl\:focus\:bg-grey-darkest:focus {
-    background-color: #3d4852;
+    background-color: #3e4852;
   }
 
   .xl\:focus\:bg-grey-darker:focus {
@@ -24642,7 +24647,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:focus\:bg-grey-light:focus {
-    background-color: #dae1e7;
+    background-color: #e9edf1;
   }
 
   .xl\:focus\:bg-grey-lighter:focus {
@@ -24978,11 +24983,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:border-black {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .xl\:border-grey-darkest {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .xl\:border-grey-darker {
@@ -24998,7 +25003,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:border-grey-light {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .xl\:border-grey-lighter {
@@ -25270,11 +25275,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:hover\:border-black:hover {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .xl\:hover\:border-grey-darkest:hover {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .xl\:hover\:border-grey-darker:hover {
@@ -25290,7 +25295,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:hover\:border-grey-light:hover {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .xl\:hover\:border-grey-lighter:hover {
@@ -25562,11 +25567,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:focus\:border-black:focus {
-    border-color: #22292f;
+    border-color: #1f2e41;
   }
 
   .xl\:focus\:border-grey-darkest:focus {
-    border-color: #3d4852;
+    border-color: #3e4852;
   }
 
   .xl\:focus\:border-grey-darker:focus {
@@ -25582,7 +25587,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:focus\:border-grey-light:focus {
-    border-color: #dae1e7;
+    border-color: #e9edf1;
   }
 
   .xl\:focus\:border-grey-lighter:focus {
@@ -28385,11 +28390,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:text-black {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .xl\:text-grey-darkest {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .xl\:text-grey-darker {
@@ -28405,7 +28410,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:text-grey-light {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .xl\:text-grey-lighter {
@@ -28677,11 +28682,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:hover\:text-black:hover {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .xl\:hover\:text-grey-darkest:hover {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .xl\:hover\:text-grey-darker:hover {
@@ -28697,7 +28702,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:hover\:text-grey-light:hover {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .xl\:hover\:text-grey-lighter:hover {
@@ -28969,11 +28974,11 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:focus\:text-black:focus {
-    color: #22292f;
+    color: #1f2e41;
   }
 
   .xl\:focus\:text-grey-darkest:focus {
-    color: #3d4852;
+    color: #3e4852;
   }
 
   .xl\:focus\:text-grey-darker:focus {
@@ -28989,7 +28994,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   }
 
   .xl\:focus\:text-grey-light:focus {
-    color: #dae1e7;
+    color: #e9edf1;
   }
 
   .xl\:focus\:text-grey-lighter:focus {
