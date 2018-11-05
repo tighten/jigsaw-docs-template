@@ -20,11 +20,9 @@ import Navigation from './components/navigation.vue';
 
 new Vue({
     components: { Navigation, NavigationToggle },
-
     mounted() {
-        document.querySelectorAll('pre code').forEach((block) => {
+        document.querySelectorAll('pre code').forEach(block => {
             hljs.highlightBlock(block);
         });
-    }
+    },
 }).$mount('#vue-app');
-

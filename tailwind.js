@@ -52,7 +52,7 @@ let colors = {
     'grey-dark': '#8795a1',
     'grey': '#b8c2cc',
     'grey-light': '#e9edf1',
-    'grey-lighter': '#f1f5f8',
+    'grey-lighter': '#eef3f7',
     'grey-lightest': '#f8fafc',
     'white': '#ffffff',
 
@@ -96,8 +96,8 @@ let colors = {
     'teal-lighter': '#a0f0ed',
     'teal-lightest': '#e8fffe',
 
-    'blue-darkest': '#1f2e41',
-    'blue-darker': '#334152',
+    'blue-darkest': '#1c3e5a',
+    'blue-darker': '#24548f',
     'blue-dark': '#2779bd',
     'blue': '#3490dc',
     'blue-light': '#6cb2eb',
@@ -935,10 +935,10 @@ module.exports = {
     function({ addUtilities }) {
         const newUtilities = {
           '.transition-fast': {
-            transition: 'all .3s ease-out',
+            transition: 'all .2s ease-out',
           },
           '.transition': {
-            transition: 'all 1s ease-out',
+            transition: 'all .5s ease-out',
           },
         }
 

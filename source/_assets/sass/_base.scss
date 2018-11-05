@@ -21,7 +21,21 @@ blockquote {
 code {
     font-size: 16px;
     @apply .bg-grey-light;
-    @apply .p-1;
+    @apply .px-2;
+    @apply .py-px;
+    @apply .rounded;
+}
+
+code.hljs {
+    @apply .bg-transparent;
+    @apply .p-0;
+
+    .hljs-comment,
+    .hljs-keyword,
+    .hljs-meta {
+        @apply .font-normal;
+        @apply .roman;
+    }
 }
 
 h1,
@@ -70,15 +84,10 @@ h6 {
     @apply .text-lg;
 }
 
-
-code.hljs {
-    @apply .bg-transparent;
-}
-
 hr {
-    @apply .border-b-2;
-    @apply .border-grey-light;
-    @apply .my-8;
+    @apply .border-b;
+    @apply .border-blue-lighter;
+    @apply .my-12;
     @apply .rounded-full;
 }
 
@@ -89,22 +98,28 @@ li {
     }
 }
 
-p {
+ol,
+ul {
     @apply .my-4;
+}
+
+p {
+    @apply .my-6;
 }
 
 pre {
     @apply .bg-grey-lighter;
-    @apply .mb-6;
-    @apply .mt-4;
+    @apply .leading-loose;
+    @apply .my-6;
     @apply .overflow-x-auto;
     @apply .p-4;
     @apply .rounded;
     @apply .shadow;
     @apply .text-base;
-}
 
-ul,
-ol {
-    @apply .my-4;
+    code {
+        @apply .bg-transparent;
+        @apply .block;
+        @apply .p-0;
+    }
 }
