@@ -24,7 +24,7 @@
 
     <div class="flex flex-col -mx-2 items-center justify-center md:items-start md:flex-row md:-mx-4 md:justify-between">
         <div class="flex flex-col w-full mb-8 mx-3 px-2 md:w-1/3">
-            <img src="/assets/img/icon-window.svg" class="h-12 w-12 mb-2" alt="window icon">
+            <img src="/assets/img/icon-window.svg" class="h-12 w-12" alt="window icon">
 
             <h3 class="text-2xl text-blue-darkest mb-0">Templating with <br>Laravel's Blade engine</h3>
 
