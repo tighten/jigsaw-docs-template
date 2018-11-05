@@ -1,7 +1,7 @@
 <template>
     <li class="list-reset text-sm">
         <a :href="item.url"
-            class="inline-block text-grey-darkest mb-3 leading-normal"
+            class="inline-block text-grey-darkest mb-3 leading-normal w-full"
             :class="{ 'text-blue' : isActive(item.url) }">
             <slot></slot>
         </a>
@@ -9,7 +9,7 @@
         <ul v-if="item.children" class="list-reset">
             <li v-for="(child, label) in item.children" :key="label" class="ml-4">
                 <a :href="child.url"
-                    class="inline-block text-grey-darker mb-3 leading-normal"
+                    class="inline-block text-grey-darker mb-3 leading-normal w-full"
                     :class="{ 'text-blue': isActive(child.url) }">
                     {{ label }}
                 </a>

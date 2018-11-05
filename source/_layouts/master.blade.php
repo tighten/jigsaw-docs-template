@@ -28,7 +28,7 @@
 
     <body class="bg-grey-lightest text-grey-darkest leading-normal font-sans">
         <div id="vue-app">
-            <header class="bg-white border-b mb-8 py-4 flex shadow-lg" role="banner">
+            <header class="bg-white border-b mb-8 py-4 flex shadow" role="banner">
                 <div class="container max-w-4xl flex mx-auto px-8 py-3">
                     <div class="flex items-center">
                         <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center font-bold">
