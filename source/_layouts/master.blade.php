@@ -22,7 +22,7 @@
             <!-- Insert analytics code here -->
         @endif
 
-        <link rel="stylesheet" href="{{ $page->url(mix('css/main.css')) }}">
+        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
     <body class="bg-grey-lightest text-grey-darkest leading-normal font-sans">
@@ -52,7 +52,7 @@
             </main>
         </div>
 
-        <script src="{{ $page->url(mix('js/main.js')) }}"></script>
+        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
         @yield('scripts')
 
         <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
