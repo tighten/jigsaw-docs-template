@@ -4,15 +4,16 @@
 <section class="container max-w-2xl py-10 mx-auto px-6 text-base transition-fast md:py-16">
     <div class="flex flex-col-reverse mb-10 lg:flex-row lg:mb-20">
         <div class="mt-8">
-            <h1 class="text-4xl font-extrabold text-black leading-none">Welcome to {{ $page->siteName }}</h1>
-            <h2 class="mb-4 text-4xl font-normal text-blue-darkest">Elegant docs powered by Jigsaw</h2>
+            <h1>{{ $page->siteName }}</h1>
 
-            <p class="text-lg sm:w-3/4">{{ $page->siteDescription }}</p>
+            <h2 class="font-light mt-4">{{ $page->siteDescription }}</h2>
 
-            <div class="flex my-8">
-                <a href="/docs/getting-started" title="{{ $page->siteName }} getting started" class="bg-blue py-2 px-6 text-white rounded mr-4">Get started</a>
+            <p class="text-lg sm:w-3/4">Give your documentation a boost with Jigsaw. <br>Generate elegant, static docs quickly and easily.</p>
 
-                <a href="https://jigsaw.tighten.co" title="Jigsaw by Tighten" class="bg-grey-light py-2 px-6 text-blue rounded">About Jigsaw</a>
+            <div class="flex my-10">
+                <a href="/docs/getting-started" title="{{ $page->siteName }} getting started" class="bg-blue hover:bg-blue-dark py-2 px-6 text-white rounded mr-4">Get started</a>
+
+                <a href="https://jigsaw.tighten.co" title="Jigsaw by Tighten" class="bg-grey-light hover:bg-grey py-2 px-6 text-grey-dark hover:text-grey-darker rounded">About Jigsaw</a>
             </div>
         </div>
 
