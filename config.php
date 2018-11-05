@@ -9,9 +9,4 @@ return [
     'baseUrl' => 'http://jigsaw-docs-skeleton.test/',
     'production' => false,
     'navigation' => require_once('navigation.php'),
-
-    // helpers
-    'url' => function ($page, $path) {
-        return rtrim($page->baseUrl, '/') . '/' . ltrim($path, '/');
-    },
 ];
