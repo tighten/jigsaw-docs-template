@@ -1,12 +1,12 @@
 @tailwind preflight;
 @tailwind components;
 
+// Code syntax highlighting,
+// powered by https://highlightjs.org
+@import '~highlight.js/styles/github.css';
+
 @import 'base';
 @import 'navigation';
 @import 'documentation';
-
-// Code syntax highlighting,
-// powered by https://highlightjs.org
-@import '~highlightjs/styles/default';
 
 @tailwind utilities;
