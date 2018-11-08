@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Elegant docs powered by Jigsaw">
+
+        <meta property="og:title" content="Docs Template" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://jigsaw-docs-staging.tighten.co/docs/algolia-docsearch"/>
+        <meta property="og:description" content="Elegant docs powered by Jigsaw" />
+
+        <title>Docs Template | Algolia DocSearch</title>
+
+        <link rel="home" href="http://jigsaw-docs-staging.tighten.co">
+        <link rel="icon" href="/favicon.ico">
+
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=2cf24f0ba8414b43200d">
+    </head>
+
+    <body class="bg-grey-lightest text-grey-darkest leading-normal font-sans">
+        <div id="vue-app">
+            <header class="bg-white border-b mb-8 py-4 flex shadow" role="banner">
+                <div class="container max-w-4xl flex mx-auto px-8 py-3">
+                    <div class="flex items-center">
+                        <a href="/" title="Docs Template home" class="inline-flex items-center font-bold">
+                            <img class="h-8 mr-3 md:h-10" src="/assets/img/logo.svg" alt="Docs Template logo" />
+
+                            <h3 class="hidden text-2xl my-0 text-blue-darker md:block">Docs Template</h3>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-1 align-right justify-end items-center">
+                        <input name="docsearch" type="text" id="docsearch" placeholder="Search"
+                            class="w-2/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker docsearch md:w-1/3 border border-grey focus:border-blue-light transition-fast">
+
+                        <navigation-toggle></navigation-toggle>
+                    </div>
+                </div>
+            </header>
+
+            <main role="main" class="min-h-screen">
+                <section class="container max-w-4xl mx-auto px-8 py-3">
+    <div class="flex flex-col lg:flex-row">
+        <div class="w-full mt-1 lg:pr-8 lg:w-1/4">
+            <navigation :links='{"Getting Started":{"url":"\/docs\/getting-started","children":{"Customizing Your Site":{"url":"\/docs\/customizing-your-site"},"Navigation":{"url":"\/docs\/navigation"},"Algolia DocSearch":{"url":"\/docs\/algolia-docsearch"},"Custom 404 Page":{"url":"\/docs\/404"}}},"Jigsaw Docs":{"url":"https:\/\/jigsaw.tighten.co\/docs\/installation"}}'></navigation>
+        </div>
+
+        <div class="w-full pb-16 lg:w-3/4 lg:pl-4" v-pre>
+            <h1>Algolia DocSearch</h1>
+<p>This template includes support for <a href="https://community.algolia.com/docsearch/">DocSearch</a>. DocSearch is a fantastic open source index-based search tool, built and managed by <a href="https://www.algolia.com">Algolia</a>. To configure this tool, you need to sign up with Algolia and receive an API key. Algolia will then crawl your documentation regularly, and index all your content.</p>
+<p><a href="https://community.algolia.com/docsearch/#join-docsearch-program">Get your DocSearch credentials here</a>.</p>
+<p>Once the <code>docsearchApiKey</code> and <code>docsearchIndexName</code> values are set in <code>config.php</code>, the search field at the top of the page is ready to use.</p>
+<pre><code class="language-php">// config.php
+return [
+    'docsearchApiKey' =&gt; '',
+    'docsearchIndexName' =&gt; '',
+];</code></pre>
+<p><strong>&lt;&lt; TODO: Add screenshot of search dropdown &gt;&gt;</strong></p>
+<hr />
+<h2>Adding Custom Styles</h2>
+<p>If you'd like to customize the styling of the search results, Algolia exposes custom CSS classes that you can modify:</p>
+<pre><code class="language-css">/* Main dropdown wrapper */
+.algolia-autocomplete .ds-dropdown-menu {
+  width: 500px;
+}
+
+/* Main category (eg. Getting Started) */
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+  color: darkgray;
+  border: 1px solid gray;
+}
+
+/* Category (eg. Downloads) */
+.algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+  color: gray;
+}
+
+/* Title (eg. Bootstrap CDN) */
+.algolia-autocomplete .algolia-docsearch-suggestion--title {
+  font-weight: bold;
+  color: black;
+}
+
+/* Description description (eg. Bootstrap currently works...) */
+.algolia-autocomplete .algolia-docsearch-suggestion--text {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+/* Highlighted text */
+.algolia-autocomplete .algolia-docsearch-suggestion--highlight {
+  color: blue;
+}</code></pre>
+<hr />
+<p>For more details, visit the <a href="https://community.algolia.com/docsearch/what-is-docsearch.html">official Algolia DocSearch documentation</a>.</p>        </div>
+    </div>
+</section>
+            </main>
+        </div>
+
+        <script src="/assets/build/js/main.js?id=4d59fa541b76eade1f02"></script>
+        
+        <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
+            <p class="text-xs">
+                &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> 2018.
+                Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
+                and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+            </p>
+        </footer>
+    </body>
+</html>

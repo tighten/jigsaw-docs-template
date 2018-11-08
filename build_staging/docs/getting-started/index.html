@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Elegant docs powered by Jigsaw">
+
+        <meta property="og:title" content="Docs Template" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://jigsaw-docs-staging.tighten.co/docs/getting-started"/>
+        <meta property="og:description" content="Elegant docs powered by Jigsaw" />
+
+        <title>Docs Template | Getting Started</title>
+
+        <link rel="home" href="http://jigsaw-docs-staging.tighten.co">
+        <link rel="icon" href="/favicon.ico">
+
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=2cf24f0ba8414b43200d">
+    </head>
+
+    <body class="bg-grey-lightest text-grey-darkest leading-normal font-sans">
+        <div id="vue-app">
+            <header class="bg-white border-b mb-8 py-4 flex shadow" role="banner">
+                <div class="container max-w-4xl flex mx-auto px-8 py-3">
+                    <div class="flex items-center">
+                        <a href="/" title="Docs Template home" class="inline-flex items-center font-bold">
+                            <img class="h-8 mr-3 md:h-10" src="/assets/img/logo.svg" alt="Docs Template logo" />
+
+                            <h3 class="hidden text-2xl my-0 text-blue-darker md:block">Docs Template</h3>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-1 align-right justify-end items-center">
+                        <input name="docsearch" type="text" id="docsearch" placeholder="Search"
+                            class="w-2/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker docsearch md:w-1/3 border border-grey focus:border-blue-light transition-fast">
+
+                        <navigation-toggle></navigation-toggle>
+                    </div>
+                </div>
+            </header>
+
+            <main role="main" class="min-h-screen">
+                <section class="container max-w-4xl mx-auto px-8 py-3">
+    <div class="flex flex-col lg:flex-row">
+        <div class="w-full mt-1 lg:pr-8 lg:w-1/4">
+            <navigation :links='{"Getting Started":{"url":"\/docs\/getting-started","children":{"Customizing Your Site":{"url":"\/docs\/customizing-your-site"},"Navigation":{"url":"\/docs\/navigation"},"Algolia DocSearch":{"url":"\/docs\/algolia-docsearch"},"Custom 404 Page":{"url":"\/docs\/404"}}},"Jigsaw Docs":{"url":"https:\/\/jigsaw.tighten.co\/docs\/installation"}}'></navigation>
+        </div>
+
+        <div class="w-full pb-16 lg:w-3/4 lg:pl-4" v-pre>
+            <h1>Getting Started</h1>
+<p>This template is a front-end theme for your Jigsaw projects, giving you a starting point for creating a beautiful documentation site. Getting started is easy and only requires minimal configuration.</p>
+<h2>Configuration</h2>
+<p>As with all Jigsaw sites, configuration options for this theme are found in <code>config.php</code>. This file is where you can update variables such as <code>siteName</code> and <code>siteDescription</code> with your own information.</p>
+<pre><code class="language-php">// config.php
+return [
+    'baseUrl' =&gt; 'https://my-awesome-jigsaw-site.com/',
+    'production' =&gt; false,
+    'siteName' =&gt; 'My Site',
+    'siteDescription' =&gt; 'Give your documentation a boost with Jigsaw.',
+    'docsearchApiKey' =&gt; '',
+    'docsearchIndexName' =&gt; '',
+    'navigation' =&gt; require_once('navigation.php'),
+];</code></pre>
+<blockquote>
+<p>Tip: If you need to extend the configuration, see the official Jigsaw documentation for <a href="https://jigsaw.tighten.co/docs/site-variables/">site variables</a> and <a href="https://jigsaw.tighten.co/docs/collections/">collections</a>.</p>
+</blockquote>
+<hr />
+<h3>Adding Content</h3>
+<p>Jigsaw supports a variety of <a href="http://jigsaw.tighten.co/docs/content-other-file-types/">file types</a> for creating content. By default, this template stores your documentation content in the <code>source/docs/</code>. If you want to change this location, be sure to update the url references in <code>navigation.php</code>. <a href="/docs/navigation">Read more about navigation</a>.</p>
+<p>The top of every content page contains a YAML header that specifies how it should be rendered. The <code>title</code> variable is used to dynamically generate html <code>&lt;title&gt;&lt;/title&gt;</code> tag for each page. The <code>extends</code> and <code>section</code> variables reference the parent Blade layout and the target content area that parent layout:</p>
+<pre><code class="language-yaml">---
+title: Navigation
+extends: _layouts.documentation
+section: content
+---</code></pre>
+<p><a href="/docs/extending">Read more about Jigsaw layouts.</a></p>
+<hr />
+<h3>Adding Assets</h3>
+<p>Any assets that need to be compiled (such as JavaScript, LESS, or Sass files) can be added to the <code>source/_assets/</code> directory, and Laravel Mix will process them when running <code>npm run local</code> or <code>npm run production</code>. The processed assets will be stored in <code>/source/assets/build/</code> (note there is no underscore on this second <code>assets</code> directory).</p>
+<p>Then, when Jigsaw builds your site, the entire <code>/source/assets/</code> directory containing your build files (and any other directories containing static assets, such as images or fonts, that you choose to store there) will be copied to <code>/build_local</code> or <code>/build_production</code>.</p>
+<p>Files that don't require processing (such as images and fonts) can be added directly to <code>/source/assets/</code>.</p>
+<p><a href="http://jigsaw.tighten.co/docs/compiling-assets/">Read more about compiling assets in Jigsaw using Laravel Mix.</a></p>
+<hr />
+<h2>Building Your Site</h2>
+<pre><code class="language-bash"># build static files with Jigsaw
+$ ./vendor/bin/jigsaw build
+
+# compile assets with Laravel Mix
+# options: dev, staging, production
+npm run dev</code></pre>        </div>
+    </div>
+</section>
+            </main>
+        </div>
+
+        <script src="/assets/build/js/main.js?id=4d59fa541b76eade1f02"></script>
+        
+        <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
+            <p class="text-xs">
+                &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> 2018.
+                Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
+                and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+            </p>
+        </footer>
+    </body>
+</html>
