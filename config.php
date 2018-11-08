@@ -6,6 +6,6 @@ return [
     'siteName' => 'Docs Template',
     'siteDescription' => 'Elegant docs powered by Jigsaw',
     'docsearchApiKey' => '',
-    'docsearchIndexName' => 'jigsaw',
+    'docsearchIndexName' => '',
     'navigation' => require_once('navigation.php'),
 ];
