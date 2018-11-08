@@ -3,10 +3,6 @@ a {
     @apply .text-blue;
 }
 
-body {
-    font-size: 17px;
-}
-
 blockquote {
     @apply .border-blue-light;
     @apply .border-l-4;
@@ -19,11 +15,11 @@ blockquote {
 }
 
 code {
-    font-size: 16px;
     @apply .bg-grey-light;
     @apply .px-2;
     @apply .py-px;
     @apply .rounded;
+    @apply .text-sm;
 }
 
 code.hljs {
