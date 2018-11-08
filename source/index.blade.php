@@ -11,7 +11,7 @@
             <p class="text-lg">Give your documentation a boost with Jigsaw. <br class="hidden sm:block">Generate elegant, static docs quickly and easily.</p>
 
             <div class="flex my-10">
-                <a href="/docs/getting-started" title="{{ $page->siteName }} getting started" class="bg-blue hover:bg-blue-dark py-2 px-6 text-white rounded mr-4">Get started</a>
+                <a href="/docs/getting-started" title="{{ $page->siteName }} getting started" class="bg-blue hover:bg-blue-dark py-2 px-6 text-white rounded mr-4">Get Started</a>
 
                 <a href="https://jigsaw.tighten.co" title="Jigsaw by Tighten" class="bg-grey-light hover:bg-grey py-2 px-6 text-grey-dark hover:text-grey-darker rounded">About Jigsaw</a>
             </div>
@@ -28,7 +28,7 @@
 
             <h3 class="text-2xl text-blue-darkest mb-0">Templating with <br>Laravel's Blade engine</h3>
 
-            <p>Blade is a powerful, simple, and beautiful templating language, but until now it wasn't an option if you were building a site that didn't need a Laravel backend.</p>
+            <p>Blade is a powerful, simple, and beautiful templating language, but until now it wasn't an option if you were building a site that didn't require a Laravel backend.</p>
         </div>
 
         <div class="flex flex-col w-full mb-8 mx-3 px-2 md:w-1/3">
@@ -36,7 +36,7 @@
 
             <h3 class="text-2xl text-blue-darkest mb-0">Use Markdown for <br>content-driven pages</h3>
 
-            <p>Markdown is a fantastic format for writing things like articles, blog posts, or documentation pages. Jigsaw makes it painless to work with Markdown content.</p>
+            <p>Markdown is a fantastic format for writing articles, blog posts, or documentation pages quickly. Jigsaw makes it painless to work with Markdown content.</p>
         </div>
 
         <div class="flex flex-col w-full mx-3 px-2 md:w-1/3">
@@ -44,7 +44,7 @@
 
             <h3 class="text-2xl text-blue-darkest mb-0">Compile your assets <br>using Laravel Mix </h3>
 
-            <p>Jigsaw sites are configured with support for Laravel Mix out of the box. If you've ever used Mix in a Laravel project, you already know how to use Mix with Jigsaw.</p>
+            <p>Jigsaw sites are configured with support for Laravel Mix out of the box. If you've ever used Mix to compile assets in a Laravel project, you already know how to use it with Jigsaw.</p>
         </div>
     </div>
 </section>

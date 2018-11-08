@@ -1,16 +1,16 @@
 ---
 title: Algolia DocSearch
 extends: _layouts.documentation
-section: documentation_content
+section: content
 ---
 
 # Algolia DocSearch
 
-The Docs theme comes with [DocSearch](https://community.algolia.com/docsearch/) pre-installed. DocSearch is a fantastic open source index-based search tool, built and managed by [Algolia](https://www.algolia.com). To configure this tool, all you need is an API key and an index name. Algolia will then crawl your public URL and index all content.
+This template includes support for [DocSearch](https://community.algolia.com/docsearch/). DocSearch is a fantastic open source index-based search tool, built and managed by [Algolia](https://www.algolia.com). To configure this tool, you need to sign up with Algolia and receive an API key. Algolia will then crawl your documentation regularly, and index all your content.
 
 [Get your DocSearch credentials here](https://community.algolia.com/docsearch/#join-docsearch-program).
 
-Once the `docsearchApiKey` and `docsearchIndexName` values are set in `config.php`, the search form is ready to use.
+Once the `docsearchApiKey` and `docsearchIndexName` values are set in `config.php`, the search field at the top of the page is ready to use.
 
 ```php
 // config.php
@@ -20,28 +20,13 @@ return [
 ];
 ```
 
-```html
-<!-- source/layouts/master.blade.php -->
-<div class="flex flex-1 align-right justify-end items-center">
-    <input name="docsearch" type="text" id="docsearch" placeholder="Search"
-        class="w-2/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker transition-fast docsearch md:w-1/3">
-
-    @yield('navigation')
-</div>
-
-<script type="text/javascript">
-    docsearch({
-        apiKey: '{{ $page->docsearchApiKey }}',
-        indexName: '{{ $page->docsearchIndexName }}',
-        inputSelector: '#docsearch'
-    });
-</script>
-```
+__<< TODO: Add screenshot of search dropdown >>__
 
 ---
 
 ## Adding Custom Styles
-Algolia exposes custom CSS classes to target in the event that you want to add your own styles.
+
+If you'd like to customize the styling of the search results, Algolia exposes custom CSS classes that you can modify:
 
 ```css
 /* Main dropdown wrapper */
@@ -78,4 +63,6 @@ Algolia exposes custom CSS classes to target in the event that you want to add y
 }
 ```
 
-[Official Algolia Documentation](https://community.algolia.com/docsearch/what-is-docsearch.html)
+---
+
+For more details, visit the [official Algolia DocSearch documentation](https://community.algolia.com/docsearch/what-is-docsearch.html).
