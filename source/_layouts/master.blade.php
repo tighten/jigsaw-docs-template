@@ -41,8 +41,6 @@
                     <div class="flex flex-1 align-right justify-end items-center">
                         <input name="docsearch" type="text" id="docsearch" placeholder="Search"
                             class="w-2/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker docsearch md:w-1/3 border border-grey focus:border-blue-light transition-fast">
-
-                        @yield('navigation')
                     </div>
                 </div>
             </header>

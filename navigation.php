@@ -2,12 +2,12 @@
 
 return [
     'Getting Started' => [
-        'url' => '/docs/getting-started',
+        'url' => 'getting-started',
         'children' => [
-            'Customizing Your Site' => ['url' => '/docs/customizing-your-site'],
-            'Navigation' => ['url' => '/docs/navigation'],
-            'Algolia DocSearch' => ['url' => '/docs/algolia-docsearch'],
-            'Custom 404 Page' => ['url' => '/docs/404'],
+            'Customizing Your Site' => ['url' => 'customizing-your-site'],
+            'Navigation' => ['url' => 'navigation'],
+            'Algolia DocSearch' => ['url' => 'algolia-docsearch'],
+            'Custom 404 Page' => ['url' => '404'],
         ],
     ],
     'Jigsaw Docs' => ['url' => 'https://jigsaw.tighten.co/docs/installation'],

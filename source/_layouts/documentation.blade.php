@@ -8,7 +8,7 @@
 <section class="container max-w-4xl mx-auto px-8 py-3">
     <div class="flex flex-col lg:flex-row">
         <div class="w-full mt-1 lg:pr-8 lg:w-1/4">
-            <navigation :links='@json($page->navigation)'></navigation>
+            @include('_nav.menu')
         </div>
 
         <div class="w-full pb-16 lg:w-3/4 lg:pl-4" v-pre>
