@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
-@section('navigation')
-<navigation-toggle></navigation-toggle>
+@section('nav-toggle')
+    @include('_nav.menu-toggle')
 @endsection
 
 @section('body')
