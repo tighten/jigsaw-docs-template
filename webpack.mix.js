@@ -9,10 +9,10 @@ mix.webpackConfig({
         build.jigsaw,
         build.browserSync(),
         build.watch([
+            'config.php',
             'source/**/*.md',
             'source/**/*.php',
             'source/**/*.scss',
-            'navigation.php',
         ]),
     ],
 });
