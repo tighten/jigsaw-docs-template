@@ -13,7 +13,7 @@
     }
 }
 
-.nav-item {
+.menu-item {
     @apply .block;
     @apply .border-b;
     @apply .p-2;
@@ -22,17 +22,5 @@
 
     &:hover {
         @apply .bg-grey-lighter;
-    }
-
-    &--level-1 {
-        @apply .pl-2;
-    }
-
-    &--level-2 {
-        @apply .pl-4;
-    }
-
-    &--level-3 {
-        @apply .pl-6;
     }
 }

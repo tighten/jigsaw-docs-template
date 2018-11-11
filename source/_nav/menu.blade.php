@@ -1,5 +1,5 @@
-<nav class="nav-list">
-    @foreach ($page->navigation as $nodeKey => $nodeData)
-        @include('_nav.node', ['level' => 1])
+<ul>
+    @foreach ($items as $label => $item)
+        @include('_nav.menu-item')
     @endforeach
-</nav>
+</ul>
