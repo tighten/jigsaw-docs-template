@@ -5,9 +5,9 @@
 @endsection
 
 @section('body')
-<section class="container max-w-4xl mx-auto px-8 py-3">
+<section class="container max-w-4xl mx-auto px-8 py-4">
     <div class="flex flex-col lg:flex-row">
-        <nav class="w-full mt-1 lg:pr-8 lg:w-1/4">
+        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
             @include('_nav.menu', ['items' => $page->navigation])
         </nav>
 
