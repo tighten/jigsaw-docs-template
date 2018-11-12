@@ -913,6 +913,49 @@ pre code {
   }
 }
 
+.nav-menu {
+  margin-top: -3rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  background-color: #eef3f7;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  width: auto;
+}
+
+@media (min-width: 992px) {
+  .nav-menu {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    background-color: transparent;
+    display: block;
+    border-bottom-width: 0;
+    margin-top: .25rem;
+    padding-left: 0;
+    padding-right: 1rem;
+    padding-top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 25%;
+  }
+}
+
+.nav-menu__item {
+  display: block;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  margin-bottom: .75rem;
+  margin-top: 0;
+  color: #606f7b;
+  font-size: .925rem;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
