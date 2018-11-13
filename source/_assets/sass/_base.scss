@@ -16,7 +16,22 @@ blockquote {
 
 code {
     @apply .bg-grey-light;
-    @apply .p-1;
+    @apply .px-2;
+    @apply .py-px;
+    @apply .rounded;
+    @apply .text-sm;
+}
+
+code.hljs {
+    @apply .bg-transparent;
+    @apply .p-0;
+
+    .hljs-comment,
+    .hljs-keyword,
+    .hljs-meta {
+        @apply .font-normal;
+        @apply .roman;
+    }
 }
 
 h1,
@@ -25,8 +40,14 @@ h3,
 h4,
 h5,
 h6 {
-    @apply .my-4;
+    @apply .leading-tight;
+    @apply .mb-4;
+    @apply .mt-8;
     @apply .text-black;
+
+    &:first-child {
+        @apply .mt-0;
+    }
 }
 
 h1 {
@@ -40,12 +61,12 @@ h2 {
 }
 
 h3 {
-    @apply .font-semibold;
+    @apply .font-bold;
     @apply .text-3xl;
 }
 
 h4 {
-    @apply .font-medium;
+    @apply .font-normal;
     @apply .text-2xl;
 }
 
@@ -59,15 +80,10 @@ h6 {
     @apply .text-lg;
 }
 
-
-code.hljs {
-    @apply .bg-transparent;
-}
-
 hr {
-    @apply .border-b-2;
-    @apply .border-grey-light;
-    @apply .my-8;
+    @apply .border-b;
+    @apply .border-blue-lighter;
+    @apply .my-12;
     @apply .rounded-full;
 }
 
@@ -78,22 +94,28 @@ li {
     }
 }
 
-p {
+ol,
+ul {
     @apply .my-4;
+}
+
+p {
+    @apply .my-6;
 }
 
 pre {
     @apply .bg-grey-lighter;
-    @apply .mb-6;
-    @apply .mt-4;
+    @apply .leading-loose;
+    @apply .my-6;
     @apply .overflow-x-auto;
     @apply .p-4;
     @apply .rounded;
     @apply .shadow;
     @apply .text-base;
-}
 
-ul,
-ol {
-    @apply .my-4;
+    code {
+        @apply .bg-transparent;
+        @apply .block;
+        @apply .p-0;
+    }
 }

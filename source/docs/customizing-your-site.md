@@ -1,26 +1,27 @@
 ---
 title: Customizing Your Site
 extends: _layouts.documentation
-section: documentation_content
+section: content
 ---
 # Customizing Your Site
 
 ## Styles
 
-This template uses [Tailwind CSS](https://tailwindcss.com), so you can customize your design directly in your Blade templates. In addition, you'll find some base SCSS files in `source/assets/sass`, which you are free to modify or extend. Out of the box, a blank `_documentation.scss` stylesheet is created for your custom styles.
+This template includes [Tailwind CSS](https://tailwindcss.com), allowing you to customize your design directly in your Blade templates. In addition, you'll find some base SCSS files in `/source/_assets/sass/` which you are free to modify or extend. Out of the box, a blank `_documentation.scss` stylesheet is created for your custom styles.
 
 ```scss
 // source/_assets/sass/main.scss
+
 @tailwind preflight;
 @tailwind components;
+
+// Code syntax highlighting,
+// powered by https://highlightjs.org
+@import '~highlight.js/styles/github.css';
 
 @import 'base';
 @import 'navigation';
 @import 'documentation';
-
-// Code syntax highlighting,
-// powered by https://highlightjs.org
-@import '~highlightjs/styles/default';
 
 @tailwind utilities;
 ```

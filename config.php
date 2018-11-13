@@ -1,17 +1,11 @@
 <?php
 
 return [
-    'siteName' => 'Jigsaw Docs',
-    'siteDescription' => 'Give your documentation a boost with Jigsaw. Generate elegant, static docs quickly and easily.',
-    'title' => 'Documentation powered by Jigsaw',
-    'docsearchApiKey' => '',
-    'docsearchIndexName' => 'jigsaw',
     'baseUrl' => 'http://jigsaw-docs-skeleton.test/',
     'production' => false,
+    'siteName' => 'Docs Template',
+    'siteDescription' => 'Elegant docs powered by Jigsaw',
+    'docsearchApiKey' => '',
+    'docsearchIndexName' => '',
     'navigation' => require_once('navigation.php'),
-
-    // helpers
-    'url' => function ($page, $path) {
-        return rtrim($page->baseUrl, '/') . '/' . ltrim($path, '/');
-    },
 ];

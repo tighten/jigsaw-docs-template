@@ -1,5 +1,7 @@
 <template>
-    <div class="w-full mt-4 transition lg:block lg:mb-0 lg:pr-8 lg:w-1/4" :class="{ hidden: ! visible }">
+    <div class="-mt-12 -mx-8 mb-8 pb-6 pt-8 px-8 lg:mt-0 lg:pt-0 lg:block lg:border-b-0 lg:bg-transparent lg:shadow-none"
+        :class="visible ? 'bg-grey-lighter shadow' : 'hidden'"
+    >
         <nav class="nav-list" role="navigation">
             <navigation-item :key="key" v-for="(url, key) in navigation" :item="url">{{ key }}</navigation-item>
         </nav>
@@ -11,22 +13,19 @@ import NavigationItem from './navigation-item.vue';
 
 export default {
     components: { NavigationItem },
-
     props: {
         links: Object,
     },
-
     data() {
         return {
             visible: false,
-            navigation: this.links
-        }
+            navigation: this.links,
+        };
     },
-
     mounted() {
         this.$root.$on('menu-toggle', data => {
             this.visible = data;
         });
-    }
-}
+    },
+};
 </script>
