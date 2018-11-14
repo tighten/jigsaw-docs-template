@@ -13,7 +13,7 @@
             <div class="flex my-10">
                 <a href="/docs/getting-started" title="{{ $page->siteName }} getting started" class="bg-blue hover:bg-blue-dark py-2 px-6 text-white rounded mr-4">Get Started</a>
 
-                <a href="https://jigsaw.tighten.co" title="Jigsaw by Tighten" class="bg-grey-light hover:bg-grey py-2 px-6 text-grey-dark hover:text-grey-darker rounded">About Jigsaw</a>
+                <a href="https://jigsaw.tighten.co" title="Jigsaw by Tighten" class="bg-grey-light hover:bg-grey-dark py-2 px-6 text-blue-darkest hover:text-white rounded">About Jigsaw</a>
             </div>
         </div>
 
