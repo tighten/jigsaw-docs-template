@@ -4,7 +4,7 @@ extends: _layouts.documentation
 section: content
 ---
 
-# Navigation
+# Navigation {#navigation}
 
 The navigation menu in the left-hand sidebar is defined using an array in `navigation.php`. Nested pages can be added by using the `children` associative array.
 

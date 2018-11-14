@@ -3,7 +3,7 @@ title: Customizing Your Site
 extends: _layouts.documentation
 section: content
 ---
-# Customizing Your Site
+# Customizing Your Site {#customizing}
 
 ## Styles
 This skeleton comes with [Tailwind CSS](https://tailwindcss.com) pre-loaded, which is a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base Sass files in the `/source/_assets/sass` folder, set up with the expectation that you can add any custom CSS into `_documentation.scss`.
@@ -29,8 +29,10 @@ This skeleton comes with [Tailwind CSS](https://tailwindcss.com) pre-loaded, whi
 
 ---
 
-## Typography Styles
+## Typography Styles {#customizing-typography}
 Here’s a quick preview of what some of the basic type styles will look like in your template.
+
+<div markdown="1" class="example pt-6">
 
 # h1 Heading
 ## h2 Heading

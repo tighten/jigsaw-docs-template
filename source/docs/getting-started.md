@@ -4,11 +4,11 @@ extends: _layouts.documentation
 section: content
 ---
 
-# Getting Started
+# Getting Started {#getting-started}
 
 This is a full skeleton for creating a beautiful, customizable documentation site for your project with minimal effort. You’ll only have to change a few settings and then you’re ready to go.
 
-## Configuration
+## Configuration {#getting-started-configuration}
 
 As with all Jigsaw sites, configuration options for this theme can be found in `config.php`. The first step you’ll want to take is to update the variables already in that file for your project. You can also add new configuration variables there to use across your site; take a look at the [Jigsaw documentation](http://jigsaw.tighten.co/docs/site-variables/) to learn more.
 
@@ -29,7 +29,7 @@ return [
 
 ---
 
-### Adding Content
+### Adding Content {#getting-started-adding-content}
 
 You can write your content using a [variety of file types](http://jigsaw.tighten.co/docs/content-other-file-types/). By default, this skeleton places your content in the `source/docs` folder. If you want to change this location, be sure to update the URL references in [navigation.php](/docs/navigation.php).
 
@@ -49,7 +49,7 @@ section: content
 
 ---
 
-### Adding Assets
+### Adding Assets {#getting-started-adding-assets}
 
 Any assets that need to be compiled (such as JavaScript, Less, or Sass files) can be added to the `source/_assets/` directory, and Laravel Mix will process them when running `npm run local` or `npm run production`. The processed assets will be stored in `/source/assets/build/` (note there is no underscore on this second `assets` directory).
 
@@ -61,7 +61,7 @@ Files that don't require processing (such as images and fonts) can be added dire
 
 ---
 
-## Building Your Site
+## Building Your Site {#getting-started-building-your-site}
 
 Now that you’ve edited your configuration variables and know how to customize your styles and content, let’s build the site.
 
