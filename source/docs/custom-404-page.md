@@ -1,5 +1,6 @@
 ---
 title: Custom 404 Page
+description: Custom 404 pages with Jigsaw Docs Template
 extends: _layouts.documentation
 section: content
 ---

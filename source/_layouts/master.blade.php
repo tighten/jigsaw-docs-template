@@ -7,8 +7,8 @@
         <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
         <meta property="og:site_name" content="{{ $page->siteName }}"/>
-        <meta property="og:title" content="{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}"/>
-        <meta property="og:description" content="{{ $page->siteDescription }}"/>
+        <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
+        <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}"/>
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>

@@ -1,5 +1,6 @@
 ---
 title: Algolia DocSearch
+description: Configure Algolia DocSearch with the Jigsaw Docs Template
 extends: _layouts.documentation
 section: content
 ---

@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+description: Get started with Jigsaws Doc Template is as easy as 1,2,3.
 extends: _layouts.documentation
 section: content
 ---
@@ -33,11 +34,12 @@ return [
 
 Jigsaw supports a variety of [file types](http://jigsaw.tighten.co/docs/content-other-file-types/) for creating content. By default, this template stores your documentation content in the `source/docs/`. If you want to change this location, be sure to update the url references in `navigation.php`. [Read more about navigation](/docs/navigation).
 
-The top of every content page contains a YAML header that specifies how it should be rendered. The `title` variable is used to dynamically generate html `<title></title>` tag for each page. The `extends` and `section` variables reference the parent Blade layout and the target content area that parent layout:
+The top of every content page contains a YAML header that specifies how it should be rendered. The `title` variable is used to dynamically generate html `<title></title>` tag for each page. Optionally, you can add a `description` variable which will dynamically used when generating the `<meta property="og:description>` tag. The `extends` and `section` variables reference the parent Blade layout and the target content area that parent layout:
 
 ```yaml
 ---
 title: Navigation
+description: Managing your template navigation is easy as 123.
 extends: _layouts.documentation
 section: content
 ---

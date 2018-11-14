@@ -1,5 +1,6 @@
 ---
 title: Navigation
+description: Managing your template navigation is easy as 123.
 extends: _layouts.documentation
 section: content
 ---

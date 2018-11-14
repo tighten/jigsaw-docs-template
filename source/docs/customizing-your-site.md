@@ -1,5 +1,6 @@
 ---
 title: Customizing Your Site
+description: Customizing your Jigsaw Docs Template
 extends: _layouts.documentation
 section: content
 ---
