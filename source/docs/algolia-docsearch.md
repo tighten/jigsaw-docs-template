@@ -4,7 +4,7 @@ extends: _layouts.documentation
 section: content
 ---
 
-# Algolia DocSearch
+# Algolia DocSearch {#algolia-docsearch}
 
 This template includes support for [DocSearch](https://community.algolia.com/docsearch/). DocSearch is a fantastic open source index-based search tool, built and managed by [Algolia](https://www.algolia.com). To configure this tool, you need to sign up with Algolia and receive an API key. Algolia will then crawl your documentation regularly, and index all your content.
 
@@ -24,7 +24,7 @@ __<< TODO: Add screenshot of search dropdown >>__
 
 ---
 
-## Adding Custom Styles
+## Adding Custom Styles {#algolia-adding-custom-styles}
 
 If you'd like to customize the styling of the search results, Algolia exposes custom CSS classes that you can modify:
 

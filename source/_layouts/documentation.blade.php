@@ -11,7 +11,7 @@
             @include('_nav.menu', ['items' => $page->navigation])
         </nav>
 
-        <div class="w-full pb-16 lg:w-3/4 lg:pl-4" v-pre>
+        <div class="docSearch-content w-full pb-16 lg:w-3/4 lg:pl-4" v-pre>
             @yield('content')
         </div>
     </div>

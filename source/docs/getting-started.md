@@ -4,11 +4,11 @@ extends: _layouts.documentation
 section: content
 ---
 
-# Getting Started
+# Getting Started {#getting-started}
 
 This template is a front-end theme for your Jigsaw projects, giving you a starting point for creating a beautiful documentation site. Getting started is easy and only requires minimal configuration.
 
-## Configuration
+## Configuration {#getting-started-configuration}
 
 As with all Jigsaw sites, configuration options for this theme are found in `config.php`. This file is where you can update variables such as `siteName` and `siteDescription` with your own information.
 
@@ -29,7 +29,7 @@ return [
 
 ---
 
-### Adding Content
+### Adding Content {#getting-started-adding-content}
 
 Jigsaw supports a variety of [file types](http://jigsaw.tighten.co/docs/content-other-file-types/) for creating content. By default, this template stores your documentation content in the `source/docs/`. If you want to change this location, be sure to update the url references in `navigation.php`. [Read more about navigation](/docs/navigation).
 
@@ -47,7 +47,7 @@ section: content
 
 ---
 
-### Adding Assets
+### Adding Assets {#getting-started-adding-assets}
 
 Any assets that need to be compiled (such as JavaScript, LESS, or Sass files) can be added to the `source/_assets/` directory, and Laravel Mix will process them when running `npm run local` or `npm run production`. The processed assets will be stored in `/source/assets/build/` (note there is no underscore on this second `assets` directory).
 
@@ -59,7 +59,7 @@ Files that don't require processing (such as images and fonts) can be added dire
 
 ---
 
-## Building Your Site
+## Building Your Site {#getting-started-building-your-site}
 
 ```bash
 # build static files with Jigsaw

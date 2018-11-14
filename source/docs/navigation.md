@@ -4,7 +4,7 @@ extends: _layouts.documentation
 section: content
 ---
 
-# Navigation
+# Navigation {#navigation}
 
 The navigation menu in the left-hand sidebar is defined using an array in `navigation.php`. Nested pages can be added by using the `children` associative array.
 
@@ -34,7 +34,7 @@ $page->navigation
 
 ---
 
-## Vue.js Components
+## Vue.js Components {#navigation-vue-js-components}
 
 The navigation menu is built by a Vue.js component named `navigation.vue`. This component iterates over the multi-dimensional array from `navigation.php` and renders a tree view structure. The component will also automatically highlight the active page in the menu.
 
