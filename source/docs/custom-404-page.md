@@ -4,7 +4,7 @@ extends: _layouts.documentation
 section: content
 ---
 
-# Custom 404 Page
+# Custom 404 Page {#custom-404-page}
 
 This template includes a custom __404 Not Found__ error page, located at `/source/404.blade.php`. [To preview the 404 page](/404), you can visit `/404` in your browser.
 
