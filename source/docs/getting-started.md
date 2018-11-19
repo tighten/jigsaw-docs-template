@@ -10,7 +10,7 @@ This is a full skeleton for creating a beautiful, customizable documentation sit
 
 ## Configuration {#getting-started-configuration}
 
-As with all Jigsaw sites, configuration options for this theme can be found in `config.php`. The first step you’ll want to take is to update the variables already in that file for your project. You can also add new configuration variables there to use across your site; take a look at the [Jigsaw documentation](http://jigsaw.tighten.co/docs/site-variables/) to learn more.
+As with all Jigsaw sites, configuration settings for this theme can be found in `config.php`; you can update the variables in that file with settings specific to your project. You can also add new configuration variables there to use across your site; take a look at the [Jigsaw documentation](http://jigsaw.tighten.co/docs/site-variables/) to learn more.
 
 ```php
 // config.php
