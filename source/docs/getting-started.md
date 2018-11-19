@@ -35,7 +35,7 @@ You can write your content using a [variety of file types](http://jigsaw.tighten
 
 [Read more about navigation](/docs/navigation)
 
-The first section of each content page contains a YAML header that specifies how it should be rendered. The `title` attribute is used to dynamically generate HTML `title` and OpenGraph tags for each page. The `extends` attribute defines which parent Blade layout this content file will render with (e.g. `_layouts.documentation` will render with `source/_layouts/documentation.blade.php`) and the `section` attribute defines the Blade “section” expects this content to be placed into it.
+The first section of each content page contains a YAML header that specifies how it should be rendered. The `title` attribute is used to dynamically generate HTML `title` and OpenGraph tags for each page. The `extends` attribute defines which parent Blade layout this content file will render with (e.g. `_layouts.documentation` will render with `source/_layouts/documentation.blade.php`), and the `section` attribute defines the Blade “section” that expects this content to be placed into it.
 
 ```yaml
 ---
