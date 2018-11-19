@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: Get started with Jigsaws Doc Template is as easy as 1,2,3.
+description: Get started with Jigsaws docs skeleton is as easy as 1,2,3.
 extends: _layouts.documentation
 section: content
 ---
@@ -41,7 +41,7 @@ The first section of each content page contains a YAML header that specifies how
 ```yaml
 ---
 title: Navigation
-description: Managing your template navigation is easy as 123.
+description: Building a navigation menu for your site
 extends: _layouts.documentation
 section: content
 ---

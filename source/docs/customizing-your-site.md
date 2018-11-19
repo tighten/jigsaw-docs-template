@@ -1,6 +1,6 @@
 ---
 title: Customizing Your Site
-description: Customizing your Jigsaw Docs Template
+description: Customizing your Jigsaw docs skeleton
 extends: _layouts.documentation
 section: content
 ---
@@ -33,7 +33,7 @@ This skeleton comes pre-loaded with [Tailwind CSS](https://tailwindcss.com), a u
 
 ## Typography Styles {#customizing-typography}
 
-Here’s a quick preview of what some of the basic type styles will look like in your template.
+Here’s a quick preview of what some of the basic type styles will look like in the docs skeleton.
 
 <div markdown="1" class="example pt-6">
 
