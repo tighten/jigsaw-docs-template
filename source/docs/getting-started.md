@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: Get started with Jigsaws Doc Template is as easy as 1,2,3.
+description: Getting started with Jigsaw's doc skeleton is as easy as 1, 2, 3.
 extends: _layouts.documentation
 section: content
 ---
