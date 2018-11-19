@@ -13,7 +13,7 @@
             <div class="flex my-10">
                 <a href="/docs/getting-started" title="{{ $page->siteName }} getting started" class="bg-blue hover:bg-blue-dark py-2 px-6 text-white rounded mr-4">Get Started</a>
 
-                <a href="https://jigsaw.tighten.co" title="Jigsaw by Tighten" class="bg-grey-light hover:bg-grey py-2 px-6 text-grey-dark hover:text-grey-darker rounded">About Jigsaw</a>
+                <a href="https://jigsaw.tighten.co" title="Jigsaw by Tighten" class="bg-grey-light hover:bg-grey-dark py-2 px-6 text-blue-darkest hover:text-white rounded">About Jigsaw</a>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
 
             <h3 id="intro-laravel" class="text-2xl text-blue-darkest mb-0">Templating with <br>Laravel's Blade engine</h3>
 
-            <p>Blade is a powerful, simple, and beautiful templating language, but until now it wasn't an option if you were building a site that didn't require a Laravel backend.</p>
+            <p>Blade is a powerful, simple, and beautiful templating language, and now you can use it for your static sites, not just your Laravel-powered apps.</p>
         </div>
 
         <div class="flex flex-col w-full mb-8 mx-3 px-2 md:w-1/3">
@@ -36,7 +36,7 @@
 
             <h3 id="intro-markdown" class="text-2xl text-blue-darkest mb-0">Use Markdown for <br>content-driven pages</h3>
 
-            <p>Markdown is a fantastic format for writing articles, blog posts, or documentation pages quickly. Jigsaw makes it painless to work with Markdown content.</p>
+            <p>Markdown is the web’s leading format for writing articles, blog posts, documentation, and more. Jigsaw makes it painless to work with Markdown content.</p>
         </div>
 
         <div class="flex flex-col w-full mx-3 px-2 md:w-1/3">
@@ -44,7 +44,7 @@
 
             <h3 id="intro-mix" class="text-2xl text-blue-darkest mb-0">Compile your assets <br>using Laravel Mix </h3>
 
-            <p>Jigsaw sites are configured with support for Laravel Mix out of the box. If you've ever used Mix to compile assets in a Laravel project, you already know how to use it with Jigsaw.</p>
+            <p>Jigsaw comes pre-configured with Laravel Mix, a simple and powerful build tool. Use the latest frontend tech with just a few lines of code.</p>
         </div>
     </div>
 </section>
