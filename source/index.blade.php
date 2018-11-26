@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <img src="/assets/img/logo-large.svg" alt="{{ $page->siteName }} large logo" class="max-w-md mx-auto mb-6 lg:mb-0 ">
+        <img src="/assets/img/logo-large.svg" alt="{{ $page->siteName }} large logo" class="w-full max-w-md mx-auto mb-6 lg:mb-0 ">
     </div>
 
     <hr class="block my-8 border lg:hidden">
