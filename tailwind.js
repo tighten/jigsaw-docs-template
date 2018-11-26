@@ -24,7 +24,7 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
-// let defaultConfig = require('tailwindcss/defaultConfig')()
+let defaultConfig = require('tailwindcss/defaultConfig')()
 
 
 /*
@@ -888,6 +888,8 @@ module.exports = {
     minHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
+    objectFit: false,
+    objectPosition: false,
     opacity: ['responsive'],
     outline: ['focus'],
     overflow: ['responsive'],
