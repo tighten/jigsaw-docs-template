@@ -1,12 +1,13 @@
 ---
 title: Custom 404 Page
+description: Custom 404 pages with Jigsaw docs skeleton
 extends: _layouts.documentation
 section: content
 ---
 
 # Custom 404 Page {#custom-404-page}
 
-This template includes a custom __404 Not Found__ error page, located at `/source/404.blade.php`. [To preview the 404 page](/404), you can visit `/404` in your browser.
+This skeleton includes a custom __404 Not Found__ error page, located at `/source/404.blade.php`. [To preview the 404 page](/404), you can visit `/404` in your browser.
 
 ```html
 <!-- source/404.blade.php -->

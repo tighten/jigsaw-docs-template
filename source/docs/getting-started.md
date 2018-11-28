@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+description: Getting started with Jigsaw's doc skeleton is as easy as 1, 2, 3.
 extends: _layouts.documentation
 section: content
 ---
@@ -40,6 +41,7 @@ The first section of each content page contains a YAML header that specifies how
 ```yaml
 ---
 title: Navigation
+description: Building a navigation menu for your site
 extends: _layouts.documentation
 section: content
 ---
