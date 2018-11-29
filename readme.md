@@ -19,4 +19,4 @@ While the goal of this skeleton is to provide a great starting point for others 
 All content is in `source/docs/*.md`. 
 
 #### Navigation
-To easily manage navigation and URLS, a `navigation.php` file has been added to the project root. 
+To easily manage navigation and URLs, a `navigation.php` file has been added to the project root. 
