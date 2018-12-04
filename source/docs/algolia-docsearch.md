@@ -21,6 +21,8 @@ return [
 ];
 ```
 
+To help Algolia index your pages correctly, it's good practice to add a unique `id` or `name` attribute to each heading tag (`<h1>`, `<h2>`, etc.). By doing so, a user will be taken directly to the appropriate section of the page when they click a search result.
+
 __<< TODO: Add screenshot of search dropdown >>__
 
 ---
