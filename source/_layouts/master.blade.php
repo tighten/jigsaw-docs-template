@@ -16,6 +16,10 @@
         <meta name="twitter:image:alt" content="{{ $page->siteName }}">
         <meta name="twitter:card" content="summary_large_image">
 
+        @if ($page->docsearchApiKey && $page->docsearchIndexName)
+            <meta name="generator" content="tighten_jigsaw_doc">
+        @endif
+
         <title>{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
