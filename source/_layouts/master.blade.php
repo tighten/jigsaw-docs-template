@@ -47,8 +47,9 @@
                 </div>
 
                 <div class="flex flex-1 align-right justify-end items-center">
-                    <input name="docsearch" type="text" id="docsearch" placeholder="Search"
-                        class="w-full sm:w-2/3 md:w-1/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker docsearch border border-grey focus:border-blue-light transition-fast">
+                    @if ($page->docsearchApiKey && $page->docsearchIndexName)
+                        <input name="docsearch" type="text" id="docsearch" placeholder="Search" class="w-full sm:w-2/3 md:w-1/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker docsearch border border-grey focus:border-blue-light transition-fast">
+                    @endif
                 </div>
             </div>
 
