@@ -3,7 +3,7 @@
 return [
     'baseUrl' => 'http://jigsaw-docs-skeleton.test/',
     'production' => false,
-    'siteName' => 'Docs Skeleton',
+    'siteName' => 'Docs Starter Template',
     'siteDescription' => 'Elegant docs powered by Jigsaw',
 
     // DocSearch credentials
