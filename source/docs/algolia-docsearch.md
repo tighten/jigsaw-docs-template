@@ -11,8 +11,6 @@ This skeleton includes support for [DocSearch](https://community.algolia.com/doc
 
 [Get your DocSearch credentials here](https://community.algolia.com/docsearch/#join-docsearch-program).
 
-Once the `docsearchApiKey` and `docsearchIndexName` values are set in `config.php`, the search field at the top of the page is ready to use.
-
 ```php
 // config.php
 return [
@@ -21,7 +19,9 @@ return [
 ];
 ```
 
-__<< TODO: Add screenshot of search dropdown >>__
+Once the `docsearchApiKey` and `docsearchIndexName` values are set in `config.php`, the search field at the top of the page is ready to use.
+
+<img class="block m-auto" src="/assets/img/docsearch.png" alt="Screenshot of search results" />
 
 ---
 
