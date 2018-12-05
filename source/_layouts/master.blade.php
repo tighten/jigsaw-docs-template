@@ -33,6 +33,10 @@
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+
+        @if ($page->docsearchApiKey && $page->docsearchIndexName)
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+        @endif
     </head>
 
     <body class="bg-grey-lightest text-grey-darkest leading-normal font-sans">
@@ -60,7 +64,19 @@
         </main>
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
-        @yield('scripts')
+
+        @if ($page->docsearchApiKey && $page->docsearchIndexName)
+            <script type="text/javascript">
+                docsearch({
+                    apiKey: '{{ $page->docsearchApiKey }}',
+                    indexName: '{{ $page->docsearchIndexName }}',
+                    inputSelector: '#docsearch',
+                    debug: false // Set debug to true if you want to inspect the dropdown
+                });
+            </script>
+        @endif
+
+        @stack('scripts')
 
         <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
             <p class="text-xs">

@@ -17,15 +17,3 @@
     </div>
 </section>
 @endsection
-
-@section('scripts')
-@if ($page->docsearchApiKey && $page->docsearchIndexName)
-    <script type="text/javascript">
-        docsearch({
-            apiKey: '{{ $page->docsearchApiKey }}',
-            indexName: '{{ $page->docsearchIndexName }}',
-            inputSelector: '#docsearch'
-        });
-    </script>
-@endif
-@endsection
