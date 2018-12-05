@@ -1,18 +1,3 @@
-.docsearch {
-    background: url('/assets/img/magnifying-glass.svg');
-    background-position: 0.8em;
-    background-repeat: no-repeat;
-    text-indent: 1.2em;
-}
-
-@screen md {
-    .docsearch:focus {
-        @apply .w-1/2;
-
-        text-indent: 1.5em;
-    }
-}
-
 .nav-menu {
     @apply .-mt-12;
     @apply .-mx-8;
@@ -46,4 +31,30 @@
     @apply .mt-0;
     @apply .text-grey-darkest;
     @apply .text-sm;
+}
+
+.docsearch {
+    background: url('/assets/img/magnifying-glass.svg');
+    background-position: 0.8em;
+    background-repeat: no-repeat;
+    text-indent: 1.2em;
+}
+
+.algolia-autocomplete {
+    @apply .text-right;
+    @apply .w-full;
+
+    .ds-dropdown-menu {
+        @apply .w-full;
+
+        min-width: auto !important;
+    }
+}
+
+@screen md {
+    .docsearch:focus {
+        @apply .w-1/2;
+
+        text-indent: 1.5em;
+    }
 }

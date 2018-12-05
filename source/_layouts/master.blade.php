@@ -33,6 +33,10 @@
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+
+        @if ($page->docsearchApiKey && $page->docsearchIndexName)
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+        @endif
     </head>
 
     <body class="bg-grey-lightest text-grey-darkest leading-normal font-sans">
@@ -46,10 +50,11 @@
                     </a>
                 </div>
 
-                <div class="flex flex-1 align-right justify-end items-center">
-                    @if ($page->docsearchApiKey && $page->docsearchIndexName)
-                        <input name="docsearch" type="text" id="docsearch" placeholder="Search" class="w-full sm:w-2/3 md:w-1/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker docsearch border border-grey focus:border-blue-light transition-fast">
-                    @endif
+                <div class="flex-1 text-right md:pl-10">
+                @if ($page->docsearchApiKey && $page->docsearchIndexName)
+                    <input name="docsearch" type="text" id="docsearch" placeholder="Search"
+                        class="docsearch w-full sm:w-2/3 md:w-1/3 bg-grey-lighter outline-none px-4 py-2 rounded-full text-grey-darker border border-grey focus:border-blue-light transition-fast">
+                @endif
                 </div>
             </div>
 
@@ -61,7 +66,19 @@
         </main>
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
-        @yield('scripts')
+
+        @if ($page->docsearchApiKey && $page->docsearchIndexName)
+            <script type="text/javascript">
+                docsearch({
+                    apiKey: '{{ $page->docsearchApiKey }}',
+                    indexName: '{{ $page->docsearchIndexName }}',
+                    inputSelector: '#docsearch',
+                    debug: false // Set debug to true if you want to inspect the dropdown
+                });
+            </script>
+        @endif
+
+        @stack('scripts')
 
         <footer class="bg-white text-center py-4 mt-12" role="contentinfo">
             <p class="text-xs">
