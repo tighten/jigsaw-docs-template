@@ -1,4 +1,4 @@
-# Jigsaw Docs Skeleton
+# Jigsaw Docs Starter Template
 
 A Documentation starter template built for Jigsaw.
 
