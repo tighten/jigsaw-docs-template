@@ -43,10 +43,10 @@
         <header class="bg-white border-b h-24 mb-8 py-4 flex items-center shadow" role="banner">
             <div class="container max-w-4xl flex mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
-                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center font-bold">
+                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         <img class="h-8 mr-3 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
 
-                        <h1 class="hidden text-2xl my-0 text-blue-darker md:block">{{ $page->siteName }}</h1>
+                        <h1 class="hidden text-2xl my-0 text-blue-darker font-semibold md:block">{{ $page->siteName }}</h1>
                     </a>
                 </div>
 
