@@ -44,16 +44,16 @@
             <div class="container max-w-4xl flex mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="h-8 mr-3 md:h-10" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
+                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
 
-                        <h1 class="hidden md:block text-2xl text-blue-darker font-semibold my-0">{{ $page->siteName }}</h1>
+                        <h1 class="text-lg md:text-2xl text-blue-darkest font-semibold hover:text-blue-dark my-0 pr-4">{{ $page->siteName }}</h1>
                     </a>
                 </div>
 
                 <div class="flex-1 text-right md:pl-10">
                     @if ($page->docsearchApiKey && $page->docsearchIndexName)
                         <input name="docsearch" type="text" id="docsearch" placeholder="Search"
-                            class="docsearch transition-fast w-full sm:w-2/3 md:w-1/3 bg-grey-lighter outline-none rounded-full text-grey-darker border border-grey focus:border-blue-light px-4 py-2">
+                            class="docsearch h-10 transition-fast w-full sm:w-2/3 md:w-1/2 xl:w-1/3 bg-grey-lighter outline-none rounded-full text-grey-darker border border-grey focus:border-blue-light px-4 py-2">
                     @endif
                 </div>
             </div>
@@ -86,6 +86,7 @@
                     <li class="md:mr-2">
                         &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> {{ date('Y') }}.
                     </li>
+
                     <li>
                         Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
                         and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
