@@ -50,10 +50,10 @@
                     </a>
                 </div>
 
-                <div class="flex-1 text-right md:pl-10">
+                <div class="flex flex-1 justify-end md:pl-10">
                     @if ($page->docsearchApiKey && $page->docsearchIndexName)
-                        <input name="docsearch" type="text" id="docsearch" placeholder="Search"
-                            class="docsearch h-10 transition-fast w-full sm:w-2/3 md:w-1/2 xl:w-1/3 bg-grey-lighter outline-none rounded-full text-grey-darker border border-grey focus:border-blue-light px-4 py-2">
+                        @include('_nav.search-toggle')
+                        @include('_nav.search-input')
                     @endif
                 </div>
             </div>
@@ -66,17 +66,6 @@
         </main>
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
-
-        @if ($page->docsearchApiKey && $page->docsearchIndexName)
-            <script type="text/javascript">
-                docsearch({
-                    apiKey: '{{ $page->docsearchApiKey }}',
-                    indexName: '{{ $page->docsearchIndexName }}',
-                    inputSelector: '#docsearch',
-                    debug: false // Set debug to true if you want to inspect the dropdown
-                });
-            </script>
-        @endif
 
         @stack('scripts')
 
