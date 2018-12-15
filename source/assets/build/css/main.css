@@ -580,12 +580,6 @@ textarea::-webkit-input-placeholder {
   opacity: .5;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: inherit;
-  opacity: .5;
-}
-
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   color: inherit;
@@ -821,11 +815,44 @@ pre code {
   font-size: .925rem;
 }
 
-.docsearch {
-  background: url("/assets/img/magnifying-glass.svg");
+.docsearch-input {
+  background-image: url("/assets/img/magnifying-glass.svg");
   background-position: .8em;
   background-repeat: no-repeat;
   text-indent: 1.2em;
+}
+
+@media (min-width: 992px) {
+  .docsearch-input:focus {
+    width: 66.66667%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .docsearch-input:focus {
+    width: 50%;
+  }
+}
+
+.docsearch-input__wrapper {
+  position: absolute;
+  background-color: #fff;
+  margin-top: 1.75rem;
+  left: 0;
+  top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .docsearch-input__wrapper {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
 }
 
 .algolia-autocomplete {
@@ -835,13 +862,38 @@ pre code {
 
 .algolia-autocomplete .ds-dropdown-menu {
   width: 100%;
+  max-width: 750px !important;
   min-width: auto !important;
 }
 
+.algolia-autocomplete .ds-dropdown-menu .algolia-docsearch-suggestion .algolia-docsearch-suggestion--content {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
-  .docsearch:focus {
-    width: 50%;
-    text-indent: 1.5em;
+  .algolia-autocomplete .ds-dropdown-menu .algolia-docsearch-suggestion .algolia-docsearch-suggestion--content {
+    width: 66.66667%;
+  }
+}
+
+.algolia-autocomplete .ds-dropdown-menu .algolia-docsearch-suggestion .algolia-docsearch-suggestion--text {
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.algolia-autocomplete .ds-dropdown-menu .algolia-docsearch-suggestion .algolia-docsearch-suggestion--wrapper {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.algolia-autocomplete .ds-dropdown-menu .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .algolia-autocomplete .ds-dropdown-menu .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column {
+    width: 33.33333%;
+    display: inline-block;
   }
 }
 
@@ -3928,6 +3980,10 @@ pre code {
   margin: 1.5rem;
 }
 
+.m-7 {
+  margin: 1.75rem;
+}
+
 .m-8 {
   margin: 2rem;
 }
@@ -4036,6 +4092,16 @@ pre code {
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
 }
 
 .my-8 {
@@ -4250,6 +4316,22 @@ pre code {
   margin-left: 1.5rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mr-7 {
+  margin-right: 1.75rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.ml-7 {
+  margin-left: 1.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -4456,6 +4538,10 @@ pre code {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-none {
+  max-width: none;
 }
 
 .min-h-0 {
@@ -5040,6 +5126,10 @@ pre code {
   padding: 1.5rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -5140,6 +5230,16 @@ pre code {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .py-8 {
@@ -5332,6 +5432,22 @@ pre code {
 
 .pl-6 {
   padding-left: 1.5rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .pt-8 {
@@ -10161,6 +10277,10 @@ pre code {
     margin: 1.5rem;
   }
 
+  .sm\:m-7 {
+    margin: 1.75rem;
+  }
+
   .sm\:m-8 {
     margin: 2rem;
   }
@@ -10269,6 +10389,16 @@ pre code {
   .sm\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .sm\:my-7 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .sm\:mx-7 {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
   }
 
   .sm\:my-8 {
@@ -10483,6 +10613,22 @@ pre code {
     margin-left: 1.5rem;
   }
 
+  .sm\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
+  .sm\:mr-7 {
+    margin-right: 1.75rem;
+  }
+
+  .sm\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .sm\:ml-7 {
+    margin-left: 1.75rem;
+  }
+
   .sm\:mt-8 {
     margin-top: 2rem;
   }
@@ -10689,6 +10835,10 @@ pre code {
 
   .sm\:max-w-full {
     max-width: 100%;
+  }
+
+  .sm\:max-w-none {
+    max-width: none;
   }
 
   .sm\:min-h-0 {
@@ -11265,6 +11415,10 @@ pre code {
     padding: 1.5rem;
   }
 
+  .sm\:p-7 {
+    padding: 1.75rem;
+  }
+
   .sm\:p-8 {
     padding: 2rem;
   }
@@ -11365,6 +11519,16 @@ pre code {
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .sm\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .sm\:py-8 {
@@ -11557,6 +11721,22 @@ pre code {
 
   .sm\:pl-6 {
     padding-left: 1.5rem;
+  }
+
+  .sm\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .sm\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .sm\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .sm\:pl-7 {
+    padding-left: 1.75rem;
   }
 
   .sm\:pt-8 {
@@ -16369,6 +16549,10 @@ pre code {
     margin: 1.5rem;
   }
 
+  .md\:m-7 {
+    margin: 1.75rem;
+  }
+
   .md\:m-8 {
     margin: 2rem;
   }
@@ -16477,6 +16661,16 @@ pre code {
   .md\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .md\:my-7 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .md\:mx-7 {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
   }
 
   .md\:my-8 {
@@ -16691,6 +16885,22 @@ pre code {
     margin-left: 1.5rem;
   }
 
+  .md\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
+  .md\:mr-7 {
+    margin-right: 1.75rem;
+  }
+
+  .md\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .md\:ml-7 {
+    margin-left: 1.75rem;
+  }
+
   .md\:mt-8 {
     margin-top: 2rem;
   }
@@ -16897,6 +17107,10 @@ pre code {
 
   .md\:max-w-full {
     max-width: 100%;
+  }
+
+  .md\:max-w-none {
+    max-width: none;
   }
 
   .md\:min-h-0 {
@@ -17473,6 +17687,10 @@ pre code {
     padding: 1.5rem;
   }
 
+  .md\:p-7 {
+    padding: 1.75rem;
+  }
+
   .md\:p-8 {
     padding: 2rem;
   }
@@ -17573,6 +17791,16 @@ pre code {
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .md\:py-8 {
@@ -17765,6 +17993,22 @@ pre code {
 
   .md\:pl-6 {
     padding-left: 1.5rem;
+  }
+
+  .md\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .md\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .md\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .md\:pl-7 {
+    padding-left: 1.75rem;
   }
 
   .md\:pt-8 {
@@ -22577,6 +22821,10 @@ pre code {
     margin: 1.5rem;
   }
 
+  .lg\:m-7 {
+    margin: 1.75rem;
+  }
+
   .lg\:m-8 {
     margin: 2rem;
   }
@@ -22685,6 +22933,16 @@ pre code {
   .lg\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .lg\:my-7 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .lg\:mx-7 {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
   }
 
   .lg\:my-8 {
@@ -22899,6 +23157,22 @@ pre code {
     margin-left: 1.5rem;
   }
 
+  .lg\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
+  .lg\:mr-7 {
+    margin-right: 1.75rem;
+  }
+
+  .lg\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .lg\:ml-7 {
+    margin-left: 1.75rem;
+  }
+
   .lg\:mt-8 {
     margin-top: 2rem;
   }
@@ -23105,6 +23379,10 @@ pre code {
 
   .lg\:max-w-full {
     max-width: 100%;
+  }
+
+  .lg\:max-w-none {
+    max-width: none;
   }
 
   .lg\:min-h-0 {
@@ -23681,6 +23959,10 @@ pre code {
     padding: 1.5rem;
   }
 
+  .lg\:p-7 {
+    padding: 1.75rem;
+  }
+
   .lg\:p-8 {
     padding: 2rem;
   }
@@ -23781,6 +24063,16 @@ pre code {
   .lg\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .lg\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .lg\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .lg\:py-8 {
@@ -23973,6 +24265,22 @@ pre code {
 
   .lg\:pl-6 {
     padding-left: 1.5rem;
+  }
+
+  .lg\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .lg\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .lg\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .lg\:pl-7 {
+    padding-left: 1.75rem;
   }
 
   .lg\:pt-8 {
@@ -28785,6 +29093,10 @@ pre code {
     margin: 1.5rem;
   }
 
+  .xl\:m-7 {
+    margin: 1.75rem;
+  }
+
   .xl\:m-8 {
     margin: 2rem;
   }
@@ -28893,6 +29205,16 @@ pre code {
   .xl\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .xl\:my-7 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .xl\:mx-7 {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
   }
 
   .xl\:my-8 {
@@ -29107,6 +29429,22 @@ pre code {
     margin-left: 1.5rem;
   }
 
+  .xl\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
+  .xl\:mr-7 {
+    margin-right: 1.75rem;
+  }
+
+  .xl\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .xl\:ml-7 {
+    margin-left: 1.75rem;
+  }
+
   .xl\:mt-8 {
     margin-top: 2rem;
   }
@@ -29313,6 +29651,10 @@ pre code {
 
   .xl\:max-w-full {
     max-width: 100%;
+  }
+
+  .xl\:max-w-none {
+    max-width: none;
   }
 
   .xl\:min-h-0 {
@@ -29889,6 +30231,10 @@ pre code {
     padding: 1.5rem;
   }
 
+  .xl\:p-7 {
+    padding: 1.75rem;
+  }
+
   .xl\:p-8 {
     padding: 2rem;
   }
@@ -29989,6 +30335,16 @@ pre code {
   .xl\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .xl\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .xl\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .xl\:py-8 {
@@ -30181,6 +30537,22 @@ pre code {
 
   .xl\:pl-6 {
     padding-left: 1.5rem;
+  }
+
+  .xl\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .xl\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .xl\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .xl\:pl-7 {
+    padding-left: 1.75rem;
   }
 
   .xl\:pt-8 {
