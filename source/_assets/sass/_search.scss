@@ -1,24 +1,36 @@
-.docsearch {
-    background: url('/assets/img/magnifying-glass.svg');
+.docsearch-input {
+    background-image: url('/assets/img/magnifying-glass.svg');
     background-position: 0.8em;
     background-repeat: no-repeat;
     text-indent: 1.2em;
-}
 
-.docsearch-wrapper {
-    @apply absolute;
-    @apply bg-white;
-    @apply mt-7;
-    @apply pin-l;
-    @apply pin-t;
-    @apply px-4;
-    @apply w-full;
-    @apply z-10;
+    @screen lg {
+        &:focus {
+            @apply .w-2/3;
+        }
+    }
 
-    @screen md {
-        @apply mt-0;
-        @apply px-0;
-        @apply relative;
+    @screen xl {
+        &:focus {
+            @apply .w-1/2;
+        }
+    }
+
+    &__wrapper {
+        @apply absolute;
+        @apply bg-white;
+        @apply mt-7;
+        @apply pin-l;
+        @apply pin-t;
+        @apply px-4;
+        @apply w-full;
+        @apply z-10;
+
+        @screen md {
+            @apply mt-0;
+            @apply px-0;
+            @apply relative;
+        }
     }
 }
 
@@ -29,6 +41,7 @@
     .ds-dropdown-menu {
         @apply .w-full;
 
+        max-width: 750px !important;
         min-width: auto !important;
 
         .algolia-docsearch-suggestion {
@@ -59,17 +72,5 @@
                 }
             }
         }
-    }
-}
-
-@screen lg {
-    .docsearch:focus {
-        @apply .w-2/3;
-    }
-}
-
-@screen xl {
-    .docsearch:focus {
-        @apply .w-1/2;
     }
 }

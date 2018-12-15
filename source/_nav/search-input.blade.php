@@ -1,11 +1,25 @@
-<div class="docsearch-wrapper">
+<button
+    title="Start searching"
+    type="button"
+    class="flex md:hidden bg-grey-lightest hover:bg-blue-lightest justify-center items-center border border-grey rounded-full focus:outline-none h-10 px-3"
+    onclick="searchInput.toggle()"
+>
+    <img src="/assets/img/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none">
+</button>
+
+<div id="js-search-input" class="docsearch-input__wrapper hidden md:block">
     <input
-        id="docsearch"
-        class="docsearch h-10 transition-fast w-full lg:w-1/2 xl:w-1/3 bg-grey-lighter outline-none rounded-full text-grey-darker border border-grey focus:border-blue-light ml-auto px-4 py-2"
+        id="docsearch-input"
+        class="docsearch-input h-10 transition-fast w-full lg:w-1/2 xl:w-1/3 bg-grey-lightest outline-none rounded-full text-grey-darker border border-grey focus:border-blue-light ml-auto px-4 py-2"
         name="docsearch"
         type="text"
         placeholder="Search"
     >
+
+    <button
+        class="md:hidden absolute pin-t pin-r h-full font-light text-3xl text-blue hover:text-blue-dark focus:outline-none -mt-px pr-7"
+        onclick="searchInput.toggle()"
+    >&times;</button>
 </div>
 
 @push('scripts')
@@ -14,9 +28,18 @@
             docsearch({
                 apiKey: '{{ $page->docsearchApiKey }}',
                 indexName: '{{ $page->docsearchIndexName }}',
-                inputSelector: '#docsearch',
-                debug: true // Set debug to true if you want to inspect the dropdown
+                inputSelector: '#docsearch-input',
+                debug: false // Set debug to true if you want to inspect the dropdown
             });
+
+            const searchInput = {
+                toggle() {
+                    const menu = document.getElementById('js-search-input');
+                    menu.classList.toggle('hidden');
+                    menu.classList.toggle('md:block');
+                    document.getElementById('docsearch-input').focus();
+                },
+            }
         </script>
     @endif
 @endpush
