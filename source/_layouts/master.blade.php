@@ -40,7 +40,7 @@
     </head>
 
     <body class="bg-grey-lightest text-grey-darkest leading-normal font-sans">
-        <header class="bg-white border-b h-24 mb-8 py-4 flex items-center shadow" role="banner">
+        <header class="flex items-center shadow bg-white border-b h-24 mb-8 py-4" role="banner">
             <div class="container flex items-center max-w-4xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
@@ -50,7 +50,7 @@
                     </a>
                 </div>
 
-                <div class="flex flex-1 justify-end text-right md:pl-10">
+                <div class="flex flex-1 justify-end items-center text-right md:pl-10">
                     @if ($page->docsearchApiKey && $page->docsearchIndexName)
                         @include('_nav.search-input')
                     @endif
