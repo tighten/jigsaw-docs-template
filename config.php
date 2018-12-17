@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'http://jigsaw-docs-skeleton.test/',
+    'baseUrl' => 'http://jigsaw-docsskeleton.test/',
     'production' => false,
     'siteName' => 'Docs Starter Template',
     'siteDescription' => 'Elegant docs powered by Jigsaw',
