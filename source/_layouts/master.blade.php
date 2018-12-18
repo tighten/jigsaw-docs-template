@@ -60,7 +60,7 @@
             @yield('nav-toggle')
         </header>
 
-        <main role="main" class="min-h-screen">
+        <main role="main" class="min-h-full">
             @yield('body')
         </main>
 
@@ -68,7 +68,7 @@
 
         @stack('scripts')
 
-        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+        <footer class="bg-white text-center text-sm mt-12 lg:mt-32 py-4" role="contentinfo">
             <nav>
                 <ul class="flex flex-col md:flex-row justify-center list-reset">
                     <li class="md:mr-2">
