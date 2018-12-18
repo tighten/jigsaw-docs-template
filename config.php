@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'baseUrl' => 'http://jigsaw-docs-skeleton.test/',
+    'baseUrl' => '',
     'production' => false,
     'siteName' => 'Docs Starter Template',
-    'siteDescription' => 'Elegant docs powered by Jigsaw',
+    'siteDescription' => 'Beautiful docs powered by Jigsaw',
 
-    // DocSearch credentials
+    // Algolia DocSearch credentials
     'docsearchApiKey' => '',
     'docsearchIndexName' => '',
 

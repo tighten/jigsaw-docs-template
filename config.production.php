@@ -1,6 +1,10 @@
 <?php
 
 return [
-    'baseUrl' => 'https://tightenco.github.io/jigsaw-docs-skeleton/',
+    'baseUrl' => 'https://my-jigsaw-docs.com',
     'production' => true,
+
+    // DocSearch credentials
+    'docsearchApiKey' => '',
+    'docsearchIndexName' => '',
 ];
