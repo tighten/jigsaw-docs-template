@@ -1,7 +1,9 @@
-<?php namespace App\Listeners;
+<?php
 
-use TightenCo\Jigsaw\Jigsaw;
+namespace App\Listeners;
+
 use samdark\sitemap\Sitemap;
+use TightenCo\Jigsaw\Jigsaw;
 
 class GenerateSitemap
 {
@@ -14,6 +16,13 @@ class GenerateSitemap
     public function handle(Jigsaw $jigsaw)
     {
         $baseUrl = $jigsaw->getConfig('baseUrl');
+
+        if (! $baseUrl) {
+            echo("To generate a sitemap.xml file, please specify a 'baseUrl' in config.php.\n");
+
+            return;
+        }
+
         $sitemap = new Sitemap($jigsaw->getDestinationPath() . '/sitemap.xml');
 
         collect($jigsaw->getOutputPaths())
