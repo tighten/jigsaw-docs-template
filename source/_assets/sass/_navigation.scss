@@ -1,14 +1,34 @@
-.docsearch {
-    background: url('/assets/img/magnifying-glass.svg');
-    background-position: 0.8em;
-    background-repeat: no-repeat;
-    text-indent: 1.2em;
+.nav-menu {
+    @apply .-mt-12;
+    @apply .-mx-8;
+    @apply .bg-grey-lighter;
+    @apply .mb-8;
+    @apply .pb-4;
+    @apply .pt-8;
+    @apply .px-4;
+    @apply .shadow;
+    @apply .w-auto;
+
+    @screen lg {
+        @apply .-mx-4;
+        @apply .bg-transparent;
+        @apply .block;
+        @apply .border-b-0;
+        @apply .mt-1;
+        @apply .pl-0;
+        @apply .pr-4;
+        @apply .pt-0;
+        @apply .shadow-none;
+        @apply .w-1/4;
+    }
 }
 
-@screen md {
-    .docsearch:focus {
-        @apply .w-1/2;
-
-        text-indent: 1.5em;
-    }
+.nav-menu__item {
+    @apply .block;
+    @apply .list-reset;
+    @apply .no-underline;
+    @apply .mb-3;
+    @apply .mt-0;
+    @apply .text-grey-darkest;
+    @apply .text-sm;
 }

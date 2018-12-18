@@ -1,10 +1,22 @@
-# Jigsaw Docs Skeleton
+# Jigsaw Docs Starter Template
 
-A documentation style starter theme for Jigsaw.
+A Documentation starter template built for Jigsaw.
 
 ## Installation
-- On the command line within the root directory of the site:
-    - Run `composer install`
-    - Run `npm install`
-    - Run `./vendor/bin/jigsaw build`
-    - Run `npm run watch`
+```bash
+composer install
+npm install
+./vendor/bin/jigsaw build
+npm run dev
+```
+
+> Tip to watch files and use Browsersync, run `npm run watch`
+
+### Styles
+While the goal of this template is to provide a great starting point for others to extend, there are some Sass stylesheets provided in `source/_assets/sass/`. 
+
+#### Documentation
+All content is in `source/docs/*.md`. 
+
+#### Navigation
+To easily manage navigation and URLs, a `navigation.php` file has been added to the project root. 
