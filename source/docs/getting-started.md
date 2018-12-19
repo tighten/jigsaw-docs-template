@@ -47,7 +47,7 @@ section: content
 ---
 ```
 
-[Read more about Jigsaw layouts.](http://jigsaw.tighten.co/docs/content-blade/)
+[Read more about Jigsaw layouts.](https://jigsaw.tighten.co/docs/content-blade/)
 
 ---
 
