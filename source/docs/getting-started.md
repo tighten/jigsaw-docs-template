@@ -34,7 +34,7 @@ return [
 
 You can write your content using a [variety of file types](http://jigsaw.tighten.co/docs/content-other-file-types/). By default, this starter template expects your content to be located in the `source/docs` folder. If you change this, be sure to update the URL references in [navigation.php](/docs/navigation.php).
 
-[Read more about navigation](/docs/navigation)
+[Read more about navigation.](/docs/navigation)
 
 The first section of each content page contains a YAML header that specifies how it should be rendered. The `title` attribute is used to dynamically generate HTML `title` and OpenGraph tags for each page. The `extends` attribute defines which parent Blade layout this content file will render with (e.g. `_layouts.documentation` will render with `source/_layouts/documentation.blade.php`), and the `section` attribute defines the Blade "section" that expects this content to be placed into it.
 
@@ -47,7 +47,7 @@ section: content
 ---
 ```
 
-[Read more about Jigsaw layouts.](/docs/extending)
+[Read more about Jigsaw layouts.](https://jigsaw.tighten.co/docs/content-blade/)
 
 ---
 
@@ -69,7 +69,7 @@ Now that you’ve edited your configuration variables and know how to customize 
 
 ```bash
 # build static files with Jigsaw
-$ ./vendor/bin/jigsaw build
+./vendor/bin/jigsaw build
 
 # compile assets with Laravel Mix
 # options: dev, staging, production

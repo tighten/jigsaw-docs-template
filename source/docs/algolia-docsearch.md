@@ -9,7 +9,7 @@ section: content
 
 This starter template includes support for [DocSearch](https://community.algolia.com/docsearch/), a documentation indexing and search tool provided by Algolia for free. To configure this tool, you’ll need to sign up with Algolia and set your API Key and index name in `config.php`. Algolia will then crawl your documentation regularly, and index all your content.
 
-[Get your DocSearch credentials here](https://community.algolia.com/docsearch/#join-docsearch-program).
+[Get your DocSearch credentials here.](https://community.algolia.com/docsearch/#join-docsearch-program)
 
 ```php
 // config.php
@@ -68,4 +68,4 @@ If you'd like to customize the styling of the search results, Algolia exposes cu
 
 ---
 
-For more details, visit the [official Algolia DocSearch documentation](https://community.algolia.com/docsearch/what-is-docsearch.html).
+For more details, visit the [official Algolia DocSearch documentation.](https://community.algolia.com/docsearch/what-is-docsearch.html)
