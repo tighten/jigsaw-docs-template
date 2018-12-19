@@ -12,15 +12,15 @@
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^3.2.3",
         "docsearch.js": "^2.6.2",
+        "extra-watch-webpack-plugin": "^1.0.3",
         "hasbin": "^1.2.3",
         "highlight.js": "^9.13.1",
         "laravel-mix": "^4.0.0",
         "node-cmd": "^3.0.0",
-        "on-build-webpack": "^0.1.0",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
         "tailwindcss": "^0.7.2",
-        "webpack-watch": "^0.2.0",
+        "vue-template-compiler": "^2.5.21",
         "yargs": "^4.6.0"
     }
 }
