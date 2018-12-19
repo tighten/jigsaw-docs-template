@@ -39,7 +39,7 @@
         @endif
     </head>
 
-    <body class="bg-grey-lightest text-grey-darkest leading-normal font-sans">
+    <body class="flex flex-col justify-between min-h-screen bg-grey-lightest text-grey-darkest leading-normal font-sans">
         <header class="flex items-center shadow bg-white border-b h-24 mb-8 py-4" role="banner">
             <div class="container flex items-center max-w-4xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
@@ -60,7 +60,7 @@
             @yield('nav-toggle')
         </header>
 
-        <main role="main" class="min-h-full">
+        <main role="main" class="w-full flex-auto">
             @yield('body')
         </main>
 
