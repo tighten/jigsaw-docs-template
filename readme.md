@@ -14,6 +14,7 @@ After installing Jigsaw, run the following command from your project directory:
 
 This starter template includes samples of common page types, and comes pre-configured with:
 
+- A blog with tags, and two pages for indexes /blog and /bloglist
 - A fully responsive navigation bar
 - A sidebar navigation menu
 - [Tailwind CSS](https://tailwindcss.com/), a utility CSS framework that allows you to customize your design without touching a line of CSS
@@ -22,6 +23,8 @@ This starter template includes samples of common page types, and comes pre-confi
 - A script that automatically generates a `sitemap.xml` file
 - A search bar powered by [Algolia DocSearch](https://community.algolia.com/docsearch/), and instructions on how to get started with their free indexing service
 - A custom 404 page
+- A component for accepting signups for a [Mailchimp](https://mailchimp.com/) newsletter
+- A sample contact form
 
 ---
 
@@ -50,7 +53,7 @@ return [
 
 ---
 
-### Adding Content
+### Adding Documentation Content
 
 You can write your content using a [variety of file types](http://jigsaw.tighten.co/docs/content-other-file-types/). By default, this starter template expects your content to be located in the `source/docs` folder. If you change this, be sure to update the URL references in `navigation.php`.
 
@@ -66,6 +69,26 @@ section: content
 ```
 
 [Read more about Jigsaw layouts.](https://jigsaw.tighten.co/docs/content-blade/)
+
+---
+
+### Adding Blog Content
+
+You can write your blog content using a [variety of file types](http://jigsaw.tighten.co/docs/content-other-file-types/). By default, this starter template expects your content to be located in the `source/_posts/` folder.
+
+The top of each content page contains a YAML header that specifies how it should be rendered. The `title` attribute is used to dynamically generate HTML `title` and OpenGraph tags for each page. The `extends` attribute defines which parent Blade layout this content file will render with (e.g. `_layouts.post` will render with `source/_layouts/post.blade.php`), and the `section` attribute defines the Blade "section" that expects this content to be placed into it.
+
+```yaml
+---
+extends: _layouts.post
+section: content
+title: Getting Started
+date: 2018-12-25
+description: Getting started with the Jigsaw blog starter template
+cover_image: /assets/img/post-cover-image-2.png
+featured: true
+---
+```
 
 ---
 
