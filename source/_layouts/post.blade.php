@@ -8,6 +8,7 @@
 @endpush
 
 @section('body')
+<div class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
     @if ($page->cover_image)
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
     @endif
@@ -47,4 +48,5 @@
             @endif
         </div>
     </nav>
+</div>
 @endsection
