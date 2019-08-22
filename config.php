@@ -8,8 +8,8 @@ return [
     'siteAuthor' => 'Author Name',
 
     // Algolia DocSearch credentials
-    'docsearchApiKey' => '',
-    'docsearchIndexName' => '',
+    'docsearchApiKey' => 'xxx',
+    'docsearchIndexName' => 'xxx',
 
     // navigation menu
     'navigation' => require_once('navigation.php'),
