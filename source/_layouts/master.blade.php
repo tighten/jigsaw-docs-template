@@ -55,6 +55,8 @@
                     @if ($page->docsearchApiKey && $page->docsearchIndexName)
                         @include('_nav.search-input')
                     @endif
+
+                    @include('_nav.upper-menu')
                 </div>
             </div>
 
