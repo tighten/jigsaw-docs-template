@@ -10,10 +10,5 @@ return [
             'Custom 404 Page' => 'docs/custom-404-page',
         ],
     ],
-    'Linux Articles' => [
-        'children' => [
-            'Install Latest Docker on Ubuntu Bionic 1804 the Easy Way' => 'docs/Install Latest Docker on Ubuntu Bionic 1804 the Easy Way',
-        ],
-    ],
     'Jigsaw Docs' => 'https://jigsaw.tighten.co/docs/installation',
 ];
