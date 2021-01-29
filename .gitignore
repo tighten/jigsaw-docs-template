@@ -1,5 +1,5 @@
 /build_*/
 /node_modules/
 /vendor/
-.DS_Store
 /source/assets/build/
+npm-debug.log
