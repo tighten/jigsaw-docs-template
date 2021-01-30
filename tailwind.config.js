@@ -171,9 +171,11 @@ module.exports = {
     },
   },
   variants: {
-    borderRadius: ['responsive', 'focus'],
-    borderWidth: ['responsive', 'active', 'focus'],
-    width: ['responsive', 'focus']
+    extend: {
+      borderRadius: ['focus'],
+      borderWidth: ['active', 'focus'],
+      width: ['focus'],
+    },
   },
   plugins: [
     function({ addUtilities }) {
