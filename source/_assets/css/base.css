@@ -6,10 +6,10 @@ a {
     @apply font-semibold;
     @apply no-underline;
     @apply text-blue-600;
+}
 
-    &:hover {
-        @apply text-blue-800;
-    }
+a:hover {
+    @apply text-blue-800;
 }
 
 blockquote {
@@ -35,9 +35,9 @@ code.hljs {
     @apply bg-transparent;
     @apply p-0;
 
-    .hljs-comment,
-    .hljs-keyword,
-    .hljs-meta {
+    & .hljs-comment,
+    & .hljs-keyword,
+    & .hljs-meta {
         @apply font-normal;
         @apply not-italic;
     }
@@ -96,11 +96,9 @@ hr {
     @apply rounded-full;
 }
 
-li {
-    ul,
-    ol {
-        @apply my-0;
-    }
+li ul,
+li ol {
+    @apply my-0;
 }
 
 ol,
@@ -130,12 +128,13 @@ pre {
     @apply shadow;
     @apply text-base;
 
-    code {
+    & code {
         @apply bg-transparent;
         @apply block;
         @apply p-0;
     }
 }
+
 
 ::selection {
     @apply bg-blue-500;

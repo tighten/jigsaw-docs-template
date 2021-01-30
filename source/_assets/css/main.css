@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+@import 'highlight.js/styles/a11y-light.css';
+
+@import './base';
+@import './navigation';
+@import './documentation';
+@import './search';
+
+@import 'tailwindcss/utilities';
