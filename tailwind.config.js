@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   purge: {
     content: [
@@ -148,12 +150,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: [
-          'Nunito Sans'
-        ],
-        mono: [
-          'monospace',
-        ],
+        sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
       },
       lineHeight: {
         normal: '1.6',
