@@ -31,7 +31,7 @@
                 apiKey: '{{ $page->docsearchApiKey }}',
                 indexName: '{{ $page->docsearchIndexName }}',
                 inputSelector: '#docsearch-input',
-                debug: false // Set debug to true if you want to inspect the dropdown
+                debug: false, // Set debug to true if you want to inspect the dropdown
             });
 
             const searchInput = {
@@ -41,7 +41,7 @@
                     menu.classList.toggle('md:block');
                     document.getElementById('docsearch-input').focus();
                 },
-            }
+            };
         </script>
     @endif
 @endpush

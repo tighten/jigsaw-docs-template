@@ -4,29 +4,29 @@ description: Customizing your Jigsaw docs site
 extends: _layouts.documentation
 section: content
 ---
+
 # Customizing Your Site {#customizing}
 
 ## Styles
 
-This starter template comes pre-loaded with [Tailwind CSS](https://tailwindcss.com), a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base Sass files in the `/source/_assets/sass` folder, set up with the expectation that you can add any custom CSS into `_documentation.scss`.
+This starter template comes pre-loaded with [Tailwind CSS](https://tailwindcss.com), a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base CSS files in the `/source/_assets/css` folder, set up with the expectation that you can add any custom CSS into `documentation.css`.
 
-> You can re-work the architecture of the Sass includes any way you’d like; just make sure to keep the `@tailwind` references in your final files.
+> You can re-work the architecture of the CSS includes any way you’d like; just make sure to keep the Tailwind `@import` statements in your final files.
 
-```scss
-// source/_assets/sass/main.scss
+```css
+/* source/_assets/css/main.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
 
-@tailwind preflight;
-@tailwind components;
+/* Code syntax highlighting powered by https://highlightjs.org */
+@import 'highlight.js/styles/a11y-light.css';
 
-// Code syntax highlighting,
-// powered by https://highlightjs.org
-@import '~highlight.js/styles/a11y-light.css';
+@import './base';
+@import './navigation';
+@import './documentation';
+@import './search';
 
-@import 'base';
-@import 'navigation';
-@import 'documentation';
-
-@tailwind utilities;
+@import 'tailwindcss/utilities';
 ```
 
 ---
@@ -63,7 +63,7 @@ _The quick brown fox jumps over the lazy dog_
 [The quick brown fox jumps over the lazy dog](#)
 
 ```php
-class Foo extends bar
+class Foo extends Bar
 {
     public function fooBar()
     {

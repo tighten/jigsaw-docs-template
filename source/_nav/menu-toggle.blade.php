@@ -24,6 +24,6 @@
             document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
             document.getElementById('js-nav-menu-show').classList.toggle('hidden');
         },
-    }
+    };
 </script>
 @endpush
