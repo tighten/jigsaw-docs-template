@@ -1,7 +1,3 @@
-body {
-    font-size: 17px;
-}
-
 a {
     @apply font-semibold;
     @apply no-underline;
