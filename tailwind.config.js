@@ -151,6 +151,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
+        mono: ['Fira Code', ...defaultTheme.fontFamily.mono],
       },
       lineHeight: {
         normal: '1.6',
