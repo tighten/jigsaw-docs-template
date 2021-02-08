@@ -7,7 +7,6 @@ a {
     @apply no-underline;
     @apply text-blue-600;
 }
-
 a:hover {
     @apply text-blue-800;
 }
