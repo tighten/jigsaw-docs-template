@@ -1,25 +1,25 @@
+.docsearch-input__wrapper {
+    @apply absolute;
+    @apply bg-white;
+    @apply mt-7;
+    @apply left-0;
+    @apply top-0;
+    @apply px-4;
+    @apply w-full;
+    @apply z-10;
+
+    @screen md {
+        @apply mt-0;
+        @apply px-0;
+        @apply relative;
+    }
+}
+
 .docsearch-input {
     background-image: url('/assets/img/magnifying-glass.svg');
     background-position: 0.8em;
     background-repeat: no-repeat;
     text-indent: 1.2em;
-
-    & .docsearch-input__wrapper {
-        @apply absolute;
-        @apply bg-white;
-        @apply mt-7;
-        @apply left-0;
-        @apply top-0;
-        @apply px-4;
-        @apply w-full;
-        @apply z-10;
-
-        @screen md {
-            @apply mt-0;
-            @apply px-0;
-            @apply relative;
-        }
-    }
 }
 
 .docsearch-input:focus {
@@ -51,9 +51,8 @@
             }
 
             & .algolia-docsearch-suggestion--text {
-                @apply font-normal;
-
                 line-height: 1.4;
+                @apply font-normal;
             }
 
             & .algolia-docsearch-suggestion--wrapper {
