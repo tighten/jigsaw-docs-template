@@ -5,6 +5,6 @@ return [
     'production' => true,
 
     // DocSearch credentials
-    'docsearchApiKey' => '',
-    'docsearchIndexName' => '',
+    'docsearchApiKey' => env('DOCSEARCH_KEY'),
+    'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 ];
