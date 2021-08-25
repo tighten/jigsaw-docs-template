@@ -9,8 +9,8 @@ return [
     'siteDescription' => 'Beautiful docs powered by Jigsaw',
 
     // Algolia DocSearch credentials
-    'docsearchApiKey' => '',
-    'docsearchIndexName' => '',
+    'docsearchApiKey' => env('DOCSEARCH_KEY'),
+    'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 
     // navigation menu
     'navigation' => require_once('navigation.php'),
