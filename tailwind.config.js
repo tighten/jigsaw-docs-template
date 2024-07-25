@@ -1,19 +1,18 @@
+/** @type {import("tailwindcss").Config} */
 module.exports = {
-  purge: {
-    content: [
+  content: require('fast-glob').sync([
       'source/**/*.html',
       'source/**/*.md',
       'source/**/*.js',
       'source/**/*.php',
       'source/**/*.vue',
+  ]),
+  options: {
+    whitelist: [
+      /language/,
+      /hljs/,
+      /algolia/,
     ],
-    options: {
-      whitelist: [
-        /language/,
-        /hljs/,
-        /algolia/,
-      ],
-    },
   },
   theme: {
     extend: {
