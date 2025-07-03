@@ -4,13 +4,13 @@
     background-repeat: no-repeat;
     text-indent: 1.2em;
 
-    @screen lg {
+    @media (width >= theme(--breakpoint-lg)) {
         &:focus {
             @apply w-2/3;
         }
     }
 
-    @screen xl {
+    @media (width >= theme(--breakpoint-xl)) {
         &:focus {
             @apply w-1/2;
         }
@@ -29,7 +29,7 @@
     @apply w-full;
     @apply z-10;
 
-    @screen md {
+    @media (width >= theme(--breakpoint-md)) {
         @apply mt-0;
         @apply px-0;
         @apply relative;
@@ -50,7 +50,7 @@
             .algolia-docsearch-suggestion--content {
                 @apply w-full;
 
-                @screen md {
+                @media (width >= theme(--breakpoint-md)) {
                     @apply w-2/3;
                 }
             }
@@ -68,7 +68,7 @@
             .algolia-docsearch-suggestion--subcategory-column {
                 @apply hidden;
 
-                @screen md {
+                @media (width >= theme(--breakpoint-md)) {
                     @apply w-1/3;
                     @apply inline-block;
                 }

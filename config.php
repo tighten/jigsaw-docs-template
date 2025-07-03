@@ -9,6 +9,7 @@ return [
     'siteDescription' => 'Beautiful docs powered by Jigsaw',
 
     // Algolia DocSearch credentials
+    'docsearchAppId' => env('DOCSEARCH_APP_ID'),
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 

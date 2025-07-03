@@ -27,7 +27,7 @@ code {
     @apply bg-gray-300;
     @apply px-2;
     @apply py-px;
-    @apply rounded;
+    @apply rounded-sm;
     @apply text-sm;
 }
 
@@ -115,7 +115,7 @@ ol {
 p {
     @apply my-3;
 
-    @screen md {
+    @media (width >= theme(--breakpoint-md)) {
         @apply my-6;
     }
 }
@@ -126,8 +126,8 @@ pre {
     @apply my-6;
     @apply overflow-x-auto;
     @apply p-4;
-    @apply rounded;
-    @apply shadow;
+    @apply rounded-sm;
+    @apply shadow-sm;
     @apply text-base;
 
     code {
