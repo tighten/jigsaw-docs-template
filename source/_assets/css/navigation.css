@@ -6,10 +6,10 @@
     @apply pb-4;
     @apply pt-8;
     @apply px-4;
-    @apply shadow;
+    @apply shadow-sm;
     @apply w-auto;
 
-    @screen lg {
+    @media (width >= theme(--breakpoint-lg)) {
         @apply -mx-4;
         @apply bg-transparent;
         @apply block;

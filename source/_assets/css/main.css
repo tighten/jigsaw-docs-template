@@ -1,12 +1,47 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import 'tailwindcss';
 
-/* Code syntax highlighting, powered by https://highlightjs.org */
-@import 'highlight.js/styles/a11y-light.css';
+@import './base.css' layer(components);
+@import './navigation.css' layer(components);
+@import './documentation.css' layer(components);
 
-@import 'base';
-@import 'navigation';
-@import 'documentation';
-@import 'search';
+@layer base {
+  :root {
+    --font-sans: 'Nunito Sans', sans-serif;
+    --font-mono: monospace;
+  }
 
-@import 'tailwindcss/utilities';
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer utilities {
+  .transition {
+    transition: all 0.5s ease-out;
+  }
+  .transition-fast {
+    transition: all 0.2s ease-out;
+  }
+}
+
+/* Syntax Highlight by Prism */
+/* https://prismjs.com/ */
+
+/* You can customize the theme of the Prism syntax highlighter below. Adjust colors, backgrounds, and styles as needed for your site. */
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #e5e7eb;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  background: transparent;
+}
