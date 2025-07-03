@@ -22,7 +22,7 @@
 
     <hr class="block my-8 border lg:hidden">
 
-    <div class="md:flex -mx-2 -mx-4">
+    <div class="md:flex -mx-4">
         <div class="mb-8 mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-window.svg" class="h-12 w-12" alt="window icon">
 
@@ -42,9 +42,9 @@
         <div class="mx-3 px-2 md:w-1/3">
             <img src="/assets/img/icon-stack.svg" class="h-12 w-12" alt="stack icon">
 
-            <h3 id="intro-mix" class="text-2xl text-blue-900 mb-0">Compile your assets <br>using Laravel Mix </h3>
+            <h3 id="intro-mix" class="text-2xl text-blue-900 mb-0">Compile your assets <br>using Vite </h3>
 
-            <p>Jigsaw comes pre-configured with Laravel Mix, a simple and powerful build tool. Use the latest frontend tech with just a few lines of code.</p>
+            <p>Jigsaw comes pre-configured with Vite, a simple and powerful build tool. Use the latest frontend tech with just a few lines of code.</p>
         </div>
     </div>
 </section>
